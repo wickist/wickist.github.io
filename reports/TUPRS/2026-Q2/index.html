@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- site-publish:meta -->
+<title>TUPRS 2026 H1 Finansal Analiz Raporu</title>
+<meta name="description" content="Bilanço, gelir tablosu, nakit akışı, özkaynak ve finansal oran analizi; rafineri marjları (crack), kapasite kullanımı ve baz değerler defteri.">
+<link rel="canonical" href="https://wickist.github.io/reports/TUPRS/2026-Q2/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Finansal Analiz Raporları">
+<meta property="og:title" content="TUPRS 2026 H1 Finansal Analiz Raporu">
+<meta property="og:description" content="Bilanço, gelir tablosu, nakit akışı, özkaynak ve finansal oran analizi; rafineri marjları (crack), kapasite kullanımı ve baz değerler defteri.">
+<meta property="og:url" content="https://wickist.github.io/reports/TUPRS/2026-Q2/">
+<meta property="og:image" content="https://wickist.github.io/reports/TUPRS/2026-Q2/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TUPRS 2026 H1 Finansal Analiz Raporu">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TUPRS 2026 H1 Finansal Analiz Raporu">
+<meta name="twitter:description" content="Bilanço, gelir tablosu, nakit akışı, özkaynak ve finansal oran analizi; rafineri marjları (crack), kapasite kullanımı ve baz değerler defteri.">
+<meta name="twitter:image" content="https://wickist.github.io/reports/TUPRS/2026-Q2/og-cover.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TUPRS 2026 H1 Finansal Analiz Raporu", "description": "Bilanço, gelir tablosu, nakit akışı, özkaynak ve finansal oran analizi; rafineri marjları (crack), kapasite kullanımı ve baz değerler defteri.", "inLanguage": "tr", "datePublished": "2026-10-07", "dateModified": "2026-10-07", "url": "https://wickist.github.io/reports/TUPRS/2026-Q2/", "image": "https://wickist.github.io/reports/TUPRS/2026-Q2/og-cover.png", "publisher": {"@type": "Organization", "name": "Finansal Analiz Raporları"}, "about": {"@type": "Organization", "name": "Türkiye Petrol Rafinerileri A.Ş.", "tickerSymbol": "TUPRS"}}</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
+:root{
+  --bg:#F0EEE6; --panel:#FAF9F5; --panel2:#F5F2EA; --ink:#1F1E1D; --muted:#5D594D;
+  --line:#E3DED2; --accent:#D97757; --accent-dark:#B0472A; --sage:#6A8E7F; --gold:#C9A227;
+  --serif:'Copernicus','Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Styrene B','Styrene A','Inter','Segoe UI',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:50;background:rgba(240,238,230,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:18px;height:52px;overflow-x:auto;white-space:nowrap}
+nav .brand{font-family:var(--serif);font-weight:700;color:var(--accent-dark);font-size:17px}
+nav a{color:var(--muted);text-decoration:none;font-size:13.5px;font-weight:500}
+nav a:hover{color:var(--ink)}
+header{padding:64px 0 40px}
+.meta{font-size:13px;color:var(--muted);margin-bottom:20px;max-width:660px;line-height:1.6}
+h1{font-family:var(--serif);font-size:clamp(34px,5vw,54px);line-height:1.12;font-weight:700;letter-spacing:-.01em}
+.lede{margin-top:18px;font-size:19px;color:#3D3A31;max-width:660px}
+.verdict{margin-top:28px;background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:12px;padding:20px 24px;max-width:660px;font-size:16.5px}
+.verdict b{color:var(--accent-dark)}
+section{padding:52px 0;border-top:1px solid var(--line)}
+h2{font-family:var(--serif);font-size:30px;font-weight:600;margin-bottom:6px}
+.sub{color:var(--muted);font-size:14.5px;margin-bottom:28px;max-width:660px}
+p.body{max-width:660px;margin-bottom:14px}
+.tag{display:inline-block;font-size:11px;font-weight:700;padding:1px 8px;border-radius:6px;vertical-align:2px;margin-left:6px}
+.tag.c{background:#EFE9DC;color:#7A5F30;border:1px solid #E0D5BC}
+.tag.h{background:#E7EEE9;color:#48685A;border:1px solid #CBDCCF}
+.tag.u{background:#F3E8E4;color:#9A4A33;border:1px solid #E5C8BC}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin:8px 0 4px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 18px 15px}
+.card .k{font-size:12.5px;color:var(--muted);font-weight:600;letter-spacing:.01em}
+.card .v{font-family:var(--serif);font-size:27px;font-weight:700;margin-top:4px}
+.card .v.neg{color:var(--accent-dark)}
+.card .n{font-size:12px;color:var(--muted);margin-top:3px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px;margin:18px 0}
+.panel h3{font-family:var(--serif);font-size:19px;font-weight:600;margin-bottom:10px}
+.fig-cap{font-size:12.5px;color:var(--muted);margin-top:10px}
+svg{display:block;width:100%;height:auto}
+svg text{font-family:var(--sans)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.two>*{min-width:0}
+#ekran table,.two table{min-width:0}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+ol.steps{counter-reset:s;list-style:none;max-width:660px}
+ol.steps li{counter-increment:s;position:relative;padding:0 0 18px 52px}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:1px;width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;font-family:var(--serif)}
+ol.steps li b{color:var(--accent-dark)}
+ul.plain{list-style:none;max-width:660px}
+ul.plain li{padding:8px 0 8px 22px;position:relative;border-bottom:1px dashed var(--line)}
+ul.plain li:last-child{border-bottom:none}
+ul.plain li::before{content:"";position:absolute;left:2px;top:16px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+table{width:100%;min-width:600px;border-collapse:collapse;font-size:14px;background:var(--panel);border-radius:12px;overflow:hidden}
+th{font-family:var(--sans);text-align:left;font-size:12.5px;letter-spacing:.01em;color:var(--muted);background:var(--panel2);padding:11px 14px;border-bottom:1px solid var(--line)}
+td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+details{max-width:660px;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:10px 16px;margin:14px 0;font-size:13.5px}
+details summary{cursor:pointer;font-weight:600;color:var(--muted);font-size:13px}
+details[open]{border-left:3px solid var(--sage)}
+details code{background:#EDE9DE;padding:1px 6px;border-radius:5px;font-size:12px}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:700px){.vs{grid-template-columns:1fr}}
+.vs .side{border-radius:14px;padding:24px}
+.vs .ok{background:#EAF0EB;border:1px solid #CBDCCF}
+.vs .bad{background:#F8E9E2;border:1px solid #EBC5B2}
+.vs .big{font-family:var(--serif);font-size:38px;font-weight:700}
+.vs .ok .big{color:#48685A}.vs .bad .big{color:var(--accent-dark)}
+.vs .lbl{font-size:13px;font-weight:600;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:36px 0 60px;color:var(--muted);font-size:13px}
+footer .grid{display:grid;grid-template-columns:2fr 1fr;gap:24px}
+@media(max-width:700px){footer .grid{grid-template-columns:1fr}}
+.künye{font-size:12.5px;line-height:1.7}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent-dark);outline-offset:2px;border-radius:4px}
+.tblwrap{overflow-x:auto}
+.copy{margin-top:26px;text-align:center;font-size:12.5px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<!-- site-publish:meta -->
+<nav style="max-width:1080px;margin:0 auto;padding:10px 20px;font-size:13px;
+ color:#5D594D;border-bottom:1px solid #E3DED2">
+<a href="/" style="color:#5D594D;text-decoration:none">Ana Sayfa</a> /
+<a href="/reports/TUPRS/" style="color:#5D594D;text-decoration:none">TUPRS</a> /
+<span style="color:#B0472A;font-weight:600">2026 H1</span>
+</nav>
+
+<nav><div class="wrap">
+  <span class="brand">TUPRS · 2026-H1</span>
+  <a href="#ozet">Özet</a><a href="#ekran">Ekran</a><a href="#yapi">Bilanço</a>
+  <a href="#oran">Oranlar</a><a href="#gelir">Gelir Tablosu</a><a href="#nakit">Nakit Akışı</a>
+  <a href="#borc">Borç ve FX</a><a href="#marj">Marj</a><a href="#olaylar">Olaylar</a>
+  <a href="#degerleme">Değerleme</a><a href="#oneri">Öneri</a>
+  <a href="#huküm">Hüküm</a><a href="#kaynak">Kaynaklar</a>
+</div></nav>
+
+<header id="ozet"><div class="wrap">
+  <p class="meta">Tüm tutarlar mn TL ve 30.06.2026 alım gücündedir (TMS 29'a göre enflasyon düzeltmesi uygulanmış). Kaynak: KAP 2026-H1 özet konsolide finansal rapor (konsolide; SBDS 2410 sınırlı denetim: Güney Bağımsız Denetim / EY, 4 Ağustos 2026) + Faaliyet raporu 2026-H1 + özel durum açıklamaları + resmî yatırımcı sunumları. Fiyat: 07.10.2026 12:11 anlık 380,75 TL (Matriks; seans açık).</p>
+  <h1>Yarıyıl kârının<br>%92'si tek çeyrekten.</h1>
+  <p class="lede">Tüpraş'ın bilançosu güçlü: net nakit pozisyonu, işleyen altın finansman kuralı, negatif nakit döngüsü. 2026 2. çeyrek net kârı 46,2 mlr TL ile tek çeyrek rekoru kırdı; sürücüsü rafinaj marjıdır. Yönetim yıllık net rafinaj marjı tahminini ağustosta iki katından fazla yukarı çekti.</p>
+  <div class="verdict"><b>Hüküm:</b> Güçlü ve temiz bilanço: net nakit, negatif nakit döngüsü, son oniki ay özkaynak kârlılığı %17,4. Likidite oranları klasik eşiklerin altında ama fark yapısal: döngü negatif, atıl nakit büyük. Kırılganlık kârın çeyrek yoğunluğunda: yarıyıl kârının %92'si 2. çeyrekten geldi ve rafinaj marjına bağlı. Yönetim 3. çeyrek marjının bir kısmını fiyat korumasıyla sabitledi. <span class="tag c">çıkarım — destekli</span></div>
+</div></header>
+
+<section id="kartlar" style="border-top:none"><div class="wrap">
+  <div class="cards">
+    <div class="card"><div class="k">Toplam varlık</div><div class="v">859.988</div><div class="n">mn TL · reel yıllık +%19,3</div></div>
+    <div class="card"><div class="k">Nakit ve benzerleri</div><div class="v">195.841</div><div class="n">mn TL · reel yıllık +%64,1</div></div>
+    <div class="card"><div class="k">Net nakit pozisyonu</div><div class="v">+130.718</div><div class="n">mn TL · net borç yok (rapor tanımıyla +102.232)</div></div>
+    <div class="card"><div class="k">2026-H1 net kâr</div><div class="v">50.272</div><div class="n">mn TL · 2. çeyrek: 46.190 (rekor)</div></div>
+    <div class="card"><div class="k">Özkaynak kârlılığı</div><div class="v">%17,4</div><div class="n">son oniki ay · FAVÖK marjı %9,0</div></div>
+    <div class="card"><div class="k">PD/DD</div><div class="v">1,61</div><div class="n">380,75 TL × 1.926,80 mn pay / 463.307</div></div>
+  </div>
+</div></section>
+
+<section id="ekran"><div class="wrap">
+  <h2>Kullanıcı ekran tablosu</h2>
+  <p class="sub">Sol tablo Matriks anlık ekranından alındı (06.10.2026 15:22, seans açık). Piyasa değeri ve PD/DD burada hesaplandı: pay sayısı finansal raporun ödenmiş sermaye satırından (1 TL nominal), defter değeri toplam özkaynaktan.</p>
+  <div class="two">
+    <div class="panel">
+      <h3>Ekran verisi — Matriks anlık</h3>
+      <div class="tblwrap"><table>
+        <tr><td>Son fiyat</td><td class="num"><b>380,75 TL</b></td><td class="num">günlük +%0,40 (seans açık 12:11)</td></tr>
+        <tr><td>Alış / satış</td><td class="num">380,50 / 380,75</td><td class="num">—</td></tr>
+        <tr><td>Gün aralığı</td><td class="num">377,50 – 385,50</td><td class="num">açılış 382,75</td></tr>
+        <tr><td>Gün hacmi</td><td class="num">2,18 mlr TL</td><td class="num">5,71 mn pay</td></tr>
+        <tr><td>Bir hafta önce kapanış</td><td class="num">376,25</td><td class="num">+%1,20</td></tr>
+        <tr><td>Bir ay önce kapanış</td><td class="num">387,31</td><td class="num">−%1,69</td></tr>
+        <tr><td>Bir yıl önce kapanış</td><td class="num">170,43</td><td class="num">+%123,4</td></tr>
+      </table></div>
+    </div>
+    <div class="panel">
+      <h3>Hesaplanan değerler</h3>
+      <div class="tblwrap"><table>
+        <tr><td>Pay sayısı</td><td class="num">1.926,80 mn</td><td class="num">ödenmiş sermaye 1.926.796 bin TL</td></tr>
+        <tr><td>Piyasa değeri</td><td class="num">734.591 mn TL</td><td class="num">≈ 734,6 mlr TL <span class="tag h">hesap</span></td></tr>
+        <tr><td>Toplam özkaynak (defter)</td><td class="num">463.307 mn TL</td><td class="num">ana ortaklık 456.139 + KGO 7.168</td></tr>
+        <tr><td>PD/DD</td><td class="num">1,59</td><td class="num">734.591 / 463.307 <span class="tag h">hesap</span> · Matriks yayınlanan 1,61</td></tr>
+        <tr><td>F/K (yayınlanan)</td><td class="num">10,09</td><td class="num">orantılı F/K 7,36 · Matriks oran servisi 06.10.2026</td></tr>
+        <tr><td>EV/FVÖK (yayınlanan)</td><td class="num">5,37</td><td class="num">Matriks oran servisi 06.10.2026</td></tr>
+        <tr><td>Halka açıklık</td><td class="num">%49,7</td><td class="num">Koç doğrudan payı %3,7 (ODA 1656968)</td></tr>
+      </table></div>
+      <p class="fig-cap">KGO: kontrol gücü olmayan paylar. Fiyat anlıktır; seans içinde değişir. Künye ve doğruluk kaynağı için bkz. kaynak bloğu.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="yapi"><div class="wrap">
+  <h2>Bilanço yapısı: para nakitte ve ticari borçta toplandı</h2>
+  <p class="sub">İki taraf da 30.06.2026 alım gücü, mn TL. Varlığın %22,8'i nakit; kaynağın %53,9'u özkaynak. Yıl başından bu yana büyümenin yarısından fazlası dönen kalemlerde.</p>
+  <div class="panel">
+    <h3>Varlık tarafı — 859.988 mn TL</h3>
+    <svg viewBox="0 0 1000 128" role="img" aria-label="Varlık dağılımı yatay yığılmış bar">
+      <g transform="translate(10,14)">
+        <rect x="0"     y="0" width="141.2" height="46" rx="4" fill="#D97757"><title>Nakit ve nakit benzerleri: 195.841 mn — %22,8</title></rect>
+        <rect x="141.2" y="0" width="70.0"  height="46" rx="4" fill="#E0A458"><title>Stoklar: 97.045 mn — %11,3</title></rect>
+        <rect x="211.2" y="0" width="56.8"  height="46" rx="4" fill="#B0472A"><title>Ticari alacaklar: 78.748 mn — %9,2</title></rect>
+        <rect x="268.0" y="0" width="252.7" height="46" rx="4" fill="#8A9B6E"><title>Maddi duran varlıklar (net): 350.570 mn — %40,8</title></rect>
+        <rect x="520.7" y="0" width="99.3"  height="46" rx="4" fill="#CFC6B4"><title>Diğer varlıklar: 137.784 mn — %16,0</title></rect>
+        <g font-size="12.5" fill="#1F1E1D">
+          <text x="70.6"  y="28" text-anchor="middle" fill="#fff" font-weight="600">Nakit 195.841</text>
+          <text x="394.4" y="28" text-anchor="middle" fill="#fff" font-weight="600">MDV net 350.570</text>
+          <text x="570.4" y="28" text-anchor="middle" fill="#3D3A31" font-size="11">Diğer 137.784</text>
+        </g>
+        <g font-size="11.5" fill="#6E6A5E">
+          <text x="0"   y="68">Nakit %22,8</text><text x="120" y="68">Stok %11,3</text>
+          <text x="250" y="68">Alacak %9,2</text><text x="370" y="68">MDV %40,8</text>
+          <text x="500" y="68">Diğer %16,0</text>
+        </g>
+      </g>
+    </svg>
+    <h3 style="margin-top:26px">Kaynak tarafı — 859.988 mn TL</h3>
+    <svg viewBox="0 0 1000 96" role="img" aria-label="Kaynak dağılımı yatay yığılmış bar">
+      <g transform="translate(10,14)">
+        <rect x="0"     y="0" width="151.0" height="46" rx="4" fill="#8C6E5A"><title>Ticari borçlar: 209.432 mn — %24,4 (faizsiz)</title></rect>
+        <rect x="151.0" y="0" width="49.2"  height="46" rx="4" fill="#A68B77"><title>Finansal borçlar (brüt): 68.201 mn — %7,9</title></rect>
+        <rect x="200.2" y="0" width="334.0" height="46" rx="4" fill="#6A8E7F"><title>Özkaynaklar: 463.307 mn — %53,9</title></rect>
+        <rect x="534.2" y="0" width="85.8"  height="46" rx="4" fill="#B9B1A1"><title>Diğer kaynaklar: 119.048 mn — %13,8</title></rect>
+        <g font-size="12.5">
+          <text x="367.2" y="28" text-anchor="middle" fill="#fff" font-weight="600">Özkaynak 463.307 — %53,9</text>
+        </g>
+        <g font-size="11.5" fill="#6E6A5E">
+          <text x="0"   y="68">Ticari borç 209.432</text><text x="170" y="68">Finansal borç 68.201</text>
+          <text x="330" y="68">Diğer 119.048</text><text x="440" y="68">— ticari borç faizsizdir</text>
+        </g>
+      </g>
+    </svg>
+    <p class="fig-cap">Kaynak: KAP 2026-H1 bilanço satırları (bin TL → mn TL). Yüzde payları aktif toplamına göredir; 31.12.2025 karşılaştırmaları aşağıdaki tabloda.</p>
+  </div>
+  <div class="panel">
+    <h3>Çok dönemli kıyas — ana kalemler (reel)</h3>
+    <p class="sub" style="margin-bottom:14px">mn TL, 30.06.2026 alım gücü. Yıllık: 30.06.2025 → 30.06.2026 · YTD: 31.12.2025 → 30.06.2026. İkisi de enflasyondan arındırılmış büyümelerdir.</p>
+    <div class="tblwrap"><table>
+      <tr><th>Kalem</th><th>30.06.26</th><th>Yıllık (reel)</th><th>YTD (reel)</th><th>Not</th></tr>
+      <tr><td>Toplam aktif</td><td class="num">859.988</td><td class="num">+%19,3</td><td class="num">+%23,4</td><td>nominal %57,6 büyümenin %32'si enflasyon</td></tr>
+      <tr><td>Nakit + benzeri</td><td class="num">195.841</td><td class="num">+%64,1</td><td class="num">+%55,1</td><td>158,2 mlr TL mevduat, %42,89 faizle</td></tr>
+      <tr><td>Stoklar</td><td class="num">97.045</td><td class="num">+%27,1</td><td class="num">+%32,6</td><td>yoldaki mallar 14,1 → 28,0 mlr (ham petrol)</td></tr>
+      <tr><td>Ticari alacak</td><td class="num">78.748</td><td class="num">+%11,7</td><td class="num">+%26,8</td><td>satış artışının altında — tahsilat iyi</td></tr>
+      <tr><td>MDV (net)</td><td class="num">350.570</td><td class="num">−%0,0</td><td class="num">+%0,5</td><td>nominal %32 = yalnız enflasyon; reel yatay</td></tr>
+      <tr><td>Ticari borç</td><td class="num">209.432</td><td class="num">+%44,0</td><td class="num">+%68,6</td><td>H1 ithalatı 431,6 mlr TL ile uyumlu</td></tr>
+      <tr><td>Finansal borç (brüt)</td><td class="num">68.201</td><td class="num">+%24,8</td><td class="num">+%15,3</td><td>≈%80 USD (54,6 mlr); tahvil 6,8 + sendikasyon 500 mn USD</td></tr>
+      <tr><td>Özkaynak</td><td class="num">463.307</td><td class="num">+%12,6</td><td class="num">+%6,4</td><td>1. çeyrek temettüsü (20 mlr) + 2. çeyrek kârı (46,2 mlr)</td></tr>
+    </table></div>
+    <p class="fig-cap">Hız kıyası: alacak artışı (<) satış artışından küçük → tahsilat politikası etkili. Stok artışı (>) satış artışından büyük → fiyat etkisi mi, stok birikimi mi? Cevap marj bölümündeki tonaj kontrolünde. <span class="tag c">çıkarım</span></p>
+  </div>
+  <div class="two">
+    <div class="panel">
+      <h3>Net işletme sermayesi: 1. çeyrekte eridi, 2. çeyrekte geri alındı</h3>
+      <svg viewBox="0 0 780 150" role="img" aria-label="Net işletme sermayesi üç dönem karşılaştırması yatay bar">
+        <text x="10" y="26" font-size="12.5" fill="#1F1E1D" font-weight="600">Aralık 2025</text>
+        <rect x="110" y="12" width="346.6" height="22" rx="4" fill="#6A8E7F"/>
+        <text x="464" y="28" font-size="12.5" fill="#3D3A31" font-weight="700">79.114</text>
+        <text x="10" y="68" font-size="12.5" fill="#1F1E1D" font-weight="600">Mart 2026</text>
+        <rect x="110" y="54" width="134.5" height="22" rx="4" fill="#B0472A"/>
+        <text x="252" y="70" font-size="12.5" fill="#3D3A31" font-weight="700">30.684</text>
+        <text x="10" y="110" font-size="12.5" fill="#1F1E1D" font-weight="600">Haziran 2026</text>
+        <rect x="110" y="96" width="500.0" height="22" rx="4" fill="#D97757"/>
+        <text x="618" y="112" font-size="12.5" fill="#3D3A31" font-weight="700">114.112</text>
+        <text x="10" y="142" font-size="11.5" fill="#6E6A5E">Net işletme sermayesi = dönen varlık − kısa vadeli yükümlülük (mn TL) · YTD +%44</text>
+      </svg>
+      <p class="fig-cap">Yıl içi dalgalanma tek döneme bakılarak yargılanamaz: 1. çeyrekteki düşüş temettü + vergi ödeme takvimiyle örtüşür, 2. çeyrekte tamamen geri alındı. <span class="tag c">çıkarım</span></p>
+    </div>
+    <div class="panel">
+      <h3>Nakit döngüsü −7 gün: tedarikçi finansmanı çalışıyor</h3>
+      <svg viewBox="0 0 700 185" role="img" aria-label="Nakit döngüsü gün bileşenleri">
+        <line x1="400" y1="2" x2="400" y2="166" stroke="#B9B1A1" stroke-width="1.5"/>
+        <text x="10" y="24" font-size="12" fill="#1F1E1D" font-weight="600">Stok süresi</text>
+        <rect x="400" y="10" width="116" height="22" rx="4" fill="#E0A458"/>
+        <text x="524" y="26" font-size="12" fill="#3D3A31" font-weight="700">+29 gün</text>
+        <text x="10" y="66" font-size="12" fill="#1F1E1D" font-weight="600">Alacak süresi</text>
+        <rect x="400" y="52" width="88" height="22" rx="4" fill="#D97757"/>
+        <text x="496" y="68" font-size="12" fill="#3D3A31" font-weight="700">+22 gün</text>
+        <text x="10" y="108" font-size="12" fill="#1F1E1D" font-weight="600">Borç süresi</text>
+        <rect x="168" y="94" width="232" height="22" rx="4" fill="#6A8E7F"/>
+        <text x="112" y="110" font-size="12" fill="#3D3A31" font-weight="700">−58 gün</text>
+        <line x1="10" y1="128" x2="660" y2="128" stroke="#E3DED2" stroke-dasharray="5 4"/>
+        <text x="10" y="152" font-size="12" fill="#1F1E1D" font-weight="700">Nakit döngüsü</text>
+        <rect x="365" y="138" width="35" height="22" rx="4" fill="#B0472A"/>
+        <text x="410" y="154" font-size="12" fill="#B0472A" font-weight="700">−7 gün (son oniki ay)</text>
+        <text x="10" y="178" font-size="11.5" fill="#6E6A5E">Döngü = stok + alacak − borç · negatif: şirket parasını tedarikçinin kredisiyle çevirir</text>
+      </svg>
+      <p class="fig-cap">Kısa vadeli yükümlülüğün %57'si ticari borçtur (faizsiz). Bu rafineri modeli için kriz değil; çalışan sermayesinin müşteriye değil tedarikçiye dayanmasıdır. <span class="tag c">çıkarım</span></p>
+    </div>
+  </div>
+  <p class="body"><b>Altın finansman kuralı:</b> duran varlık 420.507 ≤ devamlı sermaye 534.618 — çapraz finansman yok. <span class="tag h">hesap</span> <b>Duran/özkaynak 0,91:</b> eşik değerin (≈1) altında ve 1. çeyrekteki (1,08) sınır aşımı düzeldi.</p>
+  <p class="body">Dikey yapı yılbaşına göre nakit ve ticari borç lehine değişti: nakit payı %18,1 → %22,8, ticari borç payı %17,8 → %24,4, MDV payı %50,0 → %40,8. Kâr sermaye biriktiriyor; sabit varlık enflasyona karşı reel sabit kalıyor. Son oniki ay yatırım harcaması 25.007 = amortismanın (18.749) 1,3 katı: yatırım daha çok yatırım teşvik belgesi sonrası bakım ağırlıklı. <span class="tag c">çıkarım</span></p>
+  <details>
+    <summary>Finansal raporun dipnot kapsaması (1-31 tamamı tarandı — denetim 01.10.2026)</summary>
+    <p style="margin-top:8px">Maddelli kullanılanlar: <code>N2</code> enflasyon düzeltme katsayıları · <code>N4</code> segment · <code>N5</code> bloke/teminat · <code>N6</code> borç profili · <code>N7</code> faktoring · <code>N8</code> stok net elde edilebilir değeri · <code>N9</code> Opet · <code>N14</code> karşılıklar · <code>N17</code> türev + crack marjı koruması · <code>N19</code> temettü · <code>N26</code> yatırım teşviki ve efektif vergi · <code>N28</code> ilişkili taraf · <code>N29</code> kur duyarsızlığı ve net borç · <code>N30</code> nakit mutabakatı. Önemsiz/nihai: N3 işletme birleşmesi yok; N10-13/15-16 rutin bakiyeler (N13 EPDK gelir payı geçişken tahsilat mekanizması); N31 sonraki olay <b>yoktur</b> (s. 3095-3097).</p>
+    <p style="margin-top:6px">Kök doğrulaması (FR txt, bin TL): toplam varlık 859.987.516 · toplam özkaynak 463.306.781 (ana ortaklık 456.139.125 + KGO 7.167.656) · nakit 195.840.940 · faaliyetlere nakit 132.366.363 · dönem kârı 50.272.473 — beşi de wiki ile birebir.</p>
+  </details>
+</div></section>
+
+<section id="oran"><div class="wrap">
+  <h2>Oranlar: eşiklerin altı bilinçli, üstü güçlü</h2>
+  <p class="sub">Merkez Bankası tanımları kullanıldı. Eşikler gelişmekte olan piyasa genelleridir; rafineri sektör kıyası esastır. Tek dönem yargısı geçersizdir.</p>
+  <div class="tblwrap"><table>
+    <tr><th>Oran</th><th>Ara 25</th><th>Mar 26</th><th>Haz 26</th><th>Eşik</th><th>Yorum</th></tr>
+    <tr><td>Cari oran</td><td class="num">1,40</td><td class="num">1,10</td><td class="num">1,35</td><td class="num">1,5</td><td>eşiğin altı — ama −7 günlük döngü yapısal telafi ediyor</td></tr>
+    <tr><td>Asit-test</td><td class="num">0,95</td><td class="num">0,72</td><td class="num">0,86</td><td class="num">≈1</td><td>stok ve diğer dönen varlık düşünce sıkı; nakit oranı güçlü</td></tr>
+    <tr><td>Nakit oranı</td><td class="num">0,63</td><td class="num">0,45</td><td class="num">0,61</td><td class="num">≥0,20</td><td>atıl nakit bol — mevduat faizi geliri yüksek</td></tr>
+    <tr><td>Kaldıraç (yükümlülük/aktif)</td><td class="num">0,38</td><td class="num">0,49</td><td class="num">0,46</td><td class="num">düşük iyi</td><td>1. çeyrek zirvesinden döndü</td></tr>
+    <tr><td>Özkaynak/aktif</td><td class="num">0,62</td><td class="num">0,51</td><td class="num">0,54</td><td class="num">≈0,5</td><td>güçlü</td></tr>
+    <tr><td>Duran varlık/özkaynak</td><td class="num">0,96</td><td class="num">1,08</td><td class="num">0,91</td><td class="num">≈1</td><td>1. çeyrek aşımı geçiciydi, 2. çeyrekte düzeldi</td></tr>
+    <tr><td>Özkaynak kârlılığı (son oniki ay)</td><td class="num">—</td><td class="num">—</td><td class="num"><b>%17,4</b></td><td class="num">—</td><td>ayrışım: net marj %6,1 × aktif devir 1,58 × finansal etki 1,81</td></tr>
+    <tr><td>Varlık kârlılığı</td><td class="num">—</td><td class="num">—</td><td class="num">%8,8 / %9,6</td><td class="num">—</td><td>dönem sonu / ortalama aktif — TCMB tanımı dönem sonunu kullanır</td></tr>
+    <tr><td>Ekonomik rantabılite</td><td class="num">—</td><td class="num">—</td><td class="num">%14,9</td><td class="num">—</td><td>(faaliyet kârı + finansman gideri) / aktif</td></tr>
+    <tr><td>Faiz karşılama</td><td class="num">—</td><td class="num">—</td><td class="num">2,7×</td><td class="num">2-3 (literatür)</td><td>YP kayıpları giderde — sınırda; 8 eşiği (Gültikin) şüpheli</td></tr>
+    <tr><td>Stok devir</td><td class="num">—</td><td class="num">—</td><td class="num">12,7× (29g)</td><td class="num">sektör</td><td>29 gün rafineri için normal</td></tr>
+    <tr><td>Alacak devir</td><td class="num">—</td><td class="num">—</td><td class="num">16,7× (22g)</td><td class="num">vade</td><td>ölçek bazında hızlı tahsilat</td></tr>
+    <tr><td>Borç devir</td><td class="num">—</td><td class="num">—</td><td class="num">6,3× (58g)</td><td class="num">—</td><td>tedarikçi kredisi uzun — negatif döngünün kaynağı</td></tr>
+  </table></div>
+  <p class="body" style="margin-top:18px">Cari oran 1,35 ile 1,5 eşiğinin altında. İki okuma var. Birincisi: klasik eşik ihlali. İkincisi: döngü −7 gün çalışırken stok ve alacak zaten kendi kendini finanse eder; eşik bu yapıya uygulanmaz. Ayrım tek dönemle yapılamaz — rafineri sektör ortalaması kıyası esastır. <span class="tag c">çıkarım</span></p>
+</div></section>
+
+<section id="gelir"><div class="wrap">
+  <h2>Gelir tablosu: çeyrek rekoru ve marj yolu</h2>
+  <p class="sub">TMS 29'a göre düzeltilmiş çeyrek kolonları (rapor kolonları, s. 100/107). 2. çeyrek net kârı yarıyıl kârının %92'si — tek çeyrek rekoru.</p>
+  <div class="tblwrap"><table>
+    <tr><th>Çeyrek</th><th>Satış</th><th>Brüt marj</th><th>Faaliyet marjı</th><th>Net kâr</th></tr>
+    <tr><td>2. çeyrek 2025</td><td class="num">241.976</td><td class="num">%9,7</td><td class="num">%5,3</td><td class="num">11.813</td></tr>
+    <tr><td>1. çeyrek 2026 (yarıyıl − 2. çeyrek)</td><td class="num">276.368</td><td class="num">%8,4</td><td class="num">%4,1</td><td class="num">4.082</td></tr>
+    <tr><td><b>2. çeyrek 2026</b></td><td class="num"><b>386.420</b></td><td class="num"><b>%15,8</b></td><td class="num"><b>%12,1</b></td><td class="num"><b>46.190</b></td></tr>
+    <tr><td>2026 yarıyıl</td><td class="num">662.788</td><td class="num">%12,7</td><td class="num">%8,9</td><td class="num">50.272</td></tr>
+    <tr><td>2025 yarıyıl (düzeltilmiş)</td><td class="num">464.119</td><td class="num">%9,0</td><td class="num">%3,9</td><td class="num">11.982</td></tr>
+  </table></div>
+  <div class="panel">
+    <h3>Net kâr ve brüt marj — çeyrekler (mn TL)</h3>
+    <svg viewBox="0 0 700 225" role="img" aria-label="Çeyrek net kâr yatay bar grafiği">
+      <text x="10" y="38" font-size="12.5" fill="#1F1E1D" font-weight="600">2.ç25</text>
+      <rect x="140" y="22" width="117.6" height="30" rx="4" fill="#CFC6B4"/>
+      <text x="266" y="42" font-size="12" fill="#3D3A31" font-weight="700">11.813 · brüt marj %9,7</text>
+      <text x="10" y="88" font-size="12.5" fill="#1F1E1D" font-weight="600">1.ç26</text>
+      <rect x="140" y="72" width="40.6" height="30" rx="4" fill="#B0472A"/>
+      <text x="189" y="92" font-size="12" fill="#3D3A31" font-weight="700">4.082 · brüt marj %8,4</text>
+      <text x="10" y="138" font-size="12.5" fill="#1F1E1D" font-weight="600">2.ç26</text>
+      <rect x="140" y="122" width="460.0" height="30" rx="4" fill="#D97757"/>
+      <text x="150" y="142" font-size="12" fill="#FAF9F5" font-weight="700">46.190 · brüt marj %15,8</text>
+      <text x="10" y="196" font-size="11.5" fill="#6E6A5E">2. çeyrek 2026 = yarıyıl kârının %92'si — tek çeyrek rekoru (TMS 29'a göre düzeltilmiş)</text>
+    </svg>
+    <p class="fig-cap">Oniki aylık marj yolu: brüt %11,6 · faaliyet %7,5 · net %6,1 · FAVÖK %9,0 (FAVÖK: amortisman ve vergi öncesi kâr).</p>
+  </div>
+  <p class="body"><b>Sürücü 1 — marj çevresi.</b> Crack marjı = rafine ürün satış fiyatı − ham petrol maliyeti. Nisan'da Avrupa rafinaj marjları negatife döndü; Asya alımı fiyatları destekledi (Reuters 14.04.2026). Yaz ortasında küresel crack marjı rekor kırdı (OPIS, CNBC 10.07.2026).</p>
+  <p class="body"><b>Sürücü 2 — stok maliyeti farkı.</b> 1. çeyrekte düşük oluşan stok maliyeti, 2. çeyrek satışlarının maliyetine taşındı (ilk giren ilk çıkar maliyet akışı; stok reel yıllık +%27,1, yoldaki mallar iki katına çıktı). <span class="tag h">hesap</span></p>
+  <p class="body"><b>Sürücü 3 — elektrik segmenti.</b> Segment katkısı +990 mn TL; 549 mn TL ertelenmiş vergi geliriyle kâra geçti (Not 4, s. 1038-1055). 1. çeyrek zayıflığı (brüt marj %8,4) operasyonel değil fiyatsaldır: duruş/bakım açıklaması yok, kapasite kullanımı %95,1 ile kesintisiz — 1. çeyrek crack ortamı düşüktü ve bu tablo yönetim tarafından 4 Ağustos'ta resmen kabul edildi (marj bölümü). <span class="tag c">çıkarım</span></p>
+</div></section>
+
+<section id="nakit"><div class="wrap">
+  <h2>Nakit akışı: kârın 2,4 katı nakit</h2>
+  <p class="sub">Yarıyıl kolonları, mn TL, düzeltilmiş. 2025 yarıyıl karşılaştırma kolonu raporda düzeltilmiştir: 2025-2. çeyrek raporundaki 11.363.766 × 1,32109 = 15.012.559 — birebir. <span class="tag h">hesap</span></p>
+  <div class="two">
+    <div>
+      <div class="tblwrap"><table>
+        <tr><th>Kalem</th><th>2026 H1</th><th>2025 H1</th></tr>
+        <tr><td>Faaliyetlere kaynak yaratan nakit</td><td class="num">132.366</td><td class="num">15.013</td></tr>
+        <tr><td>Yatırım harcaması</td><td class="num">−11.857</td><td class="num">−10.889</td></tr>
+        <tr><td>Serbest nakit akımı</td><td class="num">118.802</td><td class="num">4.245</td></tr>
+        <tr><td>Temettü ödemesi</td><td class="num">−21.403</td><td class="num">−20.720</td></tr>
+        <tr><td>Finansal borç değişimi</td><td class="num">+16.377</td><td class="num">+29.220</td></tr>
+        <tr><td>Net nakit değişimi</td><td class="num">+77.926</td><td class="num">+17.815</td></tr>
+      </table></div>
+    </div>
+    <div class="panel">
+      <h3>Yarıyıl karşılaştırma (mn TL)</h3>
+      <svg viewBox="0 0 700 165" role="img" aria-label="Faaliyet nakdi ve serbest nakit akımı yarıyıl karşılaştırması">
+        <text x="10" y="21" font-size="12.5" fill="#1F1E1D" font-weight="600">Faaliyet nakdi</text>
+        <rect x="150" y="6" width="460" height="16" rx="4" fill="#D97757"/>
+        <text x="616" y="19" font-size="12" fill="#3D3A31" font-weight="700">132.366</text>
+        <rect x="150" y="26" width="52.2" height="16" rx="4" fill="#CFC6B4"/>
+        <text x="210" y="39" font-size="12" fill="#3D3A31">15.013</text>
+        <text x="10" y="77" font-size="12.5" fill="#1F1E1D" font-weight="600">Serbest nakit</text>
+        <rect x="150" y="62" width="412.8" height="16" rx="4" fill="#D97757"/>
+        <text x="570" y="75" font-size="12" fill="#3D3A31" font-weight="700">118.802</text>
+        <rect x="150" y="82" width="14.7" height="16" rx="4" fill="#CFC6B4"/>
+        <text x="172" y="95" font-size="12" fill="#3D3A31">4.245</text>
+        <text x="10" y="124" font-size="11.5" fill="#6E6A5E">Yatırım harcaması −11.857 · temettü −21.403 · net nakit değişimi +77.926 (mn TL)</text>
+        <rect x="150" y="136" width="12" height="12" rx="3" fill="#D97757"/><text x="168" y="146" font-size="11.5" fill="#6E6A5E">2026 H1</text>
+        <rect x="248" y="136" width="12" height="12" rx="3" fill="#CFC6B4"/><text x="266" y="146" font-size="11.5" fill="#6E6A5E">2025 H1 (düzeltilmiş)</text>
+      </svg>
+    </div>
+  </div>
+  <p class="body" style="margin-top:16px">Faaliyet nakdi / net kâr (oniki ay) = <b>2,37</b>: tahakkukun çok üstünde nakit. Türev değerleme farkı düzeltmeleri parasal olmayan kalemlerdir. "Kâr edip sermaye eritme" tuzağı yok — test tersine çalışıyor. Nakde dönüşüm kanalları: temettü + mevduat faizi + negatif nakit döngüsü. <span class="tag c">çıkarım</span></p>
+</div></section>
+
+<section id="borc"><div class="wrap">
+  <h2>Borç, kur ve tek seferlik kalemler</h2>
+  <p class="sub">Net nakit pozisyonu iki tanımla raporlanır. Borç ≈%80 USD ama kur riski türev ve stokla nötrlenmiştir. Tek seferlik kalemlerin toplamı küçüktür.</p>
+  <div class="two">
+    <div class="panel">
+      <h3>Kur pozisyonu merdiveni (mn TL)</h3>
+      <svg viewBox="0 0 1000 140" role="img" aria-label="Kur pozisyonunun türev ve stokla nötrlenme zinciri">
+        <defs>
+          <marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#5D594D"/></marker>
+        </defs>
+        <g font-size="11" text-anchor="middle">
+          <rect x="10"  y="20" width="164" height="76" rx="12" fill="#FAF9F5" stroke="#B0472A" stroke-width="2"/>
+          <text x="92"  y="42" fill="#3D3A31">Parasal net</text><text x="92"  y="58" fill="#3D3A31">kur pozisyonu</text><text x="92"  y="76" fill="#B0472A" font-weight="700">−186.685</text>
+          <rect x="214" y="20" width="164" height="76" rx="12" fill="#FAF9F5" stroke="#6A8E7F" stroke-width="2"/>
+          <text x="296" y="42" fill="#3D3A31">Türev</text><text x="296" y="58" fill="#3D3A31">korunmaları</text><text x="296" y="76" fill="#48685A" font-weight="700">+87.017</text>
+          <rect x="418" y="20" width="164" height="76" rx="12" fill="#FAF9F5" stroke="#B0472A" stroke-width="2"/>
+          <text x="500" y="42" fill="#3D3A31">Net kur</text><text x="500" y="58" fill="#3D3A31">pozisyonu</text><text x="500" y="76" fill="#B0472A" font-weight="700">−99.317</text>
+          <rect x="622" y="20" width="164" height="76" rx="12" fill="#FAF9F5" stroke="#6A8E7F" stroke-width="2"/>
+          <text x="704" y="42" fill="#3D3A31">Doğal korunma</text><text x="704" y="58" fill="#3D3A31">stok USD karşılığı</text><text x="704" y="76" fill="#48685A" font-weight="700">+95.610</text>
+          <rect x="826" y="20" width="164" height="76" rx="12" fill="#EAF0EB" stroke="#6A8E7F" stroke-width="2"/>
+          <text x="908" y="42" fill="#3D3A31">Net maruziyet</text><text x="908" y="60" fill="#48685A" font-weight="700" font-size="14">≈ 0</text><text x="908" y="78" fill="#6E6A5E">(+204)</text>
+        </g>
+        <line x1="174" y1="58" x2="210" y2="58" stroke="#5D594D" stroke-width="2" marker-end="url(#arr2)"/>
+        <line x1="378" y1="58" x2="414" y2="58" stroke="#5D594D" stroke-width="2" marker-end="url(#arr2)"/>
+        <line x1="582" y1="58" x2="618" y2="58" stroke="#5D594D" stroke-width="2" marker-end="url(#arr2)"/>
+        <line x1="786" y1="58" x2="822" y2="58" stroke="#5D594D" stroke-width="2" marker-end="url(#arr2)"/>
+        <text x="10" y="128" font-size="11.5" fill="#6E6A5E">USD %10 yükselirse net kâr etkisi −16.105 mn TL (Not 29, s. 2791-2814)</text>
+      </svg>
+      <p class="fig-cap">Kademeli nötrleme: parasal açık önce türevle, sonra stokun dolar karşılığıyla kapanır.</p>
+    </div>
+    <div class="panel">
+      <h3>Borç profili ve vade merdiveni</h3>
+      <div class="tblwrap"><table>
+        <tr><th>Bileşen</th><th>Tutar</th><th>Not</th></tr>
+        <tr><td>USD payı</td><td class="num">54,6 mlr TL</td><td>toplamın ≈%80'i (Not 6)</td></tr>
+        <tr><td>TL payı</td><td class="num">≈7,6 mlr TL</td><td>TLREF+100bp tahviller: 6,8 mlr Temmuz-Ağustos'ta itfa ile kapandı</td></tr>
+        <tr><td>USD maliyeti</td><td class="num">%5,5-6,3</td><td>sendikasyon 500 mn USD · TL mevduat %42,9 → faiz farkı lehe</td></tr>
+        <tr><td>Vade: 1-2 yıl</td><td class="num">10,6 mlr</td><td rowspan="5" style="vertical-align:middle">merdiven dengeli — kümeleşme yok</td></tr>
+        <tr><td>Vade: 2-3 yıl</td><td class="num">9,6 mlr</td></tr>
+        <tr><td>Vade: 3-4 yıl</td><td class="num">9,9 mlr</td></tr>
+        <tr><td>Vade: 4-5 yıl</td><td class="num">3,1 mlr</td></tr>
+        <tr><td>Vade: 5+ yıl</td><td class="num">3,3 mlr</td></tr>
+      </table></div>
+      <p class="fig-cap">Raporda kovenant (sözleşmesel finansal şart) yoktur. Net borç / yatırılan sermaye −%28,31 (Not 29, s. 2972-2982): net borç negatif, yani şirket net nakit taşır.</p>
+    </div>
+  </div>
+  <div class="panel">
+    <h3>Net nakit: iki tanım, tek sonuç</h3>
+    <div class="vs">
+      <div class="side ok">
+        <div class="lbl">Tüm nakit dahil</div>
+        <div class="big">+130.718</div>
+        <p style="font-size:14px;margin-top:8px">mn TL net nakit pozisyon. Not 29'un net finansal hesap tablosu tüm nakitle: borç 68.201 − nakit 195.841 − finansal yatırımlar 3.078 = −130.718. Net finansal borç negatif: şirket net nakit taşır. <span class="tag h">hesap</span></p>
+      </div>
+      <div class="side ok">
+        <div class="lbl">Bloke tutarları düşülmüş tanım</div>
+        <div class="big">+102.232</div>
+        <p style="font-size:14px;margin-top:8px">Rapordaki tablo: nakitten bloke gelir payı 15.293 + türev marjı 13.192 düşünce kullanılabilir nakit 167.355 kalır → net finansal borç −102.232; net borç / yatırılan sermaye −%28,31 (Not 29, s. 2972-2982). İki tanım da aynı şeyi söyler: net borç yok. <span class="tag h">hesap</span></p>
+      </div>
+    </div>
+  </div>
+  <p class="body"><b>İlişkili tarfa finansman kontrolü: temiz.</b> Not 6 ve 28'de ilişkili tarfa kullandırılan kredi/finansman yoktur; Opet gibi iştiraklere verilen kredi tablolarda görünmez. Nakit tanımı kontrolü: nakit kalemi gerçekten nakit ve benzerleridir (195.841) — toplam dönen varlıkla karıştırılmaz. <span class="tag c">çıkarım</span></p>
+  <p class="body"><b>Tek seferlik kalemler (H1):</b> stok değer düşüklüğü gideri 782 (net elde edilebilir değer; Haziran ateşkes-çöküşü sonrası — 2025 yarıyılında 92 iptali vardı) · sürastarya gideri 1.413 · maliyet karşılığı +1.041 · sigorta tazminat geliri 666 · <b>yatırım teşviki (RUP) ertelenmiş vergi varlığı 14.068 → 5.167</b> (teşvik tüketimi: yarıyılda 8.901 ertelenmiş vergi gideri; cari vergi 655 → 7.868 sıçradı — net kârı baskılar ama nakit etkisi yoktur). <span class="tag h">hesap</span></p>
+  <p class="body"><b>Karşılık kontrolü:</b> karşılıklar küçüktür (2,2 + 1,4 + 0,1 mlr TL); bilanço ağırlıklı bir "itiraf" taşımaz; dava karşılığı 103 mn TL. <span class="tag c">çıkarım</span></p>
+</div></section>
+
+<section id="marj"><div class="wrap">
+  <h2>Marj: net rafinaj marjı ve yönetimin tahmin zinciri</h2>
+  <p class="sub">Crack marjı = rafine ürün fiyatı − ham petrol maliyeti. Net rafinaj marjı (NRM) şirketin kendi marj ölçüsüdür. Yönetim yıllık tahmini ağustosta iki katından fazla yukarı çekti — 2. çeyrek sıçramasının kurumsal teyidi.</p>
+  <div class="panel">
+    <h3>Tahmin zinciri (NRM, USD/varil)</h3>
+    <svg viewBox="0 0 1000 145" role="img" aria-label="Net rafinaj marjı rehber zinciri üç kutu">
+      <defs>
+        <marker id="arr3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#B0472A"/></marker>
+      </defs>
+      <g font-size="12" text-anchor="middle">
+        <rect x="10"  y="16" width="280" height="84" rx="12" fill="#FAF9F5" stroke="#C9A227" stroke-width="2"/>
+        <text x="150" y="44" fill="#8A6D3B" font-weight="700">H1-25 gerçekleşme</text>
+        <text x="150" y="66" fill="#3D3A31" font-size="15" font-weight="700">4,7 USD/varil</text>
+        <text x="150" y="86" fill="#6E6A5E" font-size="11">kullanım %90,3 · üretim 12,94 mn ton</text>
+        <rect x="360" y="16" width="280" height="84" rx="12" fill="#FAF9F5" stroke="#6A8E7F" stroke-width="2"/>
+        <text x="500" y="44" fill="#48685A" font-weight="700">Rehber · 06.02.2026</text>
+        <text x="500" y="66" fill="#3D3A31" font-size="15" font-weight="700">6-7 USD/varil</text>
+        <text x="500" y="86" fill="#6E6A5E" font-size="11">ODA 1554109 · yatırım ~700 Mn USD</text>
+        <rect x="710" y="16" width="280" height="84" rx="12" fill="#F8E9E2" stroke="#B0472A" stroke-width="2"/>
+        <text x="850" y="44" fill="#B0472A" font-weight="700">Rehber · 04.08.2026</text>
+        <text x="850" y="66" fill="#3D3A31" font-size="15" font-weight="700">13-15 USD/varil</text>
+        <text x="850" y="86" fill="#6E6A5E" font-size="11">üst bant ~%115 revizyon · ODA 1643118</text>
+      </g>
+      <line x1="290" y1="58" x2="356" y2="58" stroke="#B0472A" stroke-width="2.5" marker-end="url(#arr3)"/>
+      <line x1="640" y1="58" x2="706" y2="58" stroke="#B0472A" stroke-width="2.5" marker-end="url(#arr3)"/>
+      <text x="10" y="130" font-size="11.5" fill="#6E6A5E">Gerekçe: "ürün piyasalarındaki arz-talep dengesine yönelik öngörüler" — gelir tablosundaki %15,8'lik brüt marjın kurumsal teyidi</text>
+    </svg>
+  </div>
+  <div class="panel">
+    <h3>Resmî NRM çeyrek serisi</h3>
+    <svg viewBox="0 0 760 300" role="img" aria-label="Net rafinaj marjı çeyrek bar grafiği ve rehber bandı">
+      <text x="60" y="28" font-size="11.5" fill="#6E6A5E">USD/varil — resmî sonuç sunumu (04.08.2026, tupras.com.tr)</text>
+      <rect x="60" y="116.8" width="640" height="17.8" fill="#6A8E7F" opacity="0.12"/>
+      <line x1="60" y1="116.8" x2="700" y2="116.8" stroke="#6A8E7F" stroke-width="1.5" stroke-dasharray="6 4"/>
+      <line x1="60" y1="134.6" x2="700" y2="134.6" stroke="#6A8E7F" stroke-width="1.5" stroke-dasharray="6 4"/>
+      <text x="65" y="110" font-size="10.5" fill="#48685A" font-weight="600">Revize rehber bant 13-15 USD/varil (04.08.2026)</text>
+      <g>
+        <rect x="80"  y="213.6" width="70" height="36.4" rx="4" fill="#6A8E7F"/>
+        <rect x="185" y="202.9" width="70" height="47.1" rx="4" fill="#6A8E7F"/>
+        <rect x="290" y="163.9" width="70" height="86.1" rx="4" fill="#6A8E7F"/>
+        <rect x="395" y="173.6" width="70" height="76.4" rx="4" fill="#6A8E7F"/>
+        <rect x="500" y="166.5" width="70" height="83.5" rx="4" fill="#6A8E7F"/>
+        <rect x="605" y="60.0"  width="70" height="190.0" rx="4" fill="#D97757"/>
+      </g>
+      <g font-size="12" font-weight="700" text-anchor="middle" fill="#1F1E1D">
+        <text x="115" y="207">4,1</text><text x="220" y="197">5,3</text><text x="325" y="158">9,7</text>
+        <text x="430" y="168">8,6</text><text x="535" y="160">9,4</text><text x="640" y="54" fill="#B0472A">21,4</text>
+      </g>
+      <line x1="60" y1="250" x2="700" y2="250" stroke="#B9B1A1" stroke-width="1.5"/>
+      <g font-size="11.5" fill="#6E6A5E" text-anchor="middle">
+        <text x="115" y="268">I-25</text><text x="220" y="268">II-25</text><text x="325" y="268">III-25</text>
+        <text x="430" y="268">IV-25</text><text x="535" y="268">I-26</text><text x="640" y="268">II-26</text>
+      </g>
+      <text x="60" y="288" font-size="11.5" fill="#6E6A5E">H1-26 ortalaması 15,6 — revize yıllık rehberin (13-15) üstünde gerçekleşti</text>
+    </svg>
+    <p class="fig-cap">Aynı sunumdaki eşanlı teyitler: net nakit ~130 mlr TL ≈ 2,8 mlr USD (borç bölümüyle birebir); H1 serbest nakit ~2,28 mlr USD ("2. temettü (~300 mn USD) + kalan yatırım harcaması (~450 mn USD)'ni fazlasıyla karşılıyor"); 2. çeyrek üretim 6,9 mn ton / kullanım %96. <span class="tag c">[harici] resmî sunum</span></p>
+  </div>
+  <div class="two">
+    <div class="panel">
+      <h3>Operasyonel tonaj — üretim (H1-26, bin ton)</h3>
+      <svg viewBox="0 0 760 192" role="img" aria-label="Ürün bazlı üretim yatay bar grafiği">
+        <text x="10" y="28" font-size="12.5" fill="#1F1E1D" font-weight="600">Motorin</text>
+        <rect x="110" y="12" width="420" height="22" rx="4" fill="#D97757"/>
+        <text x="538" y="28" font-size="12" fill="#3D3A31" font-weight="700">4.897 bin ton (+%3)</text>
+        <text x="10" y="70" font-size="12.5" fill="#1F1E1D" font-weight="600">Benzin</text>
+        <rect x="110" y="54" width="268.2" height="22" rx="4" fill="#C9A227"/>
+        <text x="386" y="70" font-size="12" fill="#3D3A31" font-weight="700">3.127 bin ton (+%8)</text>
+        <text x="10" y="112" font-size="12.5" fill="#1F1E1D" font-weight="600">Jet</text>
+        <rect x="110" y="96" width="231.7" height="22" rx="4" fill="#6A8E7F"/>
+        <text x="350" y="112" font-size="12" fill="#3D3A31" font-weight="700">2.701 bin ton (+%14)</text>
+        <text x="10" y="154" font-size="12.5" fill="#1F1E1D" font-weight="600">Fuel-oil</text>
+        <rect x="110" y="138" width="50.4" height="22" rx="4" fill="#CFC6B4"/>
+        <text x="168" y="154" font-size="12" fill="#3D3A31" font-weight="700">588 bin ton (−%2)</text>
+        <text x="10" y="182" font-size="11.5" fill="#6E6A5E">Şarj 14.262 kt (+724) · kullanım %95,1 (2025: 90,3) · beyaz ürün verimi %83,0</text>
+      </svg>
+      <p class="fig-cap">Satış 15.252 bin ton (+%9): yurtiçi 11.676 (+%11; motorin +%16, benzin +%10); uluslararası 3.576 (+%2; jet satışı +%77, motorin satışı −%38). Satış − üretim farkı 1.619 bin ton: stok eritme + ticari mal. Faaliyet raporu tabloları (s. 127-137).</p>
+    </div>
+    <div class="panel">
+      <h3>Pazar payı (2025, oniki ay)</h3>
+      <svg viewBox="0 0 700 170" role="img" aria-label="Ürün bazlı pazar payı yatay bar grafiği">
+        <text x="10" y="26" font-size="12.5" fill="#1F1E1D" font-weight="600">Benzin</text>
+        <rect x="110" y="10" width="420" height="22" rx="4" fill="#D97757"/>
+        <text x="538" y="26" font-size="12" fill="#3D3A31" font-weight="700">%97</text>
+        <text x="10" y="66" font-size="12.5" fill="#1F1E1D" font-weight="600">Jet</text>
+        <rect x="110" y="50" width="264.1" height="22" rx="4" fill="#6A8E7F"/>
+        <text x="382" y="66" font-size="12" fill="#3D3A31" font-weight="700">%61</text>
+        <text x="10" y="106" font-size="12.5" fill="#1F1E1D" font-weight="600">Motorin</text>
+        <rect x="110" y="90" width="147.2" height="22" rx="4" fill="#C9A227"/>
+        <text x="265" y="106" font-size="12" fill="#3D3A31" font-weight="700">%34</text>
+        <text x="10" y="134" font-size="11.5" fill="#6E6A5E">Benzin payı tek-üretici konumu; motorin payı 27,1 mn tonluk geniş pazarı</text>
+        <text x="10" y="152" font-size="11.5" fill="#6E6A5E">yansıtır. Binek araçlarda enerji tercihi 2025: dizel %33 · benzin %31 · LPG %30 · EV-hibrit %6</text>
+      </svg>
+      <p class="fig-cap">Kaynak: Temmuz-2026 yatırımcı sunumu s. 11 (Eylül-2026 sunumu s. 10 ile birebir aynı — koordinat doğrulamalı). <span class="tag c">[harici] resmî sunum</span></p>
+    </div>
+  </div>
+  <p class="body"><b>Bilanço sorusunun cevabı — stok artışı miktar + fiyat bileşik.</b> Hacim tarafı: şarj +%5 ve yoldaki mal iki katına çıktı (Haziran çöküşünde fırsat alımı). Fiyat tarafı: Brent yılbaşı 60,97 → Mart 127,2 USD/varil (Faaliyet raporu s. 111-115). Stok devrinin 29 günde sabit kalması birikime değil yeniden fiyatlama etkisine işaret eder. <span class="tag c">çıkarım</span></p>
+  <p class="body"><b>Açıklanmayan bilgi:</b> ürün bazlı gelir kırılımı resmen açıklanmıyor — Not 20 yalnız yurtiçi/yurtdışı kırılımı veriyor (2025: 695,5 / 145,7 mlr TL), resmî sunumlarda da yok. Uydurulmuş tahmin yerine resmî vekil yığın kullanılır: (i) verim karışımı (I-26: orta distilat %56 — motorin %36 + jet %20, benzin %23, asfalt %9, LPG %3); (ii) ürün bazlı satış tonajı; (iii) ürün bazlı crack serileri (Temmuz-2026 sunumu s. 6-7: II-26 jet ~65, motorin ~46, benzin 31 USD/varil — gelir ağırlığı motorin + jet lehine kaydı). <span class="tag u">çözülmedi</span></p>
+  <div class="panel">
+    <h3>Dış çevre çapaları</h3>
+    <ul class="plain">
+      <li><b>Canlı çapalar (01.10.2026):</b> USD/TRY 49,0184 · TLREF %36,87 · 5 yıllık CDS 218,5 puan · TÜFE yıllık %31,5 (Ağu 2026) · Türkiye hisse senedi risk primi %8,65 (Damodaran, Ba3).</li>
+      <li><b>EVDS3:</b> USD/TRY H1-26 ortalaması 44,55 (H1-25: 37,45; +%19,0) · 30.06.2026 kapanış 46,639 · imalat sanayi kapasite kullanım oranı H1-26 %73,9 (H1-25: %74,6 — talep düz) · rafineri alt sektörü ÜFE H1-26 ortalaması H1-25'e göre <b>+%66,5</b> (fiyat şoku; Haziran aylık −%13) · dış ticaret hacmi H1: ihracat −%10,4 / ithalat +%2,9.</li>
+      <li><b>Kapasite kullanım boşluğu:</b> resmî alt-sektör kapasite dizisi servisi tüm aralıklarda hata veriyor; Tüpraş'ın kendi kullanım oranı vekil olarak kullanıldı: <b>%96 (II-26) / %95,1 (H1)</b> (resmî sonuç sunumu). Sektör toplam kapasitesi ~42-43 mn ton (Tüpraş 30 + STAR 12 + diğer ~1).</li>
+      <li><b>Brent / crack çevresi (web):</b> Brent bandı 58,7-126,4 USD (ABD-İran/Hormuz gerilimi, Haziran ateşkes-çöküşü; Eylül ~95-107 USD); Dünya Bankası 2026 ortalama tahmini 86 USD. Avrupa rafinaj marjı Nisan'da negatif (Asya alım baskısı) → yazda küresel crack rekoru. Tüpraş ilk kez <b>crack marjı koruması</b> yaptı: III-26 için 1.080 bin varil ileri satış sabitlemesi + 61.728 bin varil (61,7 mn varil) ham petrol alım-satım koruması (Not 17, s. 1884-1888) — yönetim üçüncü çeyrek marj görünümlerini kısmen sabitliyor.</li>
+      <li><b>Dış ticaret ve fiyatlama:</b> H1 ihracat 137,3 / ithalat 431,6 mlr TL. Net yabancı para pozisyonunun doğal korunmayla nötr olması + ihracat-ithalat farkı → TL reel değerlenmesi riski satış fiyatlama mekanizmasıyla sınırlı (dipnot (***) gerekçesi).</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="olaylar"><div class="wrap">
+  <h2>2026 olay katmanı</h2>
+  <p class="sub">Yılbaşından bugünkü 44 özel durum açıklamasının tamamının yerel kopyası mevcut (tarama 01.10.2026). Bilançoya etkisi olanlar seçildi.</p>
+  <ul class="plain">
+    <li><b>Finans yönetimi:</b> Doğan Korkmaz 13.02'de Koç Holding finans direktörlüğüne atandı (ODA 1556613); yerine 18.03.2026 itibarıyla Aygaz finans direktörü <b>Gökhan Dizemen</b> geldi (ODA 1562851). 11.05'te Yatırımcı İlişkileri ve Kurumsal Risk Grup Direktörlüğüne Gülsen Ayaz (ODA 1603560). Kurumsal yönetimde yenilenme; finans politikada süreklilik beklenir (atama yine Koç içi). <span class="tag c">çıkarım</span></li>
+    <li><b>İzmit tank sahası alevlenmesi</b> (29.01 gece, ODA 1549131): kontrol altına alındı; çalışan yaralanması yok; şirket "önemli operasyonel/finansal etki yok" beyan etti — üretim kaybı tablolarda görünmüyor. Operasyonel risk notu olarak izlenir.</li>
+    <li><b>Ortak satışları:</b> 31.03'ta hızlandırılmış talep toplama ile <b>40 mn pay @233 TL = 9,32 mlr TL</b> satıldı (nominal ~%2,1; talep üzerine pay adedi yukarı revize — ODA 1575944); 07.09'da 16,02 mn pay @384,50 (Koç + Temel Ticaret). 2026 toplam ~%2,91 / ~15,5 mlr TL brüt. Koç doğrudan payı %4,27 → <b>%3,7</b>, halka açıklık <b>%49,7</b> (ODA 1656968/1659787). Bilançoya etkisi yok (satıcı ortak); likidite ve halka açıklık etkisi.</li>
+    <li><b>Derecelendirme:</b> Fitch BB- teyit + görünüm <b>Pozitif</b> (25.03, ODA 1575803); Moody's <b>Ba2/Durağan</b> korundu (29.07, ODA 1638082) — CDS 218 puanla tutarlı.</li>
+    <li><b>TL tahvil itfaları:</b> TRSTPRS72614 → 4,0 mlr (20.07) + TRSTPRS82613 → 2,8 mlr (12.08) anapara kapandı: <b>6,8 mlr TL borç 3. çeyrekte yapısal olarak düştü</b>; kupon oranları %10,37 → %10,97 (faiz indirim döngüsü işareti).</li>
+    <li><b>Entek:</b> nakit sermaye artırımı +2,5 mlr TL; Tüpraş 01.09'da 2,48 mlr TL ödedi (ODA 1656945; pay %99,23). Gün öncesi piyasada elektrik fiyatı H1 −%34,7 (1.554 TL/MWh), <b>2. çeyrekte −%61,5 (914 TL/MWh)</b> (Faaliyet raporu s. 121) → elektrik segmenti 2. çeyrekte marj baskısı altında. Büyüme platformu: depolamalı yenilenebilir enerji santralleri — RES ve GES (Sinosure 73,5 mn USD kredi + ~50 mn USD Dünya Bankası; Romanya Niculesti GES 178,5 MWe elektrik).</li>
+    <li><b>Temettü takvimi:</b> 2. taksit 13 mlr TL <b>02.10.2026 ödeme</b> (kayıt 01.10, ODA 1570793) — 3. çeyrek nakit çıkışı kesinleşti; dağıtılan / dağıtılabilir net kâr %104,08 (SPK ölçütü).</li>
+    <li><b>Yatırım iştahı:</b> H1 yatırım harcaması <b>245,9 Mn USD</b> (H1-25: 231,8); Güney Kore'den 4 Suezmax sınıfı tanker ~370 Mn USD (teslim 2029; Ditaş filosu 19 gemi / ~839 bin DWT); propilen projesi 271 Mn USD (180 bin ton/yıl, 2027); sürdürülebilir havacılık ürünü SAF eş-işleme projesi (İzmir) + 20 MW pilot elektrolizör (Faaliyet raporu s. 94-100/150-152/215).</li>
+  </ul>
+</div></section>
+
+<section id="degerleme"><div class="wrap">
+  <h2>Değerleme: fiyat, yönetimin rehber bandının alt sınırını içeriyor</h2>
+  <p class="sub">İki para birimi katmanı ayrı kurulur: bilanço katmanı mn TL (30.06.2026 alım gücü, TMS 29), nakit akım katmanı USD — çeviri yalnız tek çapa kurunda (49,0184; 01.10.2026). Sektör okuma kuralı: rafineride döngü-normal (mid-cycle) değerleme; ikinci çeyrek rekor marjının yıllıklandırılması değil, yönetimin revize rehberi (13-15 USD/varil) normalize zincirin omurgasıdır. (ke: özkaynak maliyeti; β: beta; λ: görelî ülke risk çarpanı; rf: risksiz faiz; D1: ilk yıl pay başına temettü; g: büyüme oranı)</p>
+
+  <div class="two">
+    <div class="panel" style="margin:0">
+      <h3>Tersine iskonto kontrolü (USD)</h3>
+      <ul class="plain" style="max-width:100%">
+        <li>Özkaynak maliyeti ke(USD) = ABD 10 yıllık %5,28 (çapa 03.10, valör 02.10) + β 0,789 × olgun piyasa risk primi %4,2 + ülke risk primi ≈ <b>%13,0</b>. Beta: Damodaran rafineri-entegre gelişmekte olan seti (n=15, Ocak-2026 vintajı); ülke riski iki ayakla kuruldu — rating-temelli Ba3 primi %4,45 (λ 1,556 × not primi 2,86) ve kredi-riski-temelli %3,81 (Türkiye 5 yıl CDS 245,2 puan, 07.10 canlı; bant alt ucu 218,5 puan) — iki ayak çakışıyor; bant <b>%12,0–14,1</b>. <span class="tag h">hesap</span></li>
+        <li>Normalize serbest nakit akımı = (net rafinaj marjı × 212,6 mn varil − 300 mn $ operasyon payı − amortisman 382) × (1 − %22) + 382 − yatırım 700 (rehber). Marj senaryoları: 8 / 14 / 18 USD/varil.</li>
+        <li><b>Ters çözüm:</b> 380,75 TL'de piyasanın fiyatladığı normalize marj ≈ <b>13,1 USD/varil</b> — revize rehber bandının alt sınırı. Yarıyıl gerçekleşmesi 15,6 ve ikinci çeyreğin 21,4'ü fiyatlanmış değil; piyasa tepe çeyreği dışsallaştırmıyor. <span class="tag c">çıkarım</span></li>
+        <li>Olasılık ağırlıklı değer (30/50/20) = <b>376 TL</b> — fiyatın %1,2 altında. Fiyat, marj varsayımını dürüst biçimde içeriyor; iskontolu hükmü verilmez. <span class="tag h">hesap</span></li>
+      </ul>
+    </div>
+    <div class="panel" style="margin:0">
+      <h3>Senaryo merdiveni — hisse başına değer (TL)</h3>
+      <svg viewBox="0 0 640 350" role="img" aria-label="Net rafinaj marjı senaryolarına göre hisse başına değer merdiveni: düşük 180, orta 415, yüksek 571 TL; mevcut fiyat 380,75">
+        <!-- x = 40 + TL*0.95 ; bar yükseklik 44 ; baseline y=270 -->
+        <rect x="372.5" y="50" width="123.5" height="220" fill="#D97757" opacity="0.10"/>
+        <text x="434" y="42" font-size="11.5" fill="#B0472A" font-weight="700" text-anchor="middle">bant 350–480</text>
+        <line x1="40" y1="270" x2="620" y2="270" stroke="#E3DED2" stroke-width="1.5"/>
+        <g>
+          <rect x="40" y="70"  width="171"   height="44" rx="5" fill="#B0472A"><title>Düşük senaryo — marj 8 USD/varil: hisse başına 180 TL (özdeğer 7,09 mlr $)</title></rect>
+          <rect x="40" y="140" width="394.3" height="44" rx="5" fill="#1F1E1D"><title>Orta senaryo — marj 14 USD/varil (rehber ortası): hisse başına 415 TL (özdeğer 16,31 mlr $)</title></rect>
+          <rect x="40" y="210" width="542.5" height="44" rx="5" fill="#6A8E7F"><title>Yüksek senaryo — marj 18 USD/varil: hisse başına 571 TL (özdeğer 22,46 mlr $)</title></rect>
+        </g>
+        <g font-size="13" font-weight="700">
+          <text x="219" y="97" fill="#B0472A">180</text>
+          <text x="442" y="167" fill="#1F1E1D">415</text>
+          <text x="590" y="237" fill="#48685A">571</text>
+        </g>
+        <g font-size="11.5" fill="#F5F2EA" font-weight="600">
+          <text x="48" y="97">marj 8 $/v · normalizasyon</text>
+          <text x="48" y="167">marj 14 $/v · rehber ortası</text>
+          <text x="48" y="237">marj 18 $/v · üst bant</text>
+        </g>
+        <line x1="401.7" y1="50" x2="401.7" y2="270" stroke="#D97757" stroke-width="2" stroke-dasharray="5 4"/>
+        <text x="401.7" y="290" font-size="11.5" fill="#B0472A" font-weight="700" text-anchor="middle">fiyat 380,75</text>
+        <line x1="165" y1="50" x2="165" y2="276" stroke="#6E6A5E" stroke-width="1.5" stroke-dasharray="2 4"/><text x="165" y="290" font-size="10.5" fill="#6E6A5E" text-anchor="middle">132</text>
+        <line x1="496" y1="270" x2="496" y2="276" stroke="#6E6A5E"/><text x="496" y="290" font-size="10.5" fill="#6E6A5E" text-anchor="middle">480</text>
+        <text x="40" y="322" font-size="11.5" fill="#6E6A5E">Eksen TL/pay. 132: olasılık ağırlıklı değer; 13,1 $/v: fiyatın marjı.<tspan x="40" dy="16">Merdiven: indirlmiş nakit akımı zinciri. Fiyat: Matriks anlık, 07.10 11:55.</tspan></text>
+      </svg>
+      <p class="fig-cap">Duyarlılık (marj 14 sabit): ke %12,0 → 450 TL · ke %14,1 → 383 TL; büyüme %1 → 383 · %3 → 453. <span class="tag h">hesap</span></p>
+    </div>
+  </div>
+
+  <div class="two" style="margin-top:18px">
+    <div class="panel" style="margin:0">
+      <h3>Normalize kazanç × çarpan merdiveni (mn TL)</h3>
+      <div class="tblwrap"><table style="min-width:0;font-size:13px">
+        <tr><th>Senaryo</th><th class="num">Normalize net kâr</th><th class="num">EPS (TL)</th><th class="num">9,4× BIST</th><th class="num">10,8× sektör</th></tr>
+        <tr><td>Düşük (8 $/v)</td><td class="num">38.400</td><td class="num">19,92</td><td class="num">188</td><td class="num">215</td></tr>
+        <tr><td><b>Orta (14 $/v)</b></td><td class="num"><b>86.400</b></td><td class="num"><b>44,84</b></td><td class="num"><b>422</b></td><td class="num"><b>483</b></td></tr>
+        <tr><td>Yüksek (18 $/v)</td><td class="num">118.400</td><td class="num">61,46</td><td class="num">579</td><td class="num">662</td></tr>
+      </table></div>
+      <p class="fig-cap">Normalize net kâr = vergi sonrası operasyonel kâr − kontrol gücü olmayan paylar (%1,5); net finansman sıfır yazıldı (mevduat taşıması enflasyondan arındırıldı). Orta senaryo, yarıyıl yıllıklandırmasının (100,5 mlr) altında: tepe marj + stok kârı çıkarıldı. Çarpan çıpaları: BIST ortalaması 9,42, sektör ortalaması 10,77 (Matriks oran servisi 07.10.2026); Damodaran entegre-rafineri gelişmekte olan F/K 13,4 (Oca-2026). Çarpan merdiveni "piyasanın çarpanı korunur" varsayımı taşır. <span class="tag h">hesap</span></p>
+    </div>
+    <div class="panel" style="margin:0">
+      <h3>Göreceli üçgen — çarpan kıyası</h3>
+      <div class="tblwrap"><table style="min-width:0;font-size:13px">
+        <tr><th>Çarpan</th><th class="num">TUPRS</th><th class="num">BIST ort.</th><th class="num">Sektör ort.</th><th class="num">Damodaran EM (Oca-26)</th></tr>
+        <tr><td>F/K</td><td class="num">10,09</td><td class="num">9,42</td><td class="num">10,77</td><td class="num">14,3</td></tr>
+        <tr><td>PD/DD</td><td class="num">1,61</td><td class="num">1,14</td><td class="num">1,25</td><td class="num">2,05</td></tr>
+        <tr><td>EV/FVÖK</td><td class="num">5,37</td><td class="num">6,71</td><td class="num">7,47</td><td class="num">6,47</td></tr>
+      </table></div>
+      <p class="fig-cap">Okuma: işletme değeri/FAVÖK pazarın %20, sektörün %28 iskontosunda; defter primi (pazara %41) özkaynak kârlılığıyla destekli (19,1'e karşı sektör 16,7 — Matriks 07.10). Net nakit işletme değerini mekanik küçültür — iskonto döngü-normalize FAVÖK'le de sürer (4,6×). Son kolon Damodaran entegre-rafineri gelişmekte olan ortalaması (n=15, Ocak-2026). <span class="tag c">çıkarım</span></p>
+    </div>
+  </div>
+
+  <div class="two" style="margin-top:18px">
+    <div class="panel" style="margin:0">
+      <h3>Temettü iskonto modeli — dağıtım oranı duyarlılığı</h3>
+      <div class="tblwrap"><table style="min-width:0;font-size:13px">
+        <tr><th>Dağıtım oranı</th><th class="num">D1 ($/pay)</th><th class="num">Değer (TL/pay)</th></tr>
+        <tr><td>%50 (holding normu)</td><td class="num">0,473</td><td class="num">279</td></tr>
+        <tr><td>%82 (= serbest nakit / net kâr)</td><td class="num">0,779</td><td class="num">348</td></tr>
+        <tr><td>%100 (2025 disiplini)</td><td class="num">0,947</td><td class="num">422</td></tr>
+      </table></div>
+      <p class="fig-cap">2025 dağıtımı 33.000 mn TL = 17,13 TL/pay brüt — dağıtım oranı %95-101 (SPK ölçütü %104,08): Tüpraş eksiks dağıtım şirketidir. Bugünkü fiyat, orta marjda sürdürülebilir net kâr dağıtım oranı ≈ <b>%90</b> gerektirir: fiyatın dayandığı varsayım tek başına temettü değil, orta marjda eksiks dağıtımdır. Bayrak: yatırım 700 mn $ &gt; amortisman 382 mn $ — %100 net kâr dağıtımı uzun vadede nakiti eritir. <span class="tag h">hesap</span></p>
+    </div>
+    <div class="panel" style="margin:0">
+      <h3>Alt sınır kontrolleri — net nakit ve defter</h3>
+      <ul class="plain" style="max-width:100%">
+        <li><b>Net nakit/pay: +67,84 TL</b> (tüm nakit tanımı 130.718 mn; raporun bloke-düşük tanımıyla +53,06 TL) — fiyatın %18'i dengede duran nakit. <span class="tag h">hesap</span></li>
+        <li><b>Defter çıpası: 240,45 TL/pay</b> (toplam özkaynak; ana ortaklık 236,73) — enflasyon düzeltilmiş defter, muhafazakâr yenileme maliyeti vekili; fiyatın defter primi %59. Rafineri bazında segment kırılımı yayınsız → parça başı toplam değeri üretilmez, yalnız taban okuması. <span class="tag h">hesap</span></li>
+        <li>Yenileme maliyeti sektör bench'i yerel korpus'ta yok — yenileme maliyeti çapası <b>çözümsüz</b>; savunulabilir taban defter + net nakittir. <span class="tag u">çözümsüz</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-top:18px">
+    <h3>Baz değerler defteri — her varsayım nereden geliyor?</h3>
+    <div class="tblwrap"><table style="min-width:0;font-size:12.5px">
+      <tr><th>Baz değer</th><th>Sayı</th><th>Dayanak (kaynak · tarih)</th></tr>
+      <tr><td>Normalize marj senaryoları</td><td class="num">8 / 14 / 18 $/v</td><td>Yönetim revize rehberi 13–15 (ODA 1643118); yarıyıl gerçekleşme 15,6, ikinci çeyrek 21,4. Küresel trend çıpası: Avrupa gasoil kırılma marjı 3 yıl yüzdelikleri p25 27 · p50 41 · p75 72 $/v, bugün 98,8, Eylül ortalaması 125,3 (TradingView 07.10) — düşük senaryo yüzdelik dönüşünü, orta rehberi, yüksek mevcut crack'ın tam geçişini temsil eder</td></tr>
+      <tr><td>Brent</td><td class="num">101,2 $/v</td><td>TradingView TVC:UKOIL 07.10 — OVP 2026 varsayımı 88,0 $/v'nin %15 üstünde (OVP yukarı revizyon riski; 2027 varsayımı 76,0)</td></tr>
+      <tr><td>Varil temeli</td><td class="num">212,6 mn varil</td><td>Şarj rehberi 29 mn ton × 7,33 (ODA 1643118; tonaj gerçekleşmesiyle uyumlu)</td></tr>
+      <tr><td>Özkaynak maliyeti ke(USD)</td><td class="num">%13,0 (12,0–14,1)</td><td>ABD 10 yıllık %5,28 (03.10 çapası, 02.10 valörü) + beta 0,789 (Damodaran entegre-rafineri gelişmekte olan, n=15, Oca-2026 vintajı; kaldırılmış bant 0,75–1,05) × olgun piyasa risk primi %4,2 + ülke riski iki ayakla: rating-temelli %4,45 (Ba3 not primi × λ 1,556) / kredi-riski-temelli %3,81 (Türkiye 5 yıl CDS 245,2 puan, canlı) — iki ayak çakışıyor</td></tr>
+      <tr><td>Büyüme g(USD)</td><td class="num">%2</td><td>Küresel talep trendi: IEA Eylül-2026 — 2026 talebi −2,5 mb/d (talep yıkımı), 2027'de arz +8 mb/d toparlanırken talep toparlanır; OVP dezenflasyon patikası. Model çıktısı değil, rejim hükmüdür</td></tr>
+      <tr><td>FAVÖK kalibrasyonu</td><td class="num">−300 mn $</td><td>Oniki aylık FAVÖK 2.309 mn $ ↔ marj 12,3 $/v köprüsünden çözüldü (diğer segmentler + iştirak payları − rafineri operasyon gideri)</td></tr>
+      <tr><td>Yatırım harcaması</td><td class="num">700 mn $</td><td>Yönetim rehberi; yarıyıl gerçekleşme 245,9 mn $; tanker 370 + propilen 271 mn $ hat taahhütleri</td></tr>
+      <tr><td>Amortisman</td><td class="num">382 mn $</td><td>Oniki aylık 18.749 mn TL ÷ çapa kuru</td></tr>
+      <tr><td>Efektif vergi</td><td class="num">%22</td><td>Yarıyıl %17,6 (teşvik varlığı tükeniyor) ile %25 yasal tavan arası; nakit-vergi disiplini literatür çıpası</td></tr>
+      <tr><td>Kontrol gücü olmayan paylar</td><td class="num">%1,5</td><td>Yarıyıl payı 425 mn TL / net kâr (FR s.304)</td></tr>
+      <tr><td>Net nakit</td><td class="num">+2.667 mlr $</td><td>FR Not 29 + yönetim sunumu mutabakatı (67,84 TL/pay)</td></tr>
+      <tr><td>Kur çapası</td><td class="num">49,03 TL/$</td><td>EVDS TP.DK.USD.S.YTL 02.10 — TL↔USD çevirisi yalnız tek kurda (zincir 49,0184 ile kuruldu; tazeleme kurunda fark %0,03, yeniden kurulmadı)</td></tr>
+      <tr><td>Pay sayısı</td><td class="num">1.926,80 mn</td><td>FR Not 19 (s.222)</td></tr>
+      <tr><td>Ülke büyüme / talep</td><td class="num">%3,3 → %4,2</td><td>OVP 2027–2029 GSYH patikası; yurt içi yakıt talebi GSYH + kur artış hızına bağlı varsayım (EPDK satış serisi gölde yok — açık)</td></tr>
+      <tr><td>Senaryo ağırlıkları</td><td class="num">30 / 50 / 20</td><td>Analizin beyanlı yargısı: arz-talep dengesi IEA ile düşük-ağırlığı korur, rehber merkezi ağırlıktır</td></tr>
+    </table></div>
+    <p class="fig-cap" style="margin-top:8px">Zincir wiki sentezin §10.8 defterinden taşınmadır; her yeni bilançoda ve fiyat bandı dışına çıkışta yeniden koşulur. <span class="tag h">hesap</span></p>
+  </div>
+
+  <div class="two" style="margin-top:18px">
+    <div class="panel" style="margin:0">
+      <h3>Fazla-getiri hükmü — sermaye getirisi vs. sermaye maliyeti</h3>
+      <div class="tblwrap"><table style="min-width:0;font-size:13px">
+        <tr><th>Marj senaryosu</th><th class="num">ROIC</th><th class="num">ke(USD)</th><th class="num">Fark</th></tr>
+        <tr><td>Düşük (8 $/v)</td><td class="num">%12,0</td><td class="num">%13,0</td><td class="num">−1,0 p</td></tr>
+        <tr><td><b>Orta (14 $/v)</b></td><td class="num"><b>%26,9</b></td><td class="num">%13,0</td><td class="num"><b>+13,9 p</b></td></tr>
+        <tr><td>Yüksek (18 $/v)</td><td class="num">%37,0</td><td class="num">%13,0</td><td class="num">+24,0 p</td></tr>
+        <tr><td>Oniki aylık gerçekleşme</td><td class="num">%22,6</td><td class="num">%13,0</td><td class="num">+9,6 p</td></tr>
+      </table></div>
+      <p class="fig-cap">ROIC = vergi sonrası operasyonel kâr ÷ (borç + özkaynak − net nakit fazlası), defter temelli: TMS 29 restated defter güncel yenileme değerine yakın çalıştığı için yönlü hata muhafazakâr tarafa (enflasyon-restatement tuzağı bu hesapta lehimize — bkz. wiki roic-eva sayfası). <b>Hüküm:</b> orta senaryoda büyüme belirgin değer yaratıyor; düşük senaryo (piyasanın fiyatladığı marj) değer-yaratma-sıfır çizgisi. Ekonomik durum etiketi: <b>DÖNGÜ-TEPESİ (CYCLICAL_PEAK)</b> — ikinci çeyrek marjı şirket rekoru, Avrupa gasoil kırılması üç yılın %90+yüzdeliğinde, 2027 arz toparlanması (+8 mb/d) marj rejimine rehin. <span class="tag h">hesap</span> <span class="tag c">çıkarım</span></p>
+    </div>
+    <div class="panel" style="margin:0">
+      <h3>Model tahminleri — TimesFM + TabPFN (çapraz kontrol)</h3>
+      <div class="tblwrap"><table style="min-width:0;font-size:13px">
+        <tr><th>Model</th><th class="num">Satış MASE</th><th class="num">3.ç YTD tahmin (mlr $)</th><th class="num">Bağımsız 3.ç (mlr $)</th></tr>
+        <tr><td>TimesFM 3.0</td><td class="num">0,99</td><td class="num">18,1 [13,7–23,3]</td><td class="num">3,9</td></tr>
+        <tr><td>TabPFN (makro-özellikli)</td><td class="num">0,84</td><td class="num">20,7 (nokta)</td><td class="num">6,5</td></tr>
+        <tr><td>Mevsimsel-naive / sürüklenme</td><td class="num">1,26 / 2,73</td><td class="num">—</td><td class="num">—</td></tr>
+      </table></div>
+      <p class="fig-cap">Göl çeyrek-lik yılık-birimli USD net satış serisi (2008–2026/2, 74 gözlem; enflasyon-düzeltilmiş rapor serisi + çeyrek-sonu kur) üzerinde kayan- başlangıçlı geri-test (TabPFN satırı 20 hedeflik geniş pencere). Satış kolunda modeller naive çizgiyi geçiyor; faaliyet-kârı kolunda geçiş sınırlı — <b>marj senaryo zincirinin yerine geçmez, çapraz kontroldür.</b> Bilanço oranı özellikleri (brüt marj, stok/satış, finansal borç/satış) aynı modele eklenip A/B test edildi: MASE 1,27'ye bozuldu (4/20 galibiyet) → <b>özellik seti reddedildi</b>; bilanço girdileri değerleme zincirinde kalmaya devam eder. Bağımsız üçüncü çeyrek satış bandı 3,9–6,5 mlr $ (nokta tahminler aralığı — TimesFM 3.0'un alt kuyruğu enflasyon-restatement sızıntısıyla negatife düştüğü için alt sınır nokta tahmine sabitlendi): ikinci çeyreğin (8,4) altında, yarıyıl ortalamasının üstünde. Tek değişkenli model kırılma (crack) rejimini görmez; makro-özellikli model üst bantta kırılmayla uyumlu — çelişkinin çözümü üçüncü çeyrek tablosunda. <span class="tag h">hesap</span></p>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-top:18px">
+    <h3>Tez dayanıklılığı — piyasa neden haklı olabilir · ne fikrimi değiştirir</h3>
+    <div class="two" style="gap:24px">
+      <div style="flex:1">
+        <p style="font-size:13px;font-weight:700;margin-bottom:6px">Piyasa neden haklı olabilir (380,75 TL bir "tepe-sonrası dönüş" bahsidir):</p>
+        <ul class="plain" style="max-width:100%">
+          <li>Dizel 200 $/v'u aşan fiyatla kendi talebini öldürüyor (IEA: 2026 −2,5 mb/d) — kırılma normalleşirse (üç yıl medyanı 41 $/v) marj 10–12 $/v'a iner; fiyat zaten orayı iskonto ediyor olabilir.</li>
+          <li>2027 arz toparlanması (+8 mb/d rafineri + ihracat koridorlarının dönüşü) marjı yapısal bastırır.</li>
+          <li>İkinci çeyrek marjının içinde stok etkisi var; stok-katkısız marj daha düşük.</li>
+          <li>Teşvik varlığı tükeniyor — nakit vergi %17,6'dan yukarı gelir.</li>
+          <li>641 mn $ yatırım hattı + %95-101 dağıtım disiplini çelişkisi: ya borçlanma ya dağıtım kesintisi fiyatı baskılar.</li>
+        </ul>
+      </div>
+      <div style="flex:1">
+        <p style="font-size:13px;font-weight:700;margin-bottom:6px">Ne fikrimi değiştirir:</p>
+        <ul class="plain" style="max-width:100%">
+          <li><b>İZLE → AL (üçü birlikte):</b> üçüncü çeyrek stok-katkısız marj ≥17 $/v (FR dipnot ayrıştırmasıyla) + dördüncü çeyrek kırılma-koruma örtüsü ≥%50 + fiyat ≤340. Tek başına fiyat düşüşü yetmez — talep-yıkımı senaryosunda 340 da pahalıdır.</li>
+          <li><b>İZLE → SAT:</b> marj rehberi &lt;10 $/v kesintisi · koruma örtüsünün çözülmesi · efektif verginin iki dönemde %25 üstünde kalıcılaşması · yatırım taşması + dağıtım kesintisi kombinasyonu · IEA 2027 arz revizyonunun +10 mb/d üzerine çıkması.</li>
+          <li><b>İzleme kaynakları:</b> üçüncü çeyrek finansal tablosu (marj + net elde edilebilir değer + koruma + teşvik notları), özel durum açıklamaları, TradingView kırılma serisi (yukarıdaki formül), IEA aylık revizyonları.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section id="oneri"><div class="wrap">
+  <h2>Öneri: 380,75 TL'de ne yapılmalı</h2>
+  <div class="verdict" style="max-width:100%"><b>Karar: İZLE — fiyat marj varsayımını dürüst biçimde içeriyor, güvenlik marjı taşımıyor.</b> Orta senaryo değer bandı 350–480 TL (merkez ≈415), olasılık ağırlıklı değer 376 TL: fiyat bandın içinde, merkezden %8 aşağıda. Piyasanın fiyatladığı normalize marj (13,1 USD/varil) yönetimin revize rehberinin alt sınırı — rehberin tutması tek başına getiri üretmez, aşılması gerekir. <span class="tag c">çıkarım — destekli</span></div>
+  <div class="tblwrap" style="margin-top:18px"><table>
+    <tr><th>Bant</th><th>Koşul / fiyat</th><th>Eylem</th><th>Gerekçe</th></tr>
+    <tr><td><b>İZLE</b></td><td>340–480 TL (mevcut 380,75)</td><td>izleme listesinde tut; alım yok</td><td>Net nakit/pay 67,84 TL + pozitif Fitch görünüm düşüşü sınırlar; ancak fiyat rehberin alt bandını içerdiğinden yukarı yön, marjın rehber üst bandını aşmasına bağlı <span class="tag c">çıkarım</span></td></tr>
+    <tr><td>GİRİŞ TETİKLERİ</td><td>≤340 TL ve üçüncü çeyrek marjı ≥13 USD/varil teyidi; VEYA 2026 dağıtım politikası ≥30 mlr TL teyidi; VEYA stok-katkısız marj ayrışmasının lehe netleşmesi</td><td>kademeli giriş savunulabilir</td><td>340 = olasılık ağırlıklı değerin %10 altında; dağıtım teyidi temettü iskonto ayağını, marj teyidi nakit akım ayağını güçlendirir <span class="tag c">çıkarım</span></td></tr>
+    <tr><td>İZLEME TETİĞİ</td><td>üçüncü çeyrek tablo + net elde edilebilir değer geri çözümü</td><td>marj kalitesi teyit sinyali</td><td>Eylül Brent 95+ Haziran stok karşılığını (782 mn) lehe çevirebilir; koruma 1.080 bin varille üçüncü çeyreğin bir kısmını sabitliyor</td></tr>
+    <tr><td>ÇIKIŞ SİNYALİ</td><td>fiyattan kısmen bağımsız</td><td>pozisyon gözden geçirilir</td><td>marj rehberi 10 USD/varil altına kesinti · dördüncü çeyrekte koruma oranının çözülmesi · efektif verginin %25 üstünde kalıcılaşması (teşvik varlığı tükendikçe) · tanker 370 mn $ + propilen 271 mn $ yatırım hattının dağıtımı sıkıştırması · fiyat ≥480 iken marjın stok kârıyla sürüklenmesi <span class="tag c">çıkarım</span></td></tr>
+  </table></div>
+  <p class="sub" style="margin-top:12px">Katalizör takvimi: 2026 3. çeyrek finansal tabloları (marj + stok geri çözümü + koruma oranı) · 2026 temettü politikası · ABD 10 yıllık / ülke risk primi (iskonto oranı ayağı) · Brent ikinci şoku (marj lehine crack, aleyhine talep yıkımı). Değer zinciri her bilanço döneminde yeniden koşulur; fiyat bandın dışına çıkarsa tablo yeniden okunur.</p>
+</div></section>
+
+<section id="huküm"><div class="wrap">
+  <h2>Hüküm ve izleme listesi</h2>
+  <p class="sub">Beş madde: teşhis, kırılganlık, vergi, izlenecekler, eşik kontrolü.</p>
+  <ol class="steps">
+    <li><b>Teşhis:</b> güçlü ve temiz bilanço — net nakit, altın kural sağlanıyor, negatif nakit döngüsü, reel büyüme, %17,4 özkaynak kârlılığı. Likidite oranları klasik eşiklerin altında ama fark <b>yapısal</b>: döngü negatif, atıl nakit büyük. Rafineri sektör kıyası esastır. <span class="tag c">çıkarım</span></li>
+    <li><b>Kırılganlık:</b> kârın çeyrek yoğunluğu (yarıyılın %92'si) crack marjına bağlı. 3. çeyrekte koruma 1.080 bin varil sabitleme ile kısmen sabit. Brent ikinci şoku marj lehine (crack artar) ama talep yıkımı riskini taşır.</li>
+    <li><b>Vergi:</b> yatırım teşviki tükeniyor — 2026 efektif vergi %17,6 (H1-25: %34). İleri dönemlerde normalizasyon net kârı baskılar; nakit etkisi yoktur, cari vergi artacaktır.</li>
+    <li><b>3. çeyrek izleme:</b>
+      <ul style="margin-top:6px;padding-left:18px">
+        <li>(a) 02.10 temettüsü (13 mlr) + 01.09 Entek sermaye artırımı (2,5 mlr) sonrası nakit erimesinin boyutu;</li>
+        <li>(b) stok değer düşüklüğünün geri çözümü (Eylül Brent 95+ → net elde edilebilir değer lehine);</li>
+        <li>(c) yatırım hattının büyümesi — H1 yatırım harcaması 245,9 Mn USD, tanker +370 Mn (2029) + propilen 271 Mn (2027): 153 mlr TL'lik oniki aylık serbest nakit karşılığı izlenecek;</li>
+        <li>(d) ertelenmiş vergi yükü 30,9 mlr TL — türev değerleme farkları çözülürse serbest kalır;</li>
+        <li>(e) NRM: H1 gerçekleşme 15,6 USD/varil, rehberi (13-15) aştı — 21,4'lük 2. çeyrek zirvesinin sürdürülebilirliği (korumanın sabitlediği kısım ile spot ayrımı) ve stok-katkısız marj izlenecek.</li>
+      </ul>
+    </li>
+    <li><b>Eşik kontrolü:</b> cari oran 1,35 &lt; 1,5. 3. çeyrekte 1,2 altına sarkarsa (ticari borç büyümesi hızlanırsa) teminat yapısı sorgulanmalı.</li>
+    <li><b>Değer bandı izleme:</b> orta senaryo bandı 350–480 TL (merkez ≈415, olasılık ağırlıklı değer 376). Fiyat 340 altına ya da 480 üstüne çıkarsa öneri bandı yeniden okunur; değer zinciri (iskonto oranı, marj senaryoları, dağıtım varsayımı) her bilanço döneminde yeniden koşulur.</li>
+  </ol>
+</div></section>
+
+<footer id="kaynak"><div class="wrap">
+  <h2 style="font-size:22px">Kaynak künyesi ve veri katmanları</h2>
+  <div class="grid" style="margin-top:14px">
+    <div class="künye">
+      <p><b>İddia → kaynak:</b> tüm sayılar wiki sentez sayfasından taşındı; kök rakamlar finansal rapor txt satırlarından yeniden doğrulandı (bin TL → mn TL): toplam varlık 859.987.516 · toplam özkaynak 463.306.781 (ana ortaklık 456.139.125 + kontrol gücü olmayan paylar 7.167.656) · nakit 195.840.940 · faaliyetlere nakit 132.366.363 · dönem kârı 50.272.473 — beşi de birebir. NRM serisi, pazar payı ve kullanım oranı resmî yatırımcı sunumlarından [harici]; operasyonel tonaj faaliyet raporundan; makro seriler EVDS3 ve canlı çapalardan. Değerleme zinciri: beta ve çarpan bench'i Damodaran entegre-rafineri gelişmekte olan seti (Ocak-2026 vintajı, yerel kopya) · piyasa ve sektör oranları Matriks oran servisi (06.10.2026) · iskonto oranı girdileri (ABD 10 yıllık, kredi risk primi, ülke risk primi) canlı çapa dosyası (01.10.2026) · net nakit iki tanımla Not 29 (s. 2976) · pay sayısı ödenmiş sermaye satırı (N19, s. 222); senaryo aritmetiği ve beyanlı varsayımlar wiki sentezin 10. bölümünde satır satır duruyor.</p>
+      <p style="margin-top:10px"><b>07.10.2026 tazeleme katmanı:</b> fiyat ve canlı çarpanlar Matriks anlık/oran servisi 07.10; crack çıpası TradingView (liste aşağıda); iskonto girdileri EVDS/ABD Hazine çapaları 03.10 (ABD 10 yıllık %5,28, Türkiye 5 yıl kredi risk primi 245,2 puan); ülke büyümesi OVP 2027–2029; model tahminleri TimesFM/TabPFN (çapraz kontrol — değerleme çıpası değil). Baz değerlerin kaynak defteri değerleme bölümündeki tabloda; tam defter wiki §10.8–10.9.</p>
+      <p style="margin-top:10px"><b>Bilinen veri kusurları:</b> (1) Ürün bazlı gelir kırılımı resmen açıklanmıyor (Not 20 yalnız yurtiçi/yurtdışı; resmî sunumlarda da yok) — tahmin uydurulmadı, resmî vekil yığın kullanıldı. (2) Net nakit pozisyonu iki tanımla raporlanıyor: tüm nakitle 130.718 ile bloke ve türev marjı düşülmüş 102.232 — ikisi de raporda var, fark yalnız kullanılabilir nakit tanımı. (3) Stok-katkısız net rafinaj marjı ayrıca açıklanmıyor: 21,4 USD/varil'in içinde stok kârı bileşeni olup olmadığı belirsiz (1. çeyrek sunumunun FAVÖK köprüsünde "stok kârı 4,96 mlr TL" ayrı satırı var).</p>
+      <p style="margin-top:10px"><b>Şirket künyesi:</b> Türkiye Petrol Rafinerileri A.Ş. (Tüpraş) · Merkez: Şişli/İstanbul (Gülbahar Mah. Büyükdere Cad. No:101A) · Sermaye: 1.926,80 mn pay<br><b>Denetim:</b> Güney Bağımsız Denetim ve SMMM A.Ş. (EY üye firma; sorumlu denetçi Seçkin Özdemir, SMMM) · 2026-H1: sınırlı denetim yapıldı (SBDS 2410, rapor 04.08.2026 İstanbul — olumlu kanaat)<br><b>Üretim:</b> 06.10.2026 · <b>tazeleme 07.10.2026:</b> fiyat 380,75 TL, canlı çarpanlar, baz değerler defteri, fazla-getiri/tez katmanı ve model tahminleri eklendi · bu sayfa <code>wiki/synthesis/tuprs-2026h1-bilanco-analizi</code> analizinin sunum kopyasıdır; doğruluk kaynağı wiki + KAP dosyalarıdır. Birim: mn TL, 30.06.2026 alım gücü (TMS 29). Fiyat: Matriks anlık snapshot 07.10.2026 11:55.</p>
+    </div>
+    <div>
+      <p><b>Birincil kaynaklar</b></p>
+      <ul class="plain" style="margin-top:6px">
+        <li><b>FR:</b> KAP TUPRS 2026-H1 özet konsolide finansal rapor (30.06.2026; konsolide; SBDS 2410 sınırlı denetim: Güney Bağımsız Denetim / EY, 04.08.2026 — olumlu)</li>
+        <li><b>Faaliyet raporu 2026-H1:</b> operasyonel tonaj (s. 127-137), Brent serisi (s. 111-115), elektrik fiyatları (s. 121), yatırım projeleri</li>
+        <li><b>Özel durum açıklamaları 2026:</b> NRM rehberi (1554109, 1643118), yönetim atamaları, İzmit olayı, ortak satışları, tahvil itfaları, Entek, temettü, derecelendirme</li>
+        <li><b>Yatırımcı sunumları [harici]:</b> Q2/26 sonuç sunumu (04.08.2026), Temmuz-2026 sunumu (pazar yapısı s. 11, crack serileri s. 6-7)</li>
+        <li><b>Matriks:</b> anlık fiyat 380,75 TL (07.10.2026 11:55; ilk sürüm 381,25 TL 06.10 15:22) + oran servisi: hisse/piyasa/sektör çarpanları ve özkaynak kârlılığı (07.10.2026) + crack-hedge takibi</li>
+        <li><b>EVDS3:</b> USD/TRY, kapasite kullanım oranı, rafineri alt-sektör ÜFE, dış ticaret hacim endeksleri</li>
+        <li><b>Damodaran (pages.stern.nyu.edu/~adamodar; vintaj 05.01.2026 + Temmuz-2026 ülke primi):</b> entegre-rafineri gelişmekte olan β 0,789 · F/K 13,4 · PD/DD 2,05 · EV/EBITDA 6,47 (betaemerg / peemerg / pbvemerg / vebitdaemerg.xls — yerel kopya <code>raw/degerleme-sektorel/damodaran/</code>) · Türkiye hisse senedi risk primi %8,65 (Ba3)</li>
+        <li><b>TradingView:</b> Avrupa gasoil kırılma (crack) çıpası — ICEEUR:ULS1! × EURUSD / 7,45 − TVC:UKOIL (günlük; 3 yıl yüzdelikleri 07.10.2026'da hesaplandı: p25 27 · p50 41 · p75 72 · p90 105 $/v, bugün 98,8, Eylül ort. 125,3; varil dönüşümü 7,45); Brent TVC:UKOIL 101,2 $/v</li>
+        <li><b>IEA Petrol Piyasası Raporu (Eylül-2026) [harici]:</b> 2026 küresel talep −2,5 mb/d (talep yıkımı), rafineri işleme −2,6 mb/d, 2027 arz +8 mb/d toparlanma — büyüme (USD) %2 gerekçesi ve ekonomik durum etiketesinin (döngü-tepe) dayanağı</li>
+        <li><b>OVP 2027–2029 (SBB):</b> GSYH büyüme %3,3→%4,2, ham petrol varsayımı 88,0/76,0 $/v — ülke büyüme ve yakıt-talebi dipnotu (wiki ovp-2027-2029 sayfası)</li>
+        <li><b>Zaman-serisi modelleri [hesap]:</b> TimesFM 3.0 (Google, CPU) + TabPFN v2 (2.0.9, makro-özellikli PIT backtest) — göl çeyrek-lik YTD USD satış serisi, rolling-origin; worktree <code>bilanco-is-timesfm-forecasting</code>. Çapraz kontrol katmanı; değerleme girdisi değil.</li>
+        <li><b>Wiki karşılığı:</b> <code>synthesis/tuprs-2026h1-bilanco-analizi</code></li>
+      </ul>
+    </div>
+  </div>
+  <p class="copy">© 2026 Enis Halıcı · Tüm hakları saklıdır.</p>
+</div></footer>
+
+<!-- site-publish:footer -->
+<footer style="max-width:1080px;margin:26px auto 0;padding:14px 20px 22px;border-top:1px solid
+ #E3DED2;font-size:12px;color:#5D594D">
+Bu içerik yatırım tavsiyesi değildir. Veriler KAP kamuyu aydınlatma platformu
+kaynaklıdır; analiz yorum içerir. ·
+<a href="/" style="color:#B0472A">Ana Sayfa</a> ·
+<a href="/reports/TUPRS/" style="color:#B0472A">Tüm TUPRS Raporları</a>
+</footer>
+</body>
+</html>

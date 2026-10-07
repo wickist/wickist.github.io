@@ -1,0 +1,55 @@
+/* Finansal Analiz Raporları — portal stili (rapor sayfalarının koyu paletiyle uyumlu) */
+:root{
+  --bg:#1F1E1D; --panel:#262423; --panel2:#2E2C2A; --line:#3A3735;
+  --fg:#EDEAE4; --muted:#A7A29B; --gold:#C9A227; --green:#6A8E7F; --red:#B0472A;
+  --radius:10px;
+}
+@media (prefers-color-scheme: light){
+  :root{ --bg:#F4F2EE; --panel:#FFFFFF; --panel2:#EFEBE4; --line:#D9D4CB;
+         --fg:#262423; --muted:#6B655D; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font-family:"Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;
+  line-height:1.55}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+header.site{border-bottom:1px solid var(--line);background:var(--panel)}
+header.site .wrap{display:flex;align-items:baseline;gap:14px;padding-top:18px;padding-bottom:14px;flex-wrap:wrap}
+header.site h1{font-size:20px;margin:0;letter-spacing:.2px}
+header.site .sub{color:var(--muted);font-size:13px}
+main{padding:26px 0 40px}
+.counters{display:flex;gap:14px;flex-wrap:wrap;margin:6px 0 18px}
+.counter{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:10px 16px;min-width:130px}
+.counter .v{font-size:22px;font-weight:700;color:var(--gold)}
+.counter .k{font-size:12px;color:var(--muted)}
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:10px 0 22px}
+.controls input{background:var(--panel);border:1px solid var(--line);color:var(--fg);
+  border-radius:8px;padding:9px 12px;font-size:14px;min-width:220px;flex:1;max-width:340px}
+.filters{display:flex;gap:6px;flex-wrap:wrap}
+.filters button{background:var(--panel);border:1px solid var(--line);color:var(--muted);
+  border-radius:16px;padding:5px 13px;font-size:13px;cursor:pointer}
+.filters button.active{background:var(--gold);border-color:var(--gold);color:#161514;font-weight:600}
+.company{margin:26px 0 6px;font-size:17px;letter-spacing:.3px}
+.company small{display:block;font-size:12.5px;color:var(--muted);font-weight:400;margin-top:2px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin:12px 0 8px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+.card:hover{border-color:var(--gold)}
+.card .period{font-size:13px;font-weight:700;color:var(--gold)}
+.card .title{font-size:15.5px;font-weight:600}
+.card .desc{font-size:13px;color:var(--muted);flex:1}
+.card .meta{font-size:12px;color:var(--muted)}
+.card a.open{align-self:flex-start;background:var(--panel2);border:1px solid var(--line);
+  border-radius:8px;padding:7px 14px;font-size:13px;font-weight:600;color:var(--fg)}
+.card a.open:hover{border-color:var(--gold);text-decoration:none;color:var(--gold)}
+.breadcrumb{font-size:13px;color:var(--muted);margin:4px 0 18px}
+.breadcrumb a{color:var(--muted)}
+.breadcrumb a:hover{color:var(--gold)}
+footer.site{border-top:1px solid var(--line);margin-top:34px;padding:18px 0 26px;
+  font-size:12.5px;color:var(--muted)}
+.empty{color:var(--muted);font-size:14px;padding:14px 0}
+@media (max-width:640px){ .cards{grid-template-columns:1fr} .counter{min-width:110px} }
