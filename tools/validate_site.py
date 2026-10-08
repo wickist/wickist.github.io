@@ -119,11 +119,11 @@ def main() -> None:
     # dahili bağlantı çözünürlüğü
     for html_path in ROOT.rglob("*.html"):
         for href in re.findall(r'href="(/[^"#][^"]*)"', html_path.read_text(encoding="utf-8")):
-            target = ROOT / href.lstrip("/")
+            target = ROOT / href.split("?")[0].lstrip("/")
             if not (target.exists() or (target / "index.html").is_file()):
                 err(f"{html_path.relative_to(ROOT)}: kırık dahili link {href}")
         for src in re.findall(r'src="(/[^"]*)"', html_path.read_text(encoding="utf-8")):
-            if not (ROOT / src.lstrip("/")).is_file():
+            if not (ROOT / src.split("?")[0].lstrip("/")).is_file():
                 err(f"{html_path.relative_to(ROOT)}: kırık asset {src}")
 
     # sitemap: kayıtlı URL'ler üretilmiş mi, silinmiş URL kalmamış mı

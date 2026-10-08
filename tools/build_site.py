@@ -14,6 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SITE_NAME = "Finansal Analiz Raporları"
 BASE = "https://wickist.github.io"
+ASSET_VER = "20261008a"   # site.css değişince artır (cache-busting)
 
 
 def load() -> dict:
@@ -52,7 +53,7 @@ def head(title: str, description: str, path: str, og_image: str | None = None) -
 <meta name="twitter:title" content="{escape(title)}">
 <meta name="twitter:description" content="{escape(description)}">
 <meta name="twitter:image" content="{escape(og_abs)}">
-<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/site.css?v={ASSET_VER}">
 </head>
 """
 
@@ -121,7 +122,7 @@ def build_index(data: dict) -> None:
         rows.append(
             f'<tr class="arow" data-search="{escape(search)}">'
             f'<th scope="row"><a href="/reports/{ticker}/">{ticker}</a>'
-            f'<small>{escape(rs[0]["company"])}</small></th>'
+            f'<br><small>{escape(rs[0]["company"])}</small></th>'
             + "".join(cells) +
             f'<td class="cnt">{len(rs)}</td></tr>'
         )

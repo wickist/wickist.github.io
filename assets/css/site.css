@@ -62,7 +62,7 @@ table.arsiv tbody tr:last-child th,table.arsiv tbody tr:last-child td{border-bot
 table.arsiv tbody tr:hover{background:var(--panel2)}
 table.arsiv th[scope="row"]{text-align:left;font-weight:600}
 table.arsiv th[scope="row"] a{color:var(--gold)}
-table.arsiv th[scope="row"] small{display:block;font-weight:400;color:var(--muted);font-size:12px;white-space:normal;max-width:300px}
+table.arsiv th[scope="row"] small{font-weight:400;color:var(--muted);font-size:12px;white-space:normal;max-width:300px}
 table.arsiv td.cnt{color:var(--muted);font-size:12.5px}
 a.chip{display:inline-block;background:var(--panel2);border:1px solid var(--line);border-radius:16px;padding:3px 12px;font-size:12.5px;font-weight:600;color:var(--fg)}
 a.chip:hover{border-color:var(--gold);color:var(--gold);text-decoration:none}
