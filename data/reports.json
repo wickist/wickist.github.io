@@ -91,6 +91,28 @@
         "H1",
         "havacılık"
       ]
+    },
+    {
+      "ticker": "ASELS",
+      "company": "ASELSAN Elektronik Sanayi ve Ticaret A.Ş.",
+      "period": "2026-Q2",
+      "periodLabel": "2026 H1",
+      "year": 2026,
+      "quarter": 2,
+      "title": "ASELS 2026 H1 Finansal Analiz Raporu",
+      "description": "Sipariş defterinin bilanço okuması: müşteri avansı ile SSB finansmanı, altın kural, oran eşikleri, yatırım nakdi ve iki ayaklı değerleme; FR+PDF metin katmanı denetimli.",
+      "publishedAt": "2026-10-08",
+      "updatedAt": "2026-10-08",
+      "path": "/reports/ASELS/2026-Q2/",
+      "ogImage": "/reports/ASELS/2026-Q2/og-cover.png",
+      "tags": [
+        "bilanço",
+        "finansal-analiz",
+        "ASELS",
+        "2026Q2",
+        "H1",
+        "savunma"
+      ]
     }
   ]
 }
