@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- site-publish:meta -->
+<title>SAHOL 2026 H1 Finansal Analiz Raporu</title>
+<meta name="description" content="Konsolide bilanço ve nakit kanalları okuması; iştirak mimarisi, düzeltilmiş SOTP/NAV iskonto bandı ve banka bloku analizi.">
+<link rel="canonical" href="https://wickist.github.io/reports/SAHOL/2026-Q2/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Finansal Analiz Raporları">
+<meta property="og:title" content="SAHOL 2026 H1 Finansal Analiz Raporu">
+<meta property="og:description" content="Konsolide bilanço ve nakit kanalları okuması; iştirak mimarisi, düzeltilmiş SOTP/NAV iskonto bandı ve banka bloku analizi.">
+<meta property="og:url" content="https://wickist.github.io/reports/SAHOL/2026-Q2/">
+<meta property="og:image" content="https://wickist.github.io/reports/SAHOL/2026-Q2/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SAHOL 2026 H1 Finansal Analiz Raporu">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SAHOL 2026 H1 Finansal Analiz Raporu">
+<meta name="twitter:description" content="Konsolide bilanço ve nakit kanalları okuması; iştirak mimarisi, düzeltilmiş SOTP/NAV iskonto bandı ve banka bloku analizi.">
+<meta name="twitter:image" content="https://wickist.github.io/reports/SAHOL/2026-Q2/og-cover.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "SAHOL 2026 H1 Finansal Analiz Raporu", "description": "Konsolide bilanço ve nakit kanalları okuması; iştirak mimarisi, düzeltilmiş SOTP/NAV iskonto bandı ve banka bloku analizi.", "inLanguage": "tr", "datePublished": "2026-10-08", "dateModified": "2026-10-08", "url": "https://wickist.github.io/reports/SAHOL/2026-Q2/", "image": "https://wickist.github.io/reports/SAHOL/2026-Q2/og-cover.png", "publisher": {"@type": "Organization", "name": "Finansal Analiz Raporları"}, "about": {"@type": "Organization", "name": "Hacı Ömer Sabancı Holding A.Ş.", "tickerSymbol": "SAHOL"}}</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
+:root{--bg:#F0EEE6;--panel:#FAF9F5;--ink:#1F1E1D;--accent:#D97757;--danger:#B0472A;--sage:#6A8E7F;--gold:#C9A227;--line:#D8D4C8;}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:'Styrene B','Styrene A','Inter',system-ui,sans-serif;font-size:16px;line-height:1.55}
+h1,h2,h3{font-family:'Copernicus','Fraunces',Georgia,serif;font-weight:600;line-height:1.2}
+section{padding:56px 24px;border-bottom:1px solid var(--line)}
+.wrap{max-width:960px;margin:0 auto}
+.hero{background:linear-gradient(160deg,#232120 0%,#3A352F 100%);color:#F0EEE6;padding:72px 24px 56px;border-bottom:4px solid var(--accent)}
+.hero .wrap{max-width:960px}
+.hero h1{font-size:44px;color:#FAF9F5}
+.hero .sub{color:#C9C3B4;margin-top:10px;font-size:17px;max-width:760px}
+.kpis{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.kpi{background:rgba(250,249,245,.07);border:1px solid rgba(250,249,245,.18);border-radius:12px;padding:14px 20px;min-width:150px}
+.kpi .v{font-size:26px;font-weight:700;font-family:'Copernicus','Fraunces',Georgia,serif}
+.kpi .l{font-size:12px;color:#C9C3B4;margin-top:2px;text-transform:uppercase;letter-spacing:.06em}
+.kpi .d{font-size:11px;color:#9C968A;margin-top:2px}
+.badge{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px;margin-right:6px;vertical-align:middle}
+.b-ak{background:#6A8E7F22;color:var(--sage);border:1px solid var(--sage)}
+.b-hesap{background:#C9A22722;color:#8a6f1a;border:1px solid var(--gold)}
+.b-cozulmedi{background:#B0472A22;color:var(--danger);border:1px solid var(--danger)}
+h2{font-size:30px;margin-bottom:6px}
+.lede{color:#5A564E;max-width:780px;margin-bottom:26px;font-size:15px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:760px){.grid2{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{font-size:19px;margin-bottom:10px}
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:12px}
+th{background:#EFEBDF;text-align:left;padding:8px 10px;font-weight:600;border-bottom:2px solid var(--line);white-space:nowrap}
+td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+td.num,th.num{text-align:right;white-space:nowrap}
+.pos{color:var(--sage);font-weight:600}.neg{color:var(--danger);font-weight:600}
+.big{font-size:18px;font-weight:700}
+.note{font-size:13px;color:#6B675E;margin-top:10px}
+.flag{border-left:4px solid var(--accent);background:#D977570D;padding:14px 18px;border-radius:0 10px 10px 0;margin:18px 0;font-size:14px}
+.flag.red{border-color:var(--danger);background:#B0472A0D}
+.flag.gold{border-color:var(--gold);background:#C9A2270D}
+svg{display:block;max-width:100%;height:auto;margin:18px auto}
+.tl{list-style:none}
+.tl li{position:relative;padding:0 0 22px 30px;border-left:2px solid var(--line);margin-left:8px}
+.tl li::before{content:'';position:absolute;left:-7px;top:2px;width:12px;height:12px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+.tl li.done::before{background:var(--sage)}
+.tl li.open::before{background:var(--gold)}
+.tl .d{font-weight:700;font-size:13px;color:var(--accent);text-transform:uppercase;letter-spacing:.05em}
+.tl li.done .d{color:var(--sage)}
+.decision{background:#232120;color:#F0EEE6;border-radius:16px;padding:30px;margin-top:8px}
+.decision h3{color:#FAF9F5;font-size:24px;margin-bottom:8px}
+.decision .verdict{font-size:40px;font-family:'Copernicus','Fraunces',Georgia,serif;color:var(--accent);margin:10px 0}
+.decision ul{margin:12px 0 0 20px;font-size:14px;color:#D8D4C8}
+.decision li{margin-bottom:7px}
+footer{background:#232120;color:#9C968A;padding:44px 24px 30px;font-size:13px}
+footer .wrap{max-width:960px}
+footer h4{color:#F0EEE6;margin-bottom:8px;font-size:14px}
+footer .cols{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+@media(max-width:700px){footer .cols{grid-template-columns:1fr}}
+footer ul{margin-left:18px}
+footer li{margin-bottom:6px}
+.copy{text-align:center;margin-top:34px;padding-top:18px;border-top:1px solid #3A352F;color:#6B675E}
+.pill{display:inline-block;background:#EFEBDF;border:1px solid var(--line);border-radius:8px;padding:2px 8px;font-size:12px;font-weight:600;margin:2px}
+</style>
+</head>
+<body>
+<!-- site-publish:meta -->
+<nav style="max-width:1080px;margin:0 auto;padding:10px 20px;font-size:13px;
+ color:#5D594D;border-bottom:1px solid #E3DED2">
+<a href="/" style="color:#5D594D;text-decoration:none">Ana Sayfa</a> /
+<a href="/reports/SAHOL/" style="color:#5D594D;text-decoration:none">SAHOL</a> /
+<span style="color:#B0472A;font-weight:600">2026 H1</span>
+</nav>
+
+<div class="hero">
+<div class="wrap">
+<div style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#C9A227;margin-bottom:10px">Holding · BIST · 2026-H1 (TMS 29 düzeltilmiş)</div>
+<h1>Hacı Ömer Sabancı Holding</h1>
+<p class="sub">SAHOL kendi başına bir şirket değil, dokuz şirketlik bir portföyün kasası. Bu sayfa o portföyün mimarisini okur: kim nasıl konsolide ediliyor, para hangi kanaldan akıyor, pazar değeri neden defter değerinin yarısı. Fiyatlar <b>07.10.2026 kapanış</b> (Matriks; sunum anında piyasa kapalı, son kapanış geçerlidir).</p>
+<div class="kpis">
+<div class="kpi"><div class="v">87,60 TL</div><div class="l">Hisse fiyatı</div><div class="d">07.10.2026 kapanış · analiz temeli 02.10: 86,70</div></div>
+<div class="kpi"><div class="v">184 mdr TL</div><div class="l">Piyasa değeri</div><div class="d">87,60 × 2.100,4 mn pay</div></div>
+<div class="kpi"><div class="v">0,44</div><div class="l">PD/DD</div><div class="d">Matriks 07.10: 0,4375</div></div>
+<div class="kpi"><div class="v">340,6 mdr</div><div class="l">Düzeltilmiş SOTP</div><div class="d">07.10 fiyatları · pay başına 162,2 TL</div></div>
+<div class="kpi"><div class="v">%46,0</div><div class="l">SOTP iskontosu</div><div class="d">bant: %46,0–%47,2 (birim düzeltmesiyle)</div></div>
+</div>
+</div>
+</div>
+<section id="mimari">
+<div class="wrap">
+<h2>1. Portföy mimarisi — üç konsolidasyon katmanı</h2>
+<p class="lede">SAHOL bilançosu üç farklı muhasebe rejiminin toplamıdır. Aynı şirket grubu konsolidasyona girer (borcu konsolide borca yazılır), iştirak özkaynak yöntemiyle tek satıra iner (borcu görünmez), kontrol gücü olmayan paylar kârı azaltır. Holding okumasının ilk kuralı: hangi şirket hangi katmanda?</p>
+<div class="grid2">
+<div class="card">
+<h3>Tam konsolide katman</h3>
+<table>
+<tr><th>Şirket</th><th class="num">Pay</th><th>Not</th></tr>
+<tr><td>Akbank</td><td class="num">%40,75</td><td>Banka — bilanço okuması bankacılık göstergeleriyle (§3 kartı) <span class="badge b-ak">çıkarım</span></td></tr>
+<tr><td>Çimsa</td><td class="num">%54,54</td><td>Konsolide; Exsa'da ters pay var (§4 düzeltme)</td></tr>
+<tr><td>Kordsa</td><td class="num">%71,11</td><td>USD fonksiyonel para — enflasyon düzeltmesi yok</td></tr>
+<tr><td>Teknosa</td><td class="num">%50,00</td><td>Negatif özkaynak, sıfır dağıtım</td></tr>
+<tr><td>AgeSA · Aksigorta · CBS</td><td class="num">—</td><td>Sigorta + girişim sermayesi</td></tr>
+<tr><td>CarrefourSA</td><td class="num">—</td><td>31.07.2026'da negatif fiyatla çıkıldı</td></tr>
+</table>
+</div>
+<div class="card">
+<h3>Özkaynak yöntemi (iştirak) katmanı</h3>
+<table>
+<tr><th>Şirket</th><th class="num">Pay</th><th>Not</th></tr>
+<tr><td>Enerjisa Enerji</td><td class="num">%40,00</td><td>Tek nakit kanalı temettü (2.568 mn)</td></tr>
+<tr><td>Enerjisa Üretim</td><td class="num">%50,00</td><td>Halka açık değil — realize kanalı yok</td></tr>
+<tr><td>Brisa</td><td class="num">%43,63</td><td>Taşıma değeri piyasanın üstünde (§4)</td></tr>
+<tr><td>Temsa Ulaşım</td><td class="num">%50,00</td><td>Halka açık değil — taşıma 5.716 mn</td></tr>
+<tr><td>Akçansa</td><td class="num">—</td><td>Blok satıldı; portföyden çıktı (§3)</td></tr>
+</table>
+<p class="note">Bu katmanın borcu konsolide bilançoda görünmez; ancak SOTP'nin en büyük ikinci bloku burada (Enerji %44,0). <span class="badge b-ak">çıkarım</span></p>
+</div>
+</div>
+
+<svg viewBox="0 0 940 360" role="img" aria-label="Konsolidasyon haritası">
+<rect x="350" y="10" width="240" height="52" rx="12" fill="#232120"/>
+<text x="470" y="42" text-anchor="middle" fill="#FAF9F5" font-size="18" font-weight="700" font-family="Georgia,serif">SAHOL — PD 184 mdr</text>
+<rect x="30" y="110" width="420" height="230" rx="14" fill="#FAF9F5" stroke="#D8D4C8"/>
+<text x="50" y="140" fill="#1F1E1D" font-size="15" font-weight="700">Tam konsolidasyon</text>
+<text x="50" y="160" fill="#6B675E" font-size="12">Şirket borcu konsolide borca girer · pay ayıklanır</text>
+<rect x="50" y="175" width="118" height="44" rx="8" fill="#6A8E7F22" stroke="#6A8E7F"/>
+<text x="109" y="193" text-anchor="middle" font-size="13" font-weight="600" fill="#1F1E1D">Akbank</text>
+<text x="109" y="211" text-anchor="middle" font-size="12" fill="#6A8E7F">%40,75</text>
+<rect x="180" y="175" width="118" height="44" rx="8" fill="#6A8E7F22" stroke="#6A8E7F"/>
+<text x="239" y="193" text-anchor="middle" font-size="13" font-weight="600" fill="#1F1E1D">Çimsa</text>
+<text x="239" y="211" text-anchor="middle" font-size="12" fill="#6A8E7F">%54,54</text>
+<rect x="310" y="175" width="118" height="44" rx="8" fill="#6A8E7F22" stroke="#6A8E7F"/>
+<text x="369" y="193" text-anchor="middle" font-size="13" font-weight="600" fill="#1F1E1D">Kordsa</text>
+<text x="369" y="211" text-anchor="middle" font-size="12" fill="#6A8E7F">%71,11</text>
+<rect x="50" y="233" width="118" height="44" rx="8" fill="#6A8E7F22" stroke="#6A8E7F"/>
+<text x="109" y="251" text-anchor="middle" font-size="13" font-weight="600" fill="#1F1E1D">Teknosa</text>
+<text x="109" y="269" text-anchor="middle" font-size="12" fill="#6A8E7F">%50,00</text>
+<rect x="180" y="233" width="118" height="44" rx="8" fill="#6A8E7F22" stroke="#6A8E7F"/>
+<text x="239" y="251" text-anchor="middle" font-size="13" font-weight="600" fill="#1F1E1D">AgeSA</text>
+<text x="239" y="269" text-anchor="middle" font-size="12" fill="#6A8E7F">sigorta</text>
+<rect x="310" y="233" width="118" height="44" rx="8" fill="#6A8E7F22" stroke="#6A8E7F"/>
+<text x="369" y="251" text-anchor="middle" font-size="13" font-weight="600" fill="#1F1E1D">Aksigorta</text>
+<text x="369" y="269" text-anchor="middle" font-size="12" fill="#6A8E7F">sigorta</text>
+<text x="50" y="305" fill="#B0472A" font-size="12" font-weight="600">CarrefourSA: 31.07.2026 çıkış (negatif fiyatlı satış)</text>
+<text x="50" y="325" fill="#6B675E" font-size="12">Çalışan 58.567 · konsolide tablo konsorsiyumundur (§6)</text>
+<rect x="490" y="110" width="420" height="230" rx="14" fill="#FAF9F5" stroke="#D8D4C8"/>
+<text x="510" y="140" fill="#1F1E1D" font-size="15" font-weight="700">Özkaynak yöntemi (iştirak)</text>
+<text x="510" y="160" fill="#6B675E" font-size="12">Tek satır taşıma değeri · borcu görünmez</text>
+<rect x="510" y="175" width="118" height="44" rx="8" fill="#C9A22722" stroke="#C9A227"/>
+<text x="569" y="193" text-anchor="middle" font-size="13" font-weight="600" fill="#1F1E1D">Enerjisa En.</text>
+<text x="569" y="211" text-anchor="middle" font-size="12" fill="#8a6f1a">%40,00</text>
+<rect x="640" y="175" width="118" height="44" rx="8" fill="#C9A22722" stroke="#C9A227"/>
+<text x="699" y="193" text-anchor="middle" font-size="13" font-weight="600" fill="#1F1E1D">Enerjisa Ürt.</text>
+<text x="699" y="211" text-anchor="middle" font-size="12" fill="#8a6f1a">%50 · halka yok</text>
+<rect x="770" y="175" width="118" height="44" rx="8" fill="#C9A22722" stroke="#C9A227"/>
+<text x="829" y="193" text-anchor="middle" font-size="13" font-weight="600" fill="#1F1E1D">Brisa</text>
+<text x="829" y="211" text-anchor="middle" font-size="12" fill="#8a6f1a">%43,63</text>
+<rect x="510" y="233" width="118" height="44" rx="8" fill="#C9A22722" stroke="#C9A227"/>
+<text x="569" y="251" text-anchor="middle" font-size="13" font-weight="600" fill="#1F1E1D">Temsa Ulaş.</text>
+<text x="569" y="269" text-anchor="middle" font-size="12" fill="#8a6f1a">%50 · halka yok</text>
+<text x="510" y="305" fill="#B0472A" font-size="12" font-weight="600">Akçansa: blok satışla portföyden çıktı (06.10 ORT kapandı)</text>
+<text x="510" y="325" fill="#6B675E" font-size="12">İştirak taşıma toplamı (N12) = 157.511 mn TL</text>
+<line x1="430" y1="62" x2="240" y2="110" stroke="#D97757" stroke-width="2"/>
+<line x1="510" y1="62" x2="700" y2="110" stroke="#D97757" stroke-width="2"/>
+</svg>
+</div>
+</section>
+<section id="kanallar">
+<div class="wrap">
+<h2>2. Para nerede akıyor — nakit kanalları matrisi</h2>
+<p class="lede">Holdingin tekrarlanabilir nakit makinesi iki şirkettir: Enerjisa Enerji ve Çimsa. En büyük iştirak geliri (Enerjisa Üretim temettüsü 3.959 mn) kâğıt üstündedir — nakdi görülmemiştir. Nakit çıkış tarafı daha büyüktür: kar payı dağıtım gideri (KGP) tek başına tüm girişleri aşar. <span class="badge b-ak">çıkarım</span></p>
+<svg viewBox="0 0 760 340" role="img" aria-label="Nakit giriş çıkış kanalları">
+<text x="20" y="28" font-size="15" font-weight="700" fill="#1F1E1D">Holding lehine nakit girişler (mn TL, 2026-H1)</text>
+<line x1="360" y1="34" x2="360" y2="260" stroke="#1F1E1D" stroke-width="1.5"/>
+<rect x="360" y="42" width="67" height="26" rx="4" fill="#6A8E7F"/>
+<text x="20" y="60" font-size="13" fill="#1F1E1D">ENJSA temettüsü — gerçek nakit</text>
+<text x="435" y="60" font-size="13" font-weight="700" fill="#6A8E7F">2.568</text>
+<rect x="360" y="78" width="10" height="26" rx="3" fill="#6A8E7F"/>
+<text x="20" y="96" font-size="13" fill="#1F1E1D">Çimsa temettüsü — gerçek nakit</text>
+<text x="378" y="96" font-size="13" font-weight="700" fill="#6A8E7F">382</text>
+<rect x="360" y="114" width="103" height="26" rx="4" fill="#C9A227" opacity="0.85"/>
+<text x="20" y="132" font-size="13" fill="#1F1E1D">EÜ temettüsü — nakdi görünmez (kâğıt)</text>
+<text x="471" y="132" font-size="13" font-weight="700" fill="#8a6f1a">3.959</text>
+<text x="20" y="176" font-size="15" font-weight="700" fill="#1F1E1D">Holding aleyhine nakit çıkışlar (mn TL)</text>
+<rect x="360" y="190" width="230" height="26" rx="4" fill="#B0472A"/>
+<text x="20" y="208" font-size="13" fill="#1F1E1D">Kar payı dağıtım gideri (KGP)</text>
+<text x="598" y="208" font-size="13" font-weight="700" fill="#B0472A">8.854</text>
+<rect x="360" y="226" width="62" height="26" rx="4" fill="#B0472A" opacity="0.7"/>
+<text x="20" y="244" font-size="13" fill="#1F1E1D">Kordsa avansı — para yukarı akmıyor</text>
+<text x="430" y="244" font-size="13" font-weight="700" fill="#B0472A">2.400</text>
+<rect x="20" y="278" width="720" height="46" rx="10" fill="#B0472A0D" stroke="#B0472A"/>
+<text x="36" y="298" font-size="13" font-weight="700" fill="#B0472A">Net: gerçek giriş 2.950 – KGP 8.854 = −5.904 mn TL (çıkarım)</text>
+<text x="36" y="316" font-size="12" fill="#6B675E">Ölçek: 1 mdr = 26 px · Segment kârının %59'u kontrol gücü olmayan paylara (txt 1076-77).</text>
+</svg>
+</div>
+</section>
+
+<section id="olaylar">
+<div class="wrap">
+<h2>3. 2026 olayları — portföyün yeniden yazımı</h2>
+<p class="lede">Dört olay NAV'ı kalıcı biçimde değiştirdi: bir varlık iki katı taşıma değerinden satıldı, bir zarar kaynağı negatif fiyatla bırakıldı, iki sermaye hareketi bekliyor.</p>
+<ul class="tl">
+<li class="done"><span class="d">16.09.2026 · tamamlandı</span><br><b>Kordsa bedelsizi:</b> sermaye 3.695,9 mn TL'ye çıktı; SAHOL payı %71,11'e yükseldi (kords §8.1).</li>
+<li class="done"><span class="d">17.09.2026 · karar</span><br><b>Kordsa bedellisi:</b> rüçhanlı artış kararı alındı; SPK onayı <b>07.10 itibarıyla yayınsız</b> — takvim belirsiz. SAHOL oranlı katılım ≈2,6 mdr nakit çıkışı demektir (kords §9).</li>
+<li class="done"><span class="d">06.10.2026 · kapandı</span><br><b>Akçansa'da kontrol gücü olmayan paylara zorunlu pay alım teklifi:</b> Heidelberg'in 274,24 TL/blok teklifine katılım <b>29,49 mn nominal/blok — sermayenin ~%0,15'i</b> (1.062 pay sahibi). Squeeze-out eşiği (%95) doğmadı; AKCNS halka açık kaldı (fiili dolaşım %6, geçerlilik 07.10). Kontrol gücü olmayan paylar realize kanalını kullanmadı; sonuç NAV'a nötr (KAP 1673963, 1672897).</li>
+<li class="open"><span class="d">bekliyor</span><br><b>Teknosa sermaye adımı:</b> kayıtlı sermaye tavanı 2 mdr hazır; bedelli kararı + SAHOL'ün %50 katılımı sinyal vermedi (03.10→07.10 özel durum taraması temiz) (tknsa §8.1-9).</li>
+</ul>
+<div class="card" style="margin-top:8px">
+<h3>Akbank — banka bloku, bankacılık okumasıyla <span class="badge b-ak">çıkarım</span></h3>
+<table>
+<tr><th>Gösterge</th><th class="num">Değer</th><th>Okuma</th></tr>
+<tr><td>Hisse fiyatı (07.10)</td><td class="num">69,25 TL</td><td>PD 360,1 mdr TL (5,2 mlr pay)</td></tr>
+<tr><td>SAHOL payı (%40,75)</td><td class="num">146,7 mdr</td><td>Düzeltilmiş SOTP'nin <b>%43,1'i</b> — tek başına holding PD'sinin %25 üstünde</td></tr>
+<tr><td>Çekirdek sermaye yeterlilik rasyosu</td><td class="num">%11,28</td><td>Tampon sınırı — akbnk raporundan (banka muafiyeti: kendi raporu nominal)</td></tr>
+<tr><td>Segment kârında kontrol gücü olmayan paylar payı</td><td class="num">%59</td><td>3.257 mn — konsolide kârın bankaya ait yarısı holding dışına gider (txt 1076-77)</td></tr>
+</table>
+<p class="note">Banka bilançosu sanayi şablonuyla okunmaz: sermaye yeterliliği, aktif kalite ve kontrol gücü olmayan paylara akış esastır; net borç kavramı banka mevduatını borç saydığı için holding geneline taşınmaz (§4 varyant A). <span class="badge b-ak">çıkarım</span></p>
+</div>
+</div>
+</section>
+<section id="sotp">
+<div class="wrap">
+<h2>4. SOTP / NAV — parçaların toplamı hissenin iki katı</h2>
+<p class="lede">Halka açık paylar 07.10.2026 kapanış fiyatıyla, halka açıklığı olmayan iştirakler defter taşıma değeriyle toplandı. Sonuç: portföyün parçaları 340,6 mdr TL eder; bütün 184 mdr TL'ye işlem görüyor. Farkın adı iskontodur; anatomisi §6'da. <span class="badge b-hesap">hesap</span></p>
+<div class="card">
+<table>
+<tr><th>Blok</th><th class="num">Şirket PD (mn)</th><th class="num">SAHOL payı</th><th class="num">PD payı (mn)</th></tr>
+<tr><td>Akbank — 69,25 TL</td><td class="num">360.100</td><td class="num">%40,75</td><td class="num big">146.741</td></tr>
+<tr><td>Enerjisa Enerji — 114,10 TL</td><td class="num">134.760</td><td class="num">%40,00</td><td class="num big">53.904</td></tr>
+<tr><td>Çimsa — 40,92 TL</td><td class="num">38.694</td><td class="num">%54,54</td><td class="num big">21.104</td></tr>
+<tr><td>Brisa — 72,00 TL</td><td class="num">21.967</td><td class="num">%43,63</td><td class="num big">9.584</td></tr>
+<tr><td>Kordsa — 2,93 TL</td><td class="num">10.829</td><td class="num">%71,11</td><td class="num big">7.700</td></tr>
+<tr><td>Teknosa — 13,69 TL</td><td class="num">2.752</td><td class="num">%50,00</td><td class="num big">1.376</td></tr>
+<tr><td><b>Halka açık paylar toplamı</b></td><td class="num"></td><td class="num"></td><td class="num big">240.409</td></tr>
+<tr><td>Enerjisa Üretim (halka açıklık yok — N12 taşıma)</td><td class="num">—</td><td class="num">%50,00</td><td class="num big">95.948</td></tr>
+<tr><td>Temsa Ulaşım (halka açıklık yok — N12 taşıma)</td><td class="num">—</td><td class="num">%50,00</td><td class="num big">5.716</td></tr>
+<tr><td>Exsa çifte sayım düzeltmesi (CIMSA'daki SAHOL payı)</td><td class="num"></td><td class="num">%54,54×2.700</td><td class="num big neg">−1.473</td></tr>
+<tr><td><b>Düzeltilmiş brüt SOTP</b></td><td class="num"></td><td class="num"></td><td class="num big" style="color:var(--accent)">340.600</td></tr>
+<tr><td><b>SAHOL piyasa değeri (07.10)</b></td><td class="num"></td><td class="num"></td><td class="num big">183.993</td></tr>
+</table>
+<p class="note">Pay başına SOTP = 340.600 / 2.100,376 = <b>162,16 TL</b>. Taşıma değerleri 30.06.2026 alım gücüdür; fiyatlar cari — birim uyuşmazlığı iskonto bandının üst ucunu (%47,2) üretir. <span class="badge b-hesap">hesap</span></p>
+</div>
+
+<svg viewBox="0 0 760 300" role="img" aria-label="SOTP bileşenleri ve piyasa değeri">
+<text x="20" y="26" font-size="15" font-weight="700" fill="#1F1E1D">SOTP blokları — ortak ölçek (1 mdr TL = 0,55 px)</text>
+<line x1="320" y1="32" x2="320" y2="218" stroke="#1F1E1D" stroke-width="1.5"/>
+<rect x="320" y="40" width="132" height="26" rx="4" fill="#6A8E7F"/>
+<text x="20" y="58" font-size="13" fill="#1F1E1D">Halka açık paylar (6 şirket)</text>
+<text x="460" y="58" font-size="13" font-weight="700" fill="#6A8E7F">240.409</text>
+<rect x="452" y="76" width="56" height="26" rx="4" fill="#C9A227"/>
+<text x="20" y="94" font-size="13" fill="#1F1E1D">Halka açıklığı olmayan JV taşıma (EÜ+Temsa)</text>
+<text x="516" y="94" font-size="13" font-weight="700" fill="#8a6f1a">101.664</text>
+<text x="20" y="130" font-size="13" fill="#1F1E1D">Exsa düzeltmesi</text>
+<text x="320" y="130" font-size="13" font-weight="700" fill="#B0472A">−1.473 (ölçek dışı küçük)</text>
+<rect x="320" y="146" width="187" height="28" rx="4" fill="#232120"/>
+<text x="20" y="166" font-size="13" font-weight="700" fill="#1F1E1D">Düzeltilmiş SOTP</text>
+<text x="515" y="166" font-size="13" font-weight="700" fill="#1F1E1D">340.600</text>
+<rect x="320" y="188" width="101" height="28" rx="4" fill="#D97757"/>
+<text x="20" y="208" font-size="13" font-weight="700" fill="#1F1E1D">SAHOL piyasa değeri</text>
+<text x="429" y="208" font-size="13" font-weight="700" fill="#D97757">183.993</text>
+<text x="20" y="250" font-size="14" font-weight="700" fill="#B0472A">Fark = 156.607 mn TL → iskonto %46,0 (bant %46,0–%47,2) (hesap)</text>
+<text x="20" y="274" font-size="12" fill="#6B675E">Akbank düşüldüğünde: pazar kalan 193,9 mdr'luk blok için 37,3 mdr ödüyor</text><text x="20" y="292" font-size="12" fill="#6B675E">→ bloka %80,8 iskonto (hesap).</text>
+</svg>
+
+<svg viewBox="0 0 760 330" role="img" aria-label="İskonto senaryo merdiveni">
+<text x="20" y="26" font-size="15" font-weight="700" fill="#1F1E1D">Senaryo merdiveni — pay başına değer (1 TL = 1,9 px)</text>
+<line x1="380" y1="34" x2="380" y2="200" stroke="#1F1E1D" stroke-width="1.5"/>
+<rect x="380" y="40" width="308" height="24" rx="4" fill="#D8D4C8"/>
+<text x="20" y="57" font-size="13" fill="#1F1E1D">SOTP başına (iskontosuz)</text>
+<text x="696" y="57" font-size="13" font-weight="700" fill="#1F1E1D">162,16</text>
+<rect x="380" y="72" width="200" height="24" rx="4" fill="#C9A22733" stroke="#C9A227"/>
+<text x="20" y="89" font-size="13" fill="#1F1E1D">İskonto %35 — makul bandın üstü</text>
+<text x="588" y="89" font-size="13" font-weight="700" fill="#8a6f1a">105,40</text>
+<rect x="380" y="104" width="185" height="24" rx="4" fill="#C9A22722" stroke="#C9A227"/>
+<text x="20" y="121" font-size="13" fill="#1F1E1D">İskonto %40</text>
+<text x="573" y="121" font-size="13" font-weight="700" fill="#8a6f1a">97,30</text>
+<rect x="380" y="136" width="166" height="24" rx="4" fill="#D97757"/>
+<text x="20" y="153" font-size="13" font-weight="700" fill="#1F1E1D">İskonto %46 — BUGÜNKÜ FİYAT</text>
+<text x="554" y="153" font-size="13" font-weight="700" fill="#D97757">87,60</text>
+<rect x="380" y="168" width="154" height="24" rx="4" fill="#B0472A22" stroke="#B0472A"/>
+<text x="20" y="185" font-size="13" fill="#1F1E1D">İskonto %50</text>
+<text x="542" y="185" font-size="13" font-weight="700" fill="#B0472A">81,08</text>
+<line x1="546" y1="34" x2="546" y2="200" stroke="#D97757" stroke-width="1.5" stroke-dasharray="5 4"/>
+<rect x="20" y="216" width="720" height="96" rx="10" fill="#FAF9F5" stroke="#D8D4C8"/>
+<text x="36" y="240" font-size="13" font-weight="700" fill="#1F1E1D">N12 taşıma karşılaştırması — pazar bilgisinin yönü iki yönlü hatalı (hesap)</text>
+<text x="36" y="256" font-size="12" fill="#1F1E1D">ENJSA taşıma 43.583 &lt; PD payı 53.904 → +10.321 NAV lehine (hesap)</text><text x="36" y="276" font-size="12" fill="#1F1E1D">BRISA taşıma 12.263 &gt; PD payı 9.584 → −2.679 aleyhe (hesap)</text>
+<text x="36" y="296" font-size="12" fill="#6B675E">Net etki +7.642: defter toplamı pazar fiyatını iki yönlü çarpıtır.</text>
+</svg>
+
+<div class="flag gold"><b>Birim uyarısı:</b> Taşıma bloğu 30.06.2026 alım gücü, pazar değerleri 07.10 carisidir. Taşıma bloğu Temmuz–Eylül enflasyonuyla (~%7-8 tahmin) ölçeklenirse düzeltilmiş SOTP ≈ 348,3 mdr → iskonto ≈%47,2. İskonto tek sayı değil, <b>%46,0–%47,2 bandıdır</b>. <span class="badge b-hesap">hesap</span></div>
+<div class="flag red"><b>Net borç tuzağı:</b> Tam konsolide net borç (481.1 mdr — omurgası banka mevduatı/ihraçları) holding NAV'ından düşülemez: banka zaten özkaynak değeriyle (pazar fiyatıyla) sayıldı; net borcu tekrar düşmek çift cezadır ve NAV −140,5 mdr'ye (negatife) döner — bu, muhasebe hatasının kanıtıdır, değerlemenin değil. Holding-bazlı (banka dışı) net borç raporlanmamıştır. <span class="badge b-cozulmedi">çözülemedi</span></div>
+</div>
+</section>
+<section id="degerleme">
+<div class="wrap">
+<h2>5. Değerleme — iki bağımsız yöntem aynı yönü gösteriyor</h2>
+<p class="lede">Yöntem 1 (SOTP bantları) ve Yöntem 2 (temel analize dayalı PD/DD çapası) birbirinden bağımsız kuruldu; ikisi de mevcut fiyatın analiz temelinin altında olduğunu söylüyor.</p>
+<div class="grid2">
+<div class="card">
+<h3>Yöntem 1 — SOTP iskonto bantları</h3>
+<table>
+<tr><th>Bant</th><th class="num">Pay başına (TL)</th><th>Fiyat 87,60'a göre</th></tr>
+<tr><td>İskontosuz SOTP</td><td class="num">162,16</td><td>+%85</td></tr>
+<tr><td>%35 iskonto (makul bandın üstü)</td><td class="num">105,40</td><td>+20,3%</td></tr>
+<tr><td>%40 iskonto</td><td class="num">97,30</td><td>+11,1%</td></tr>
+<tr><td><b>%46 — bugünkü işlem</b></td><td class="num">87,60</td><td>0,0%</td></tr>
+<tr><td>%50 iskonto</td><td class="num">81,08</td><td>−7,4%</td></tr>
+</table>
+<p class="note">İskantonun ~%20-30'u holding pratiğinde makuldür [çıkarım — genel band]; kalan puan yapısal. Ekonomik durum etiketi: <b>sıkı para — dezenflasyon rejimi</b> (politika faizi %37 bandı; spread rahat ama talep baskısı iki ayağı zıt yönlü etkiler). <span class="badge b-ak">çıkarım</span></p>
+</div>
+<div class="card">
+<h3>Yöntem 2 — PD/DD–ROE çapası</h3>
+<table>
+<tr><th>Girdi</th><th class="num">Değer</th></tr>
+<tr><td>Pay başına özkaynak (BVPS)</td><td class="num">199,64 TL</td></tr>
+<tr><td>Çapraz kontrol: LTM F/K</td><td class="num">8,83</td></tr>
+<tr><td>Çapraz kontrol: temettü verimi (FY25: 1,41356 TL)</td><td class="num">%1,61</td></tr>
+<tr><td>Damodaran çeşitlendirilmiş örneklem: PD/DD 0,717 @ ROE %7,13</td><td class="num">→ hedef 0,567</td></tr>
+<tr><td><b>Çapa değer</b> (0,567 × 199,64)</td><td class="num big">113,2 TL</td></tr>
+</table>
+<p class="note">Mevcut fiyat çapanın <b>%22,6 altında</b>. ROE enflasyon düzeltilmiş özkaynakla düşük kaldığı sürece çapa da düşer — SOTP ile aynı uyarıyı verir: sorun kârlılık değil, sermaye verimliliği. <span class="badge b-hesap">hesap</span></p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="oneri">
+<div class="wrap">
+<h2>6. Öneri</h2>
+<div class="decision">
+<h3>Hüküm</h3>
+<div class="verdict">İZLE</div>
+<p style="color:#D8D4C8;font-size:14px">Fiyat (87,60) her iki yöntemin de altında ama iskontonun yapısal yarısı nakit kanalı açılmadan kapanmaz. Fazla getiri hükmü: defter sermayesinin getirisi (ROE %7,13) sermaye maliyetinin altında kaldığı sürece iskonto bir değer tuzağıdır; indirim tek başına alım sebebi değildir. [çıkarım]</p>
+<ul>
+<li><b>Giriş tetikleri:</b> (1) Kordsa bedellisinde SPK onayı + oranlı katılım duyurusu; (2) ENJSA temettü politikasının Q3'te teyidi (baz alınan net kârın ≥%60'ı — 2027 dağıtımında SAHOL payı ≈3,1-3,6 mdr); (3) iskonto bandının %50 altına sarkması (≈81 TL) ve Akbank ayağında bozulma olmaması.</li>
+<li><b>Çıkış / uzaklaşma sinyalleri:</b> (1) Akbank çekirdek sermaye yeterliliğinin %11,28 tamponunun erimesi veya tasfiye haline gelmiş alacakların organik bozulması; (2) CRFSA Q3 konsolidasyon çıkışında beklenenden büyük zarar (>5 mdr); (3) Teknosa bedellisinde SAHOL'ün katılmayıp pay eritmesi (konsolidasyon rejimi sorunu).</li>
+<li><b>Yanılma payım (WWCMIM):</b> (1) Q3'te ENJSA temettü politikası teyit edilip EÜ'ye değerleme primi biçilirse iskonto 5-8 puan daralır; (2) Akbank sermaye tamponu erirse 146,7 mdr blok %10 yara alır — SOTP 4,4 mdr düşer, ucuzluk daha da yapısal olur; (3) Kordsa bedellisine katılım/rejim sorunu büyümezse ters temettü akışı düzelir. <span class="badge b-ak">çıkarım</span></li>
+<li><b>Ters köşe kontrolü:</b> Pazar iskontoyu belki doğru fiyatlıyor — KGP sızıntısı (net −4.649 mn), realize kanalsız 101,7 mdr JV bloku ve zararlı perakende gerçek değer indirimleridir; iskonto bir fiyat hatası değil rasyonel cevaptır. <span class="badge b-ak">çıkarım</span></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="hukum">
+<div class="wrap">
+<h2>7. Hüküm — indirimin anatomisi</h2>
+<div class="grid2">
+<div class="card"><h3>(a) Görünmez iştirak borcu</h3><p style="font-size:14px">İştirak yükümlülükleri 322.846 mn TL konsolide borçta görünmez; ama NAV'ın en büyük bloku (Enerji %44,0) bu şirketlerdir. Alıcı, değerini taşımadan aldığı borcu fiyattan düşer. <span class="badge b-ak">çıkarım</span></p></div>
+<div class="card"><h3>(b) Ters temettü akışı</h3><p style="font-size:14px">İştirak temettüsü girişi 4.205, kar payı dağıtım gideri çıkışı 8.854 mn TL (net −4.649). Kordsa üç yıldır dağıtmayıp holdingden 2.400 avans borçlanıyor. Konsolide tablo konsorsiyumun gelir tablosudur — pazar bunu fiyatlar. <span class="badge b-ak">çıkarım</span></p></div>
+<div class="card"><h3>(c) Zarar eden perakende</h3><p style="font-size:14px">"Diğer" segmentinde kontrol gücü olmayan paylar sonucu Akçansa hariç ≈ −6.391 mn TL. CarrefourSA çıkışı deliğin yarısını kapatır; Teknosa konsolide kalmaya devam eder — çıkışsız, dağıtımsız, sermaye tüketen blok.</p></div>
+<div class="card"><h3>(d) Özkaynak yöntemi bilgi taşımaz</h3><p style="font-size:14px">Brisa taşıması piyasanın üstünde (12.263 &gt; 9.584), Enerjisa Enerji taşıması altında (43.583 &lt; 53.904). Defter toplamı pazar bilgisine iki yönlü hatalıdır; halka açıklığı olmayan 101,7 mdr bloğun realize kanalı yoktur. <span class="badge b-hesap">hesap</span></p></div>
+</div>
+<div class="flag"><b>Tek cümle:</b> SAHOL, parçalarının toplamının (340,6 mdr — 07.10) yarısından fazlasına işlem görüyor; fark, nakde dönmeyen %30'luk iştirak blokunun, holding dışına akan temettülerin ve kapanmış olsa bile perakende zararının fiyatlandırılmış halidir. Kapanışın anahtarı bilanço değil, temettü ve gerçekleşen olay üretimidir. <span class="badge b-ak">çıkarım</span></div>
+</div>
+</section>
+
+<footer>
+<div class="wrap">
+<div class="cols">
+<div>
+<h4>İddia → kaynak</h4>
+<ul>
+<li>SOTP tablosu ve iskonto: wiki/synthesis/sahol-2026h1-holding-ve-istirak-analizi §4 (fiyatlar Matriks 07.10.2026 kapanış; paylar FR txt 909/1681-85/913-16).</li>
+<li>Konsolidasyon mimarisi ve nakit kanalları: aynı sayfa §1-§2; SAHOL 2026-H1 FR txt satır 1076-77, 2657-66.</li>
+<li>Akçansa ORT sonucu: KAP 1673963 (ORT tamamlama) + 1672897 (AKCNS fiili dolaşım %6, geçerlilik 07.10).</li>
+<li>Fiyat/çapan girdileri: Matriks 07.10 kapanış (F/K 8,83; PD/DD 0,4375); Damodaran çeşitlendirilmiş örneklem (pbvemerg).</li>
+</ul>
+</div>
+<div>
+<h4>Bilinen veri kusurları</h4>
+<ul>
+<li>Holding-bazlı (banka dışı) net borç raporda yayınsız — varyant A bu yüzden kurulamıyor.</li>
+<li>Enerjisa Üretim temettü kırılımı yayınsız; nakdi hiç görünmeyen 3.959 mn giriş "kâğıt" sınıflandırıldı.</li>
+<li>Akbank'ın kendi raporu nominal (banka enflasyon düzeltmesi muafiyeti); SAHOL konsolidesinde düzeltilmiş — vintaj karışımı dipnotlarda işaretli.</li>
+<li>CarrefourSA çıkış muhasebe sonucu H2-2026'da netleşecek — tahmini sonuç bant içinde yayınsız.</li>
+</ul>
+<h4 style="margin-top:18px">Şirket künyesi</h4>
+<ul>
+<li>Hacı Ömer Sabancı Holding A.Ş. · merkez: Sabancı Center, 4. Levent, İstanbul · ödenmiş sermaye 2.100,4 mn pay (1 TL nominal, FR dipnot 25).</li>
+<li><b>Denetim:</b> 2026-H1 ara dönem sınırlı denetimi DRT Bağımsız Denetim ve SMMM A.Ş. (Deloitte üye firma) tarafından yapıldı; İstanbul, 12 Ağustos 2026 — olumlu kanaat ("kanaatine varmamıza sebep olacak herhangi bir husus dikkatimizi çekmemiştir").</li>
+</ul>
+</div>
+</div>
+<p style="margin-top:22px;font-size:12px">Bu sayfa <b>wiki/synthesis/sahol-2026h1-bilanco-analizi</b> + <b>sahol-2026h1-holding-ve-istirak-analizi</b> sayfalarının sunum kopyasıdır; doğruluk kaynağı wiki ve KAP dosyalarıdır. Tutarlar, aksi yazılı değilse 30.06.2026 satın alma gücüyle mn TL'dir (TMS 29); fiyatlar 07.10.2026 cari kapanıştır.</p>
+<div class="copy">© 2026 Enis Halıcı · Tüm hakları saklıdır.</div>
+</div>
+</footer>
+<!-- site-publish:footer -->
+<footer style="max-width:1080px;margin:26px auto 0;padding:14px 20px 22px;border-top:1px solid
+ #E3DED2;font-size:12px;color:#5D594D">
+Bu içerik yatırım tavsiyesi değildir. Veriler KAP kamuyu aydınlatma platformu
+kaynaklıdır; analiz yorum içerir. ·
+<a href="/" style="color:#B0472A">Ana Sayfa</a> ·
+<a href="/reports/SAHOL/" style="color:#B0472A">Tüm SAHOL Raporları</a>
+</footer>
+</body>
+</html>
