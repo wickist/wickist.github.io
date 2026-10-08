@@ -113,7 +113,7 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--accent-dark);outli
   <span class="brand">THYAO · 2026-H1</span>
   <a href="#ozet">Özet</a><a href="#yapi">Bilanço</a><a href="#gelir">Gelir</a>
   <a href="#nakit">Nakit</a><a href="#borc">Borç ve Kur</a><a href="#trafik">Trafik</a>
-  <a href="#degerleme">Değerleme</a><a href="#oneri">Öneri</a><a href="#kaynak">Kaynaklar</a>
+  <a href="#makro">Makro</a><a href="#degerleme">Değerleme</a><a href="#oneri">Öneri</a><a href="#kaynak">Kaynaklar</a>
 </div></nav>
 
 <header id="ozet"><div class="wrap">
@@ -437,6 +437,24 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--accent-dark);outli
     <tr><td class="num">05.10.2026</td><td>Hedef 12 ücret yapılandırması <span class="tag u">medya · KAP ODA yok</span></td><td>Kokpit/kabin ücret kalemleri (kök maaş, uçuş ücreti, fazla mesai, harcırah, ek ödemeler) yeniden düzenlendi; medyada <b>%10-20 kesinti</b>, ~39.000 çalışanın imzası, yürürlük <b>01.01.2027</b>. Hava-İş değişikliği resmen reddetti; "irade sakatlığı" ve işten çıkarma baskısı iddiaları — hukuki süreç sürüyor. Şirket Kamuyu Aydınlatma Platformu açıklaması yapmadı; oran/bedel medya iddiası.</td></tr>
   </table></div>
   <p class="fig-cap">ODA zinciri künyesi: wiki sentez sayfası §8.1; ek dosyalar <code>data/ozel_durum/THYAO/</code> altında.</p>
+</div></section>
+
+<section id="makro"><div class="wrap">
+  <h2>Sektör makro katmanı: pazar daralıyor, pay alımı sürüyor</h2>
+  <p class="sub">Kalıcı yapı: <code>scripts/sector_macro.py --preset ULAŞTIRMA</code> + <code>--preset TURİZM</code> canlı EVDS + TCMB sektör bilançosu aynasından üretildi (çapalar: <code>data/mali-analiz/anchors-sektor-ulastirma-2026-10-08.json</code>, <code>anchors-sektor-turizm-2026-10-08.json</code>, 08.10.2026). Reel değişimler TÜFE deflatörlüdür. TCMB H/I-harf oranları nominal 2023–2025 vintajıdır (enflasyon düzeltmesi yok); şirket oranları TMS 29'a göre düzeltilmiştir — kıyas bu etiketle okunur.</p>
+  <ul>
+    <li><b>Pazar daralıyor, şirket pay alıyor:</b> Türkiye'ye gelen ziyaretçi sayısı Haziran'da reel %27,4 gerilerken yolcu 10,0 milyonla rekor kırdı, doluluk %88,0 — büyüme aktarma hub'ı ve filo büyümesiyle pay alımıdır, pazar genişlemesi değil.</li>
+    <li><b>Kargo uyarısı:</b> iç taşıma hacim endeksi Temmuz'da reel %25,6 daraldı; ticaret/ulaştırma/konaklama GSYH bileşiği ikinci çeyrekte ancak %0,5 büyüdü — kargo gelir hattı için aşağı yönlü risk, üçüncü çeyrek trafik verisinde tonaj izlenecek.</li>
+    <li><b>Sektör finansal yerçekimi ağır:</b> TCMB Ulaştırma (H) 2025: faiz karşılama 0,66×, net marj −%1,6; Turizm (I): 1,31×, −%0,9 — sektör ortalaması finansman giderini faaliyet kârıyla karşılayamıyor.</li>
+    <li><b>Şirket vs sektör:</b> faiz karşılama 8,5× (EBIT) vs sektör 0,66×; ROE %11,6 vs sektörün negatif net marjı — ölçek ve portföy faiz geliri ayırıcı. Tek göreli zayıflık özkaynak oranı: %43,2 &lt; sektör %49,3.</li>
+    <li><b>Rejim-değişimi izleyicisi:</b> ziyaretçi verisi ve bölgesel karışım (Orta Doğu payı) bozulursa önerinin trafik-yavaşlama tetikleyicisi devreye girer.</li>
+  </ul>
+  <div class="tblwrap"><table>
+    <tr><th>Gösterge (sektör: TCMB H-harf 2025; şirket: 2026-H1)</th><th>Ulaştırma sektörü</th><th>THY</th><th>Okuma</th></tr>
+    <tr><td>Özkaynak / aktif</td><td>%49,3</td><td>%43,2</td><td>tek göreli zayıflık</td></tr>
+    <tr><td>Faiz karşılama (faaliyet kârı / finansman gideri)</td><td>0,66×</td><td>8,5× (EBIT)</td><td>ölçek + portföy faizi ayırıyor</td></tr>
+    <tr><td>Net kâr marjı / ROE</td><td>net marj −%1,6</td><td>ROE %11,6</td><td>sektör zararda, şirket kârlı</td></tr>
+  </table></div>
 </div></section>
 
 <section id="degerleme"><div class="wrap">

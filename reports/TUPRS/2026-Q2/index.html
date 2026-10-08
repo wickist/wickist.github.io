@@ -20,7 +20,7 @@
 <meta name="twitter:title" content="TUPRS 2026 H1 Finansal Analiz Raporu">
 <meta name="twitter:description" content="Bilanço, gelir tablosu, nakit akışı, özkaynak ve finansal oran analizi; rafineri marjları (crack), kapasite kullanımı ve baz değerler defteri.">
 <meta name="twitter:image" content="https://wickist.github.io/reports/TUPRS/2026-Q2/og-cover.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TUPRS 2026 H1 Finansal Analiz Raporu", "description": "Bilanço, gelir tablosu, nakit akışı, özkaynak ve finansal oran analizi; rafineri marjları (crack), kapasite kullanımı ve baz değerler defteri.", "inLanguage": "tr", "datePublished": "2026-10-07", "dateModified": "2026-10-07", "url": "https://wickist.github.io/reports/TUPRS/2026-Q2/", "image": "https://wickist.github.io/reports/TUPRS/2026-Q2/og-cover.png", "publisher": {"@type": "Organization", "name": "Finansal Analiz Raporları"}, "about": {"@type": "Organization", "name": "Türkiye Petrol Rafinerileri A.Ş.", "tickerSymbol": "TUPRS"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TUPRS 2026 H1 Finansal Analiz Raporu", "description": "Bilanço, gelir tablosu, nakit akışı, özkaynak ve finansal oran analizi; rafineri marjları (crack), kapasite kullanımı ve baz değerler defteri.", "inLanguage": "tr", "datePublished": "2026-10-07", "dateModified": "2026-10-08", "url": "https://wickist.github.io/reports/TUPRS/2026-Q2/", "image": "https://wickist.github.io/reports/TUPRS/2026-Q2/og-cover.png", "publisher": {"@type": "Organization", "name": "Finansal Analiz Raporları"}, "about": {"@type": "Organization", "name": "Türkiye Petrol Rafinerileri A.Ş.", "tickerSymbol": "TUPRS"}}</script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
 :root{
@@ -116,7 +116,7 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--accent-dark);outli
   <a href="#ozet">Özet</a><a href="#ekran">Ekran</a><a href="#yapi">Bilanço</a>
   <a href="#oran">Oranlar</a><a href="#gelir">Gelir Tablosu</a><a href="#nakit">Nakit Akışı</a>
   <a href="#borc">Borç ve FX</a><a href="#marj">Marj</a><a href="#olaylar">Olaylar</a>
-  <a href="#degerleme">Değerleme</a><a href="#oneri">Öneri</a>
+  <a href="#makro">Makro</a><a href="#degerleme">Değerleme</a><a href="#oneri">Öneri</a>
   <a href="#huküm">Hüküm</a><a href="#kaynak">Kaynaklar</a>
 </div></nav>
 
@@ -555,6 +555,24 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--accent-dark);outli
     <li><b>Temettü takvimi:</b> 2. taksit 13 mlr TL <b>02.10.2026 ödeme</b> (kayıt 01.10, ODA 1570793) — 3. çeyrek nakit çıkışı kesinleşti; dağıtılan / dağıtılabilir net kâr %104,08 (SPK ölçütü).</li>
     <li><b>Yatırım iştahı:</b> H1 yatırım harcaması <b>245,9 Mn USD</b> (H1-25: 231,8); Güney Kore'den 4 Suezmax sınıfı tanker ~370 Mn USD (teslim 2029; Ditaş filosu 19 gemi / ~839 bin DWT); propilen projesi 271 Mn USD (180 bin ton/yıl, 2027); sürdürülebilir havacılık ürünü SAF eş-işleme projesi (İzmir) + 20 MW pilot elektrolizör (Faaliyet raporu s. 94-100/150-152/215).</li>
   </ul>
+</div></section>
+
+<section id="makro"><div class="wrap">
+  <h2>Sektör makro katmanı: makas açık, sektör hacim kaybediyor</h2>
+  <p class="sub">Kalıcı yapı: <code>scripts/sector_macro.py --preset RAFINERI</code> canlı EVDS + TCMB sektör bilançosu aynasından üretildi (düz okuma çapası: <code>data/mali-analiz/anchors-sektor-rafineri-2026-10-08.json</code>, 08.10.2026). Reel değişimler TÜFE deflatörlüdür. TCMB C-harf oranları nominal 2023–2025 vintajıdır (enflasyon düzeltmesi yok); şirket oranları TMS 29'a göre düzeltilmiştir — kıyas bu etiketle okunur.</p>
+  <ul class="plain">
+    <li><b>Sektör hacim kaybediyor, Tüpraş kazanıyor:</b> rafineri ürünleri üretimi Temmuz'da reel %23,1 daraldı (nominal −1,7); şirket aynı dönemde şarj +%5, kapasite kullanımı %95,1 ile tam yol — pozitif ayrışma operasyonel, sektörel değil.</li>
+    <li><b>Makas hem nominal hem reel açıldı:</b> rafinaj ürün üretici fiyatı Ağustos'ta nominal %106,2 / reel %61,2 artarken Brent (EIA) Eylül aylık ortalaması 114,1 $ ile nominal %67,8 yükseldi. Ürün fiyatı girdi maliyetini geçti — yönetimin iki katına çıkan marj rehberi ve ikinci çeyrek kâr rekoru makro olarak doğrulanıyor.</li>
+    <li><b>İç talep ithalatla karşılanıyor:</b> ürün ithalatı reel %47,4 arttı, ihracat reel %13,3 geriledi. Marj desteği sürer; yüksek ithalat payı fiyat müdahalesi/rekabet politikası riski taşır.</li>
+    <li><b>Sektör tamponu eridi:</b> TCMB C-harf sektöründe faiz karşılama 2023'te 2,23× iken 2025'te 1,45×'e indi.</li>
+    <li><b>Rejim hükmü:</b> hacim rejimi zayıf, fiyat rejimi lehine — net etki bugün marj lehine; talep yıkımı, katmanın bilinen kırılma riskidir (Hüküm §2).</li>
+  </ul>
+  <div class="tblwrap"><table>
+    <tr><th>Gösterge (sektör: TCMB C-harf 2025; şirket: 2026-H1)</th><th>Sektör</th><th>Tüpraş</th><th>Okuma</th></tr>
+    <tr><td>Özkaynak / aktif</td><td>%46,7</td><td>%54</td><td>şirket daha dayanıklı</td></tr>
+    <tr><td>Faiz karşılama (faaliyet kârı / finansman gideri)</td><td>1,45×</td><td>2,7× (EBIT)</td><td>net nakit konumun sonucu</td></tr>
+    <tr><td>Net kâr marjı</td><td>%3,1</td><td>%6,1</td><td>makas kazancı şirkete yazıyor</td></tr>
+  </table></div>
 </div></section>
 
 <section id="degerleme"><div class="wrap">

@@ -100,7 +100,7 @@ nav a:hover{color:var(--ink)}
 <nav><div class="wrap">
   <span class="brand">SAHOL · 2026-H1</span>
   <a href="#ozet">Özet</a><a href="#mimari">Portföy Mimari</a><a href="#kanallar">Nakit Kanalları</a>
-  <a href="#olaylar">Olaylar</a><a href="#sotp">SOTP / NAV</a><a href="#degerleme">Değerleme</a>
+  <a href="#olaylar">Olaylar</a><a href="#makro">Makro</a><a href="#sotp">SOTP / NAV</a><a href="#degerleme">Değerleme</a>
   <a href="#oneri">Öneri</a><a href="#hukum">Hüküm</a><a href="#kaynak">Kaynaklar</a>
 </div></nav>
 
@@ -250,9 +250,22 @@ nav a:hover{color:var(--ink)}
 </div>
 </div>
 </section>
+<section id="makro">
+<div class="wrap">
+<h2>4. Sektör makro katmanı — ılımlı büyüme, zayıf iç talep hacmi</h2>
+<p class="lede">Kalıcı yapı: <code>scripts/sector_macro.py --preset HOLDING</code> canlı EVDS çekimi (düz okuma çapası: <code>data/mali-analiz/anchors-sektor-holding-2026-10-08.json</code>, 08.10.2026). Reel değişimler TÜFE deflatörlüdür. Holding için TCMB sektör-harf oranı yoktur (finansal sektör Sektör Bilançoları kümesi dışı) — kıyas GSYH ve sektör hacim düzeyinde yapılır.</p>
+<ul class="plain">
+<li><b>Ilımlı büyüme rejimi:</b> GSYH ikinci çeyrekte reel %2,3 büyüdü; sanayi %2,4, finans-sigorta %2,1, ticaret/ulaştırma/konaklama bileşiği ancak %0,5. Rejim ne rüzgâr ne fren — konsolide kredi büyümesi rejimle uyumlu.</li>
+<li><b>İç talep hacmi zayıf:</b> perakende ciro endeksi Eylül'de reel %20,1, iç taşıma hacim endeksi Temmuz'da reel %25,6 geriledi; çimento üretimi reel %18,5 daraldı, konut satışı reel %33,4 düştü. Aygaz ve lojistik-yönlü gelirler için hacim baskısı.</li>
+<li><b>Akçansa kârlılığı hacimden değil fiyattan:</b> çimento ÜFE'si nominal %24,3 ile reel marjı korurken sektör hacmi daralıyor — birinci kâr motorunda kırılganlık volümdedir.</li>
+<li><b>Banka kanalı dezenflasyondan kazanıyor:</b> enflasyon muhasebesi parasal kaybı küçülürken finans-sigorta katma değeri %2,1 büyüyor — grubun kâr motoru makro cephede destekli; sanayi/enerji iştirakleri hacim-cılız rejimde.</li>
+<li><b>Şirket vs rejim:</b> %4,9 ROE ve %2,9 kâr marjı ılımlı rejimle tutarlı; net aktif değer iskontosu makrodan değil portföy/temettü yapısından — hüküm değişmez.</li>
+</ul>
+</div>
+</section>
 <section id="sotp">
 <div class="wrap">
-<h2>4. SOTP / NAV — parçaların toplamı hissenin iki katı</h2>
+<h2>5. SOTP / NAV — parçaların toplamı hissenin iki katı</h2>
 <p class="lede">Halka açık paylar 07.10.2026 kapanış fiyatıyla, halka açıklığı olmayan iştirakler defter taşıma değeriyle toplandı. Sonuç: portföyün parçaları 340,6 mdr TL eder; bütün 184 mdr TL'ye işlem görüyor. Farkın adı iskontodur; anatomisi §6'da. <span class="badge b-hesap">hesap</span></p>
 <div class="card">
 <table>
@@ -325,7 +338,7 @@ nav a:hover{color:var(--ink)}
 </section>
 <section id="degerleme">
 <div class="wrap">
-<h2>5. Değerleme — iki bağımsız yöntem aynı yönü gösteriyor</h2>
+<h2>6. Değerleme — iki bağımsız yöntem aynı yönü gösteriyor</h2>
 <p class="lede">Yöntem 1 (SOTP bantları) ve Yöntem 2 (temel analize dayalı PD/DD çapası) birbirinden bağımsız kuruldu; ikisi de mevcut fiyatın analiz temelinin altında olduğunu söylüyor.</p>
 <div class="grid2">
 <div class="card">
@@ -358,7 +371,7 @@ nav a:hover{color:var(--ink)}
 
 <section id="oneri">
 <div class="wrap">
-<h2>6. Öneri</h2>
+<h2>7. Öneri</h2>
 <div class="decision">
 <h3>Hüküm</h3>
 <div class="verdict">İZLE</div>
@@ -375,7 +388,7 @@ nav a:hover{color:var(--ink)}
 
 <section id="hukum">
 <div class="wrap">
-<h2>7. Hüküm — indirimin anatomisi</h2>
+<h2>8. Hüküm — indirimin anatomisi</h2>
 <div class="grid2">
 <div class="card"><h3>(a) Görünmez iştirak borcu</h3><p style="font-size:14px">İştirak yükümlülükleri 322.846 mn TL konsolide borçta görünmez; ama NAV'ın en büyük bloku (Enerji %44,0) bu şirketlerdir. Alıcı, değerini taşımadan aldığı borcu fiyattan düşer. <span class="badge b-ak">çıkarım</span></p></div>
 <div class="card"><h3>(b) Ters temettü akışı</h3><p style="font-size:14px">İştirak temettüsü girişi 4.205, NÇİ'ye temettü çıkışı 8.854 mn TL (toplam dağıtım 12.000; AO payı 3.145 — net −4.649). Kordsa üç yıldır dağıtmayıp holdingden 2.400 avans borçlanıyor. Konsolide tablo konsorsiyumun gelir tablosudur — pazar bunu fiyatlar. <span class="badge b-ak">çıkarım</span></p></div>
