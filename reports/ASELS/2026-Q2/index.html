@@ -74,6 +74,11 @@ footer ul{margin-left:18px}
 footer li{margin-bottom:6px}
 .copy{text-align:center;margin-top:34px;padding-top:18px;border-top:1px solid #3A352F;color:#6B675E}
 .pill{display:inline-block;background:#EFEBDF;border:1px solid var(--line);border-radius:8px;padding:2px 8px;font-size:12px;font-weight:600;margin:2px}
+nav{position:sticky;top:0;z-index:50;background:rgba(240,238,230,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:18px;height:52px;overflow-x:auto;white-space:nowrap}
+nav .brand{font-family:'Copernicus','Fraunces',Georgia,'Times New Roman',serif;font-weight:700;color:#B0472A;font-size:17px}
+nav a{color:#5D594D;text-decoration:none;font-size:13.5px;font-weight:500}
+nav a:hover{color:var(--ink)}
 </style>
 </head>
 <body>
@@ -85,7 +90,14 @@ footer li{margin-bottom:6px}
 <span style="color:#B0472A;font-weight:600">2026 H1</span>
 </nav>
 
-<div class="hero">
+<nav><div class="wrap">
+  <span class="brand">ASELS · 2026-H1</span>
+  <a href="#ozet">Özet</a><a href="#bilanco">Bilanço</a><a href="#oranlar">Oranlar</a>
+  <a href="#karlilik">Kârlılık</a><a href="#siparis">Sipariş</a><a href="#degerleme">Değerleme</a>
+  <a href="#oneri">Öneri</a><a href="#sonuc">Sonuç</a><a href="#kaynak">Kaynaklar</a>
+</div></nav>
+
+<div class="hero" id="ozet">
 <div class="wrap">
 <div style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#C9A227;margin-bottom:10px">Savunma elektronik · BIST · 2026-H1 (TMS 29'a göre düzeltilmiş)</div>
 <h1>ASELSAN</h1>
@@ -483,7 +495,7 @@ footer li{margin-bottom:6px}
 </div>
 </section>
 
-<footer>
+<footer id="kaynak">
 <div class="wrap">
 <h4>İddia → kaynak</h4>
 <ul>
