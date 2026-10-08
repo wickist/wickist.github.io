@@ -19,6 +19,21 @@
       card.hidden = !ok;
       if (ok) shown++;
     });
+    // Şirket arşivi matrisi: satır = şirket, hücre = dönem çipi
+    document.querySelectorAll("tr.arow").forEach(function (row) {
+      var hay = (row.getAttribute("data-search") || "").toUpperCase();
+      var okTerm = !term || hay.indexOf(term) !== -1;
+      var any = false;
+      row.querySelectorAll("a.chip").forEach(function (ch) {
+        var okP = (!state.year || ch.getAttribute("data-year") === state.year) &&
+                  (!state.quarter || ch.getAttribute("data-quarter") === state.quarter);
+        ch.classList.toggle("dim", !okP);
+        if (okP) any = true;
+      });
+      var vis = okTerm && any;
+      row.hidden = !vis;
+      if (vis) shown++;
+    });
     document.querySelectorAll(".company-block").forEach(function (block) {
       var any = Array.prototype.some.call(
         block.querySelectorAll("[data-card]"),

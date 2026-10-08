@@ -53,3 +53,19 @@ footer.site{border-top:1px solid var(--line);margin-top:34px;padding:18px 0 26px
   font-size:12.5px;color:var(--muted)}
 .empty{color:var(--muted);font-size:14px;padding:14px 0}
 @media (max-width:640px){ .cards{grid-template-columns:1fr} .counter{min-width:110px} }
+/* Şirket arşivi matrisi */
+.tblwrap{overflow-x:auto;margin:10px 0 8px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel)}
+table.arsiv{border-collapse:collapse;width:100%;font-size:13.5px}
+table.arsiv th,table.arsiv td{padding:9px 14px;border-bottom:1px solid var(--line);text-align:center;white-space:nowrap;font-weight:inherit}
+table.arsiv thead th{color:var(--muted);font-size:12px;font-weight:600;background:var(--panel2)}
+table.arsiv tbody tr:last-child th,table.arsiv tbody tr:last-child td{border-bottom:none}
+table.arsiv tbody tr:hover{background:var(--panel2)}
+table.arsiv th[scope="row"]{text-align:left;font-weight:600}
+table.arsiv th[scope="row"] a{color:var(--gold)}
+table.arsiv th[scope="row"] small{display:block;font-weight:400;color:var(--muted);font-size:12px;white-space:normal;max-width:300px}
+table.arsiv td.cnt{color:var(--muted);font-size:12.5px}
+a.chip{display:inline-block;background:var(--panel2);border:1px solid var(--line);border-radius:16px;padding:3px 12px;font-size:12.5px;font-weight:600;color:var(--fg)}
+a.chip:hover{border-color:var(--gold);color:var(--gold);text-decoration:none}
+a.chip.dim{opacity:.3}
+span.none{color:var(--line)}
+tr.arow[hidden]{display:none}

@@ -97,18 +97,47 @@ def build_index(data: dict) -> None:
     filters += [f'<button data-filter="year:{y}">{y}</button>' for y in years]
     filters += [f'<button data-filter="quarter:{q}">Q{q}</button>' for q in quarters]
 
-    blocks = []
+    # Dönem kolonları (yeni->eski) ve şirket×dönem matrisi
+    period_keys: dict[tuple[int, int], str] = {}
+    for r in reports:
+        period_keys.setdefault((r["year"], r["quarter"]), r["periodLabel"])
+    cols = sorted(period_keys, reverse=True)
+
+    rows = []
     for ticker in sorted(tickers):
         rs = tickers[ticker]
-        cards = "\n".join(card(r, show_ticker=False) for r in rs)
-        blocks.append(f"""<section class="company-block">
-<h2 class="company"><a href="/reports/{ticker}/">{ticker}</a><small>{escape(rs[0]['company'])} · {len(rs)} rapor</small></h2>
-<div class="cards">
-{cards}
-</div>
-</section>""")
+        search = f"{ticker} {rs[0]['company']}".lower()
+        cells = []
+        for key in cols:
+            hit = next((r for r in rs if (r["year"], r["quarter"]) == key), None)
+            if hit:
+                cells.append(
+                    f'<td><a class="chip" href="{escape(hit["path"])}" '
+                    f'data-year="{hit["year"]}" data-quarter="{hit["quarter"]}" '
+                    f'title="{escape(hit["title"])}">{escape(hit["periodLabel"])}</a></td>'
+                )
+            else:
+                cells.append('<td><span class="none">—</span></td>')
+        rows.append(
+            f'<tr class="arow" data-search="{escape(search)}">'
+            f'<th scope="row"><a href="/reports/{ticker}/">{ticker}</a>'
+            f'<small>{escape(rs[0]["company"])}</small></th>'
+            + "".join(cells) +
+            f'<td class="cnt">{len(rs)}</td></tr>'
+        )
+    thead = '<tr><th>Şirket</th>' + "".join(
+        f'<th>{escape(period_keys[k])}</th>' for k in cols) + '<th>N</th></tr>'
+    archive = f"""<section class="arsiv">
+<h2 class="company">Şirket Arşivi</h2>
+<div class="tblwrap"><table class="arsiv">
+<thead>{thead}</thead>
+<tbody>
+{chr(10).join(rows)}
+</tbody>
+</table></div>
+</section>"""
 
-    latest = reports[:3]
+    latest = reports[:6]
     latest_html = "\n".join(card(r) for r in latest)
     doc = head(
         f"{SITE_NAME} — BIST Bilanço ve Finansal Analiz Raporları",
@@ -132,7 +161,7 @@ def build_index(data: dict) -> None:
 <div class="cards">
 {latest_html}
 </div>
-{''.join(blocks)}
+{archive}
 <p class="empty" id="empty" hidden>Eşleşen rapor yok.</p>
 </div></main>
 """ + footer() + """<script src="/assets/js/site.js" defer></script>
