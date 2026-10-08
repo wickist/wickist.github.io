@@ -49,28 +49,6 @@
       ]
     },
     {
-      "ticker": "THYAO",
-      "company": "Türk Hava Yolları A.O.",
-      "period": "2026-Q2",
-      "periodLabel": "2026 H1",
-      "year": 2026,
-      "quarter": 2,
-      "title": "THYAO 2026 H1 Finansal Analiz Raporu",
-      "description": "Bilanço, gelir tablosu, nakit akışı ve kapasite okuması; II-14.1 dolar tabloları, yakıtsız CASK, trafik ekleri ve TMS 29 notu.",
-      "publishedAt": "2026-10-08",
-      "updatedAt": "2026-10-08",
-      "path": "/reports/THYAO/2026-Q2/",
-      "ogImage": "/reports/THYAO/2026-Q2/og-cover.png",
-      "tags": [
-        "bilanço",
-        "finansal analiz",
-        "THYAO",
-        "2026Q2",
-        "H1",
-        "havacılık"
-      ]
-    },
-    {
       "ticker": "SAHOL",
       "company": "Hacı Ömer Sabancı Holding A.Ş.",
       "period": "2026-Q2",
@@ -90,6 +68,28 @@
         "2026Q2",
         "H1",
         "holding"
+      ]
+    },
+    {
+      "ticker": "THYAO",
+      "company": "Türk Hava Yolları A.O.",
+      "period": "2026-Q2",
+      "periodLabel": "2026 H1",
+      "year": 2026,
+      "quarter": 2,
+      "title": "THYAO 2026 H1 Finansal Analiz Raporu",
+      "description": "Bilanço, gelir tablosu, nakit akışı ve kapasite okuması; II-14.1 dolar tabloları, yakıtsız CASK, trafik ekleri ve TMS 29 notu.",
+      "publishedAt": "2026-10-08",
+      "updatedAt": "2026-10-08",
+      "path": "/reports/THYAO/2026-Q2/",
+      "ogImage": "/reports/THYAO/2026-Q2/og-cover.png",
+      "tags": [
+        "bilanço",
+        "finansal-analiz",
+        "THYAO",
+        "2026Q2",
+        "H1",
+        "havacılık"
       ]
     }
   ]
