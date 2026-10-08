@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- site-publish:meta -->
+<title>DOHOL 2026 H1 Finansal Analiz Raporu</title>
+<meta name="description" content="Portföyünü bilançosunda taşıyan yatırım-holding okuması: nakit+finansal yatırım ağırlıklı aktif mimarisi, segment/GWIND elektrik köprüsü ve düzeltilmiş SOTP/NAV bantı.">
+<link rel="canonical" href="https://wickist.github.io/reports/DOHOL/2026-Q2/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Finansal Analiz Raporları">
+<meta property="og:title" content="DOHOL 2026 H1 Finansal Analiz Raporu">
+<meta property="og:description" content="Portföyünü bilançosunda taşıyan yatırım-holding okuması: nakit+finansal yatırım ağırlıklı aktif mimarisi, segment/GWIND elektrik köprüsü ve düzeltilmiş SOTP/NAV bantı.">
+<meta property="og:url" content="https://wickist.github.io/reports/DOHOL/2026-Q2/">
+<meta property="og:image" content="https://wickist.github.io/reports/DOHOL/2026-Q2/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DOHOL 2026 H1 Finansal Analiz Raporu">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DOHOL 2026 H1 Finansal Analiz Raporu">
+<meta name="twitter:description" content="Portföyünü bilançosunda taşıyan yatırım-holding okuması: nakit+finansal yatırım ağırlıklı aktif mimarisi, segment/GWIND elektrik köprüsü ve düzeltilmiş SOTP/NAV bantı.">
+<meta name="twitter:image" content="https://wickist.github.io/reports/DOHOL/2026-Q2/og-cover.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "DOHOL 2026 H1 Finansal Analiz Raporu", "description": "Portföyünü bilançosunda taşıyan yatırım-holding okuması: nakit+finansal yatırım ağırlıklı aktif mimarisi, segment/GWIND elektrik köprüsü ve düzeltilmiş SOTP/NAV bantı.", "inLanguage": "tr", "datePublished": "2026-10-08", "dateModified": "2026-10-08", "url": "https://wickist.github.io/reports/DOHOL/2026-Q2/", "image": "https://wickist.github.io/reports/DOHOL/2026-Q2/og-cover.png", "publisher": {"@type": "Organization", "name": "Finansal Analiz Raporları"}, "about": {"@type": "Organization", "name": "Doğan Şirketler Grubu Holding A.Ş.", "tickerSymbol": "DOHOL"}}</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600;700&display=swap');
+:root{--bg:#F0EEE6;--panel:#FAF9F5;--ink:#1F1E1D;--accent:#D97757;--danger:#B0472A;--sage:#6A8E7F;--gold:#C9A227;--line:#DED9CB;}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:'Styrene B','Styrene A','Inter',system-ui,sans-serif;font-size:15px;line-height:1.55}
+.wrap{max-width:980px;margin:0 auto;padding:22px 18px}
+h1,h2,h3{font-family:'Copernicus','Fraunces',Georgia,serif;font-weight:600;letter-spacing:-.01em}
+h1{font-size:33px;line-height:1.15;margin-bottom:10px}
+h2{font-size:24px;margin-bottom:12px}
+h3{font-size:17px;margin:14px 0 8px}
+section{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px 26px;margin-bottom:20px}
+p{margin-bottom:10px}
+ul{margin:0 0 10px 20px}li{margin-bottom:6px}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin:10px 0}
+th{background:#EFEBDD;text-align:left;padding:8px 10px;font-weight:600;border-bottom:2px solid var(--line)}
+td{padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th.num{white-space:normal}
+.tag{display:inline-block;font-size:11px;font-weight:600;padding:1px 8px;border-radius:10px;margin-left:6px;vertical-align:middle}
+.hesap{background:#E3EDE7;color:#3F6B58}.cikarim{background:#F4E3D6;color:#9C5A34}.cozulmedi{background:#F0D9D2;color:#8E3A22}
+.hero{background:linear-gradient(160deg,#22211F,#3A3733);color:#F5F2EA;border:none}
+.hero h1{color:#F5F2EA}.hero .sub{color:#C9C4B8;margin-bottom:14px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:16px 0}
+.kpi{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:12px 14px}
+.kpi .v{font-size:21px;font-weight:700;font-family:'Copernicus','Fraunces',Georgia,serif}
+.kpi .l{font-size:11.5px;color:#C9C4B8;margin-top:2px}
+.badge{display:inline-block;background:var(--sage);color:#fff;font-weight:700;padding:6px 16px;border-radius:20px;font-size:14px}
+.badge.warn{background:var(--danger)}
+.note{font-size:12.5px;color:#6B675E;margin-top:8px}
+.figcap{font-size:12.5px;color:#6B675E;margin-top:6px}
+.svgbox{overflow-x:auto}
+svg{max-width:100%;height:auto}
+.s-t{font:600 14px 'Inter',sans-serif;fill:#1F1E1D}
+.s-l{font:400 12.5px 'Inter',sans-serif;fill:#3C3A35}
+.s-s{font:400 11px 'Inter',sans-serif;fill:#6B675E}
+.s-v{font:600 11.5px 'Inter',sans-serif;fill:#1F1E1D}
+.s-sm{font:600 10.5px 'Inter',sans-serif;fill:#fff}
+footer{font-size:12.5px;color:#57544C}
+footer h3{font-size:14.5px}
+.copy{text-align:center;padding:22px 0 30px;color:#8A8578;font-size:12.5px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:720px){.grid2{grid-template-columns:1fr}}
+.flag{background:#F7E8E3;border-left:4px solid var(--danger);padding:10px 14px;border-radius:8px;margin:10px 0}
+.okbox{background:#E8F0EA;border-left:4px solid var(--sage);padding:10px 14px;border-radius:8px;margin:10px 0}
+nav{position:sticky;top:0;z-index:50;background:rgba(240,238,230,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:18px;height:52px;overflow-x:auto;white-space:nowrap;padding:0 18px}
+nav .brand{font-family:'Copernicus','Fraunces',Georgia,'Times New Roman',serif;font-weight:700;color:#B0472A;font-size:17px}
+nav a{color:#5D594D;text-decoration:none;font-size:13.5px;font-weight:500}
+nav a:hover{color:var(--ink)}
+</style>
+</head>
+<body>
+<!-- site-publish:meta -->
+<nav style="max-width:1080px;margin:0 auto;padding:10px 20px;font-size:13px;
+ color:#5D594D;border-bottom:1px solid #E3DED2">
+<a href="/" style="color:#5D594D;text-decoration:none">Ana Sayfa</a> /
+<a href="/reports/DOHOL/" style="color:#5D594D;text-decoration:none">DOHOL</a> /
+<span style="color:#B0472A;font-weight:600">2026 H1</span>
+</nav>
+
+<nav><div class="wrap">
+  <span class="brand">DOHOL · 2026-H1</span>
+  <a href="#ozet">Özet</a><a href="#bilanco">Bilanço</a><a href="#ozkaynak">Özkaynak</a>
+  <a href="#gelir">Gelir Tablosu</a><a href="#nakit">Nakit Akışı</a>
+  <a href="#sektor">Segmentler</a><a href="#makro">Makro</a>
+  <a href="#degerleme">Değerleme</a><a href="#oneri">Öneri</a>
+  <a href="#olay">Olaylar</a><a href="#hukum">Hüküm</a><a href="#kaynak">Kaynaklar</a>
+</div></nav>
+<div class="wrap">
+
+<section class="hero" id="ozet">
+<div class="sub">DOĞAN ŞİRKETLER GRUBU HOLDİNG A.Ş. · BIST: DOHOL · 2026 birinci yarı · TMS 29'a göre düzeltilmiş</div>
+<h1>Fiyat net finansal varlığa eşit: işletme portföyü neredeyse sıfıra fiyatlanmış</h1>
+<p class="sub">Aktifin 89,1 mlyar lirası nakit ve finansal yatırım. Şirket net finansal varlık taşıyor: borçtan fazla portföyü var. İki bağımsız değerleme çıpası aynı yerde buluşuyor. Karar: <b>AL (kademeli)</b>.</p>
+<div class="kpis">
+<div class="kpi"><div class="v">18,37 TL</div><div class="l">Fiyat · Matriks kapanış 08.10</div></div>
+<div class="kpi"><div class="v">48.074 mn TL</div><div class="l">Piyasa değeri</div></div>
+<div class="kpi"><div class="v">45.475 mn TL</div><div class="l">Net finansal varlık (N6 tabanı)</div></div>
+<div class="kpi"><div class="v">0,495</div><div class="l">PD/DD (net pay bazında)</div></div>
+<div class="kpi"><div class="v">7,53</div><div class="l">F/K · son 12 ay ana ortaklık kârı</div></div>
+<div class="kpi"><div class="v">24,7–25,3 TL</div><div class="l">Değer bandı · merkez 25,0 TL</div></div>
+</div>
+<span class="badge">AL (kademeli) — fiyat bant alt sınırının %26 altında</span>
+<div class="note">Analiz baz fiyatı: 18,37 TL (08.10.2026 Matriks kapanışı). Sunumdaki tüm fiyat damgaları bu ekran görüntüsüyle aynı gündür. Para birimi: mn TL, 30.06.2026 alım gücü (TMS 29'a göre düzeltilmiş). Kaynak: wiki sentez sayfası + KAP finansal rapor metni.</div>
+</section>
+
+<section>
+<h2>Kullanıcı ekran tablosu <span class="tag hesap">hesap</span></h2>
+<table>
+<tr><th>Gösterge</th><th class="num">Değer</th><th>Not</th></tr>
+<tr><td>Fiyat</td><td class="num">18,37 TL</td><td>Matriks kapanışı, 08.10.2026 (seans kapandı)</td></tr>
+<tr><td>Piyasa değeri</td><td class="num">48.074 mn TL</td><td>18,37 × 2.616.996.091 pay (çıkarılmış sermaye bazlı Matriks yayını)</td></tr>
+<tr><td>PD/DD</td><td class="num">0,495</td><td>Ana ortaklık özkaynağı 95.446 mn ÷ net pay 2.572.673.058 (geri alımlar düşülmüş) = defter 37,10 TL/pay</td></tr>
+<tr><td>F/K (son 12 ay)</td><td class="num">7,53</td><td>Ana ortaklık kârı 6.388 mn (2025 yılı 2.111 + 2026 ilk yarı 3.649 − 2025 ilk yarı −628)</td></tr>
+<tr><td>Temettü verimi</td><td class="num">%0</td><td>2025 yılı dağıtımı yok (yönetim kurulu 17.03.2026, genel kurul 10.04.2026); 2024 dağıtımı 0,3057 TL/pay idi</td></tr>
+<tr><td>Net finansal varlık (net borç değil)</td><td class="num">+45.475</td><td>Borçlanma 43.638 − (nakit 4.073 + kısa vadeli finansal yatırım 85.040); dipnot N6</td></tr>
+<tr><td>Politika faizi</td><td class="num">%37 (sabit)</td><td>Son karar 10.09.2026; yürüyüş 46 → 43 → 37 (TCMB karar metinleri)</td></tr>
+<tr><td>Fiili dolaşım oranı</td><td class="num">%35,7</td><td>2026-H1 finansal rapor, dipnot 1</td></tr>
+</table>
+<div class="note">Politika: ekran tablosu her sunumda canlı veriyle yenilenir; analiz baz fiyatı ayrı satırda sabit kalır.</div>
+</section>
+<section id="bilanco">
+<h2>1 · Bilanço yapısı: likidite portföyden geliyor, tahsilattan değil <span class="tag hesap">hesap</span></h2>
+<div class="svgbox">
+<svg viewBox="0 0 840 380" role="img" aria-label="Varlık ve kaynak yığını">
+<text x="12" y="22" class="s-t">Varlıklar ve kaynaklar — düzeltilmiş (mn TL, 30.06.2026 alım gücü)</text>
+<rect x="60"  y="208" width="80" height="122" fill="#6A8E7F"/>
+<rect x="60"  y="132" width="80" height="76"  fill="#C9A227"/>
+<rect x="180" y="204" width="80" height="126" fill="#6A8E7F"/>
+<rect x="180" y="130" width="80" height="74"  fill="#C9A227"/>
+<rect x="360" y="252" width="80" height="78"  fill="#B0472A"/>
+<rect x="360" y="232" width="80" height="20"  fill="#C9A227"/>
+<rect x="360" y="132" width="80" height="100" fill="#6A8E7F"/>
+<rect x="480" y="251" width="80" height="79"  fill="#B0472A"/>
+<rect x="480" y="232" width="80" height="19"  fill="#C9A227"/>
+<rect x="480" y="130" width="80" height="102" fill="#6A8E7F"/>
+<text x="100" y="272" class="s-sm" text-anchor="middle">134.291</text>
+<text x="220" y="270" class="s-sm" text-anchor="middle">138.288</text>
+<text x="100" y="173" class="s-sm" text-anchor="middle">83.089</text>
+<text x="220" y="170" class="s-sm" text-anchor="middle">82.055</text>
+<text x="400" y="294" class="s-sm" text-anchor="middle">85.321</text>
+<text x="520" y="293" class="s-sm" text-anchor="middle">86.868</text>
+<text x="400" y="245" class="s-s"  text-anchor="middle">Uzun vad.</text>
+<text x="520" y="244" class="s-s"  text-anchor="middle">Uzun vad.</text>
+<text x="400" y="185" class="s-sm" text-anchor="middle">110.206</text>
+<text x="520" y="184" class="s-sm" text-anchor="middle">112.318</text>
+<text x="100" y="350" class="s-l" text-anchor="middle">Varlık 31.12.25</text>
+<text x="220" y="350" class="s-l" text-anchor="middle">Varlık 30.06.26</text>
+<text x="400" y="350" class="s-l" text-anchor="middle">Kaynak 31.12.25</text>
+<text x="520" y="350" class="s-l" text-anchor="middle">Kaynak 30.06.26</text>
+<text x="620" y="140" class="s-l">Toplam: 217.380 → 220.343</text>
+<text x="620" y="160" class="s-s">Uzun vadeli: 21.854 → 21.156</text>
+<text x="620" y="176" class="s-s">Kısa vadeli: 85.321 → 86.868</text>
+<text x="620" y="196" class="s-s">yeşil: dönen / özkaynak</text>
+<text x="620" y="212" class="s-s">altın: duran / uzun vadeli</text>
+<text x="620" y="228" class="s-s">kırmızı: kısa vadeli</text>
+</svg>
+</div>
+<table>
+<tr><th>Dönem</th><th class="num">Cari oran</th><th class="num">Net çalışma sermayesi</th><th class="num">Özkaynak/aktif</th><th class="num">Toplam borç (N6)</th><th class="num">Nakit + finansal yatırım</th><th class="num">Net finansal varlık</th></tr>
+<tr><td>2025-Q1</td><td class="num">1,69</td><td class="num">52.793</td><td class="num">%52,4</td><td class="num">45.424</td><td class="num">78.775</td><td class="num">+33.351</td></tr>
+<tr><td>2025-Q2</td><td class="num">1,69</td><td class="num">53.565</td><td class="num">%52,5</td><td class="num">41.650</td><td class="num">81.746</td><td class="num">+40.095</td></tr>
+<tr><td>2025-Q3</td><td class="num">1,70</td><td class="num">51.896</td><td class="num">%53,8</td><td class="num">36.866</td><td class="num">81.973</td><td class="num">+45.108</td></tr>
+<tr><td>2025-Q4</td><td class="num">1,57</td><td class="num">48.971</td><td class="num">%52,7</td><td class="num">40.663</td><td class="num">87.180</td><td class="num">+46.517</td></tr>
+<tr><td>2026-Q1</td><td class="num">1,61</td><td class="num">50.687</td><td class="num">%52,5</td><td class="num">42.304</td><td class="num">87.121</td><td class="num">+44.817</td></tr>
+<tr><td>2026-Q2</td><td class="num">1,59</td><td class="num">51.419</td><td class="num">%51,0</td><td class="num">43.638</td><td class="num">89.113</td><td class="num">+45.475</td></tr>
+</table>
+<ul>
+<li><b>Vade kuralı her altı dönemde karşılanıyor:</b> duran varlıklar (82.055) uzun vadeli fonların (özkaynak + uzun vadeli yükümlülük = 133.475) altında; uzun vadeli fon fazlası 51.420 net çalışma sermayesinin kendisine eşit. <span class="tag hesap">hesap</span></li>
+<li>Cari oran 1,57–1,70 bandında yatay; ancak dönen varlığın <b>%61'i finansal yatırım</b> (85.040 mn). Likidite kaynak-tahsilat likiditesi değil, portföy likiditesi. Portföyün 55.785 mn'si yatırım fonu ve pay: faiz indirim döngüsünde değerleme kazancı, tersinde TMS 29 parasal zarar büyütücüsü. <span class="tag hesap">hesap</span></li>
+<li>Borç altı dönemde 36,9 → 43,6 mlyar arttı; artış madencilik yatırım harcamasını finanse ediyor (2026 ilk yarı 3.427 mn; en büyük kalem madencilik 1.373 mn, dipnot N3). Net finansal varlık pozisyonu korunduğu için bu bir vade-kaydırma, kaldıraç birikimi değil. <span class="tag hesap">hesap</span></li>
+<li>Mali borç/aktif %19,8 (43.638/220.343); özkaynak/aktif %51,0 (TCMB oran tanımları). <span class="tag hesap">hesap</span></li>
+</ul>
+</section>
+
+<section id="ozkaynak">
+<h2>2 · Kaynak kalitesi: özkaynağın %80'i enflasyon düzeltme farkı <span class="tag hesap">hesap</span></h2>
+<ul>
+<li>Özkaynak 112.318 = ana ortaklık payı 95.446 + kontrol gücü olmayan paylar 16.872. Ana ortaklık bloğunun <b>%79,9'u sermaye düzeltme farkları</b> (76.313 mn) — TMS 29 düzeltmesi özkaynağı enflasyonla büyütür, kâr marjını sıkıştırır. Bu oranlar nominal özkaynaklı şirketlerle (bankalar düzeltme dışı) doğrudan kıyaslanamaz. <span class="tag hesap">hesap</span></li>
+<li>Kontrol gücü olmayan paylar büyük ve büyüyor (16.071 → 16.872). 2026 ilk yarı grup kârının %23'ü (1.091 / 4.740 mn) bu paylara gitti; KAREL tek başına dipnot N22'de açıklanıyor (KAREL özkaynağı 1.888, pay 755 — KAREL'in kendi raporuyla birebir). <span class="tag hesap">hesap</span></li>
+<li><b>Hepiyi sigorta satış opsiyonu:</b> Hepiyi'nin B grubu ortaklarının (efektif %15) DOHOL'a karşı satma opsiyonu yükümlülüğü. TMS 8 geriye-dönük düzeltmesi Aralık-25 yükümlülüğünü +3.786 mn artırdı; özkaynakta opsiyon değerleme fonu −3.786 (Haziran-26). Ana ortaklık özkaynağı bu yükü <b>zaten taşıyor</b>; ek değerleme düzeltmesi gerekmez. <span class="tag hesap">hesap</span></li>
+<li>Geri alınmış paylar −921 mn; geri alım programı 10.04.2026'da sonlandırıldı, 2026 ilk yarıda 94 mn ilave alım yapıldı. <span class="tag hesap">hesap</span></li>
+</ul>
+<h3>Özkaynak hareketi — ana ortaklık payı (bin TL, kapanış denemesi farkı = 0)</h3>
+<table>
+<tr><th>Kalem</th><th class="num">Tutar</th></tr>
+<tr><td>1 Ocak 2026 — önceden raporlanan</td><td class="num">98.592.346</td></tr>
+<tr><td>TMS 8 yeniden düzenleme etkisi (dipnot 2.1.7, Hepiyi opsiyonu)</td><td class="num">−4.457.828</td></tr>
+<tr><td><b>1 Ocak 2026 — düzeltilmiş açılış</b></td><td class="num"><b>94.134.518</b></td></tr>
+<tr><td>Dönem kârı (ana ortaklık payı)</td><td class="num">+3.648.803</td></tr>
+<tr><td>Diğer kapsamlı gelir: tanım dışı yeniden ölçüm</td><td class="num">−404.572</td></tr>
+<tr><td>Yabancı para çevrim farkları</td><td class="num">−2.604.791</td></tr>
+<tr><td>Satış opsiyonu değerleme fonu değişimi</td><td class="num">+672.305</td></tr>
+<tr><td>Temettü / iç transfer / geri alım (ana ortaklık kolonu)</td><td class="num">0</td></tr>
+<tr><td><b>30 Haziran 2026 kapanış</b></td><td class="num"><b>95.446.263</b></td></tr>
+<tr><td><b>Açılış + hareketler − kapanış</b></td><td class="num"><b>0 ✓</b></td></tr>
+</table>
+<div class="okbox">Kontrol gücü olmayan paylar köprüsü de kapalı denkleme oturuyor: 16.071.381 + kâr payı 1.080.962 − temettü 280.191 = 16.872.152 ✓ (fark 0).</div>
+</section>
+<section id="gelir">
+<h2>3 · Gelir tablosu: kâr iki kalemden geliyor — portföy getirisi ve madencilik <span class="tag hesap">hesap</span></h2>
+<div class="svgbox">
+<svg viewBox="0 0 900 330" role="img" aria-label="Çeyreklik ana ortaklık kârı ve yatırım gelirleri">
+<text x="12" y="22" class="s-t">Ana ortaklık payına dönem kârı (mn TL)</text>
+<line x1="45" y1="200" x2="470" y2="200" stroke="#1F1E1D"/>
+<rect x="60"  y="200"   width="46" height="26"   fill="#B0472A"/>
+<rect x="130" y="196.4" width="46" height="3.6"  fill="#6A8E7F"/>
+<rect x="200" y="194.4" width="46" height="5.6"  fill="#6A8E7F"/>
+<rect x="270" y="107"   width="46" height="93"   fill="#6A8E7F"/>
+<rect x="340" y="187.1" width="46" height="12.9" fill="#6A8E7F"/>
+<rect x="410" y="81.5"  width="46" height="118.5" fill="#6A8E7F"/>
+<text x="83"  y="243" class="s-v" text-anchor="middle">−728</text>
+<text x="153" y="190" class="s-v" text-anchor="middle">100</text>
+<text x="223" y="188" class="s-v" text-anchor="middle">156</text>
+<text x="293" y="100" class="s-v" text-anchor="middle">2.583</text>
+<text x="363" y="180" class="s-v" text-anchor="middle">357</text>
+<text x="433" y="74"  class="s-v" text-anchor="middle">3.292</text>
+<text x="83"  y="290" class="s-l" text-anchor="middle">Ç1-25</text>
+<text x="153" y="290" class="s-l" text-anchor="middle">Ç2-25</text>
+<text x="223" y="290" class="s-l" text-anchor="middle">Ç3-25</text>
+<text x="293" y="290" class="s-l" text-anchor="middle">Ç4-25</text>
+<text x="363" y="290" class="s-l" text-anchor="middle">Ç1-26</text>
+<text x="433" y="290" class="s-l" text-anchor="middle">Ç2-26</text>
+<text x="520" y="22" class="s-t">Net yatırım gelirleri (mn TL)</text>
+<line x1="515" y1="60" x2="515" y2="210" stroke="#DED9CB"/>
+<polyline points="540,163 594,142 648,114 702,87 756,99 810,76" fill="none" stroke="#D97757" stroke-width="2.5"/>
+<circle cx="540" cy="163" r="3.5" fill="#D97757"/><circle cx="594" cy="142" r="3.5" fill="#D97757"/><circle cx="648" cy="114" r="3.5" fill="#D97757"/><circle cx="702" cy="87" r="3.5" fill="#D97757"/><circle cx="756" cy="99" r="3.5" fill="#D97757"/><circle cx="810" cy="76" r="3.5" fill="#D97757"/>
+<text x="540" y="182" class="s-v" text-anchor="middle">1.541</text>
+<text x="594" y="161" class="s-v" text-anchor="middle">2.411</text>
+<text x="648" y="133" class="s-v" text-anchor="middle">3.568</text>
+<text x="702" y="106" class="s-v" text-anchor="middle">4.690</text>
+<text x="756" y="118" class="s-v" text-anchor="middle">4.212</text>
+<text x="810" y="95"  class="s-v" text-anchor="middle">5.180</text>
+<text x="540" y="290" class="s-l" text-anchor="middle">Ç1-25</text>
+<text x="594" y="290" class="s-l" text-anchor="middle">Ç2-25</text>
+<text x="648" y="290" class="s-l" text-anchor="middle">Ç3-25</text>
+<text x="702" y="290" class="s-l" text-anchor="middle">Ç4-25</text>
+<text x="756" y="290" class="s-l" text-anchor="middle">Ç1-26</text>
+<text x="810" y="290" class="s-l" text-anchor="middle">Ç2-26</text>
+<text x="12" y="318" class="s-s">Çeyrek kolonları 2026 ikinci çeyrek raporunun TMS 29'a göre düzeltilmiş kendi kolonlarıdır · iki panelin ölçekleri bağımsızdır</text>
+</svg>
+</div>
+<table>
+<tr><th>mn TL</th><th class="num">2025 ilk yarı</th><th class="num">2026 ilk yarı</th><th class="num">Değişim</th><th>Not</th></tr>
+<tr><td>Toplam hasılat</td><td class="num">55.511</td><td class="num">51.834</td><td class="num">−%6,6</td><td>ticari 30.136 + finans sektörü hasılatı 21.699</td></tr>
+<tr><td>Brüt kâr</td><td class="num">8.819</td><td class="num">11.716</td><td class="num">+%32,9</td><td>düşen ciroya karşın marj iyileşmesi</td></tr>
+<tr><td>Esas faaliyet kârı</td><td class="num">6.987</td><td class="num">6.453</td><td class="num">−%7,6</td><td></td></tr>
+<tr><td>Net yatırım gelirleri</td><td class="num">3.951</td><td class="num">9.391</td><td class="num">+%137,7</td><td>faiz indirimi döngüsü: tahvil + fon portföyü getirisi</td></tr>
+<tr><td>Net finansman gideri</td><td class="num">−7.658</td><td class="num">−6.035</td><td class="num">+%21,2 iyileşme</td><td></td></tr>
+<tr><td>Parasal kayıp</td><td class="num">−2.078</td><td class="num">−4.499</td><td class="num">kötüleşme</td><td>parasal varlık ağırlıklı bilançonun TMS 29 maliyeti</td></tr>
+<tr><td>Vergi öncesi kâr</td><td class="num">1.203</td><td class="num">5.311</td><td class="num">+%341</td><td></td></tr>
+<tr><td><b>Ana ortaklık kârı</b></td><td class="num"><b>−628</b></td><td class="num"><b>+3.649</b></td><td class="num">işaret değişimi</td><td>son 12 ay: 6.388 (2025 yılı 2.111 idi)</td></tr>
+</table>
+<ul>
+<li>Sıçramanın kaynağı operasyonel ciro değil: vergi öncesi kâr artışının taşıyıcısı net yatırım gelirleri (+5.440 mn) ve madencilik segmenti (vergi öncesi 418 → 1.527 mn). <span class="tag hesap">hesap</span></li>
+<li>Sanayi ve otomotiv zararları küçüldü (−1.981 → −431 ve −1.457 → −334) ama sürüklemeyi sürdürüyor; elektrik üretimi gelir gerilemesiyle katkıyı yitirdi (824 → 516 mn). <span class="tag hesap">hesap</span></li>
+<li>2025 yılı karşılaştırması (yıllık raporun kendi kolonları): ana ortaklık kârı 5.651 → 1.792 (reel −%68). Yılın iki faili operasyon değil: efektif ~%66 vergi (3.442) ve parasal zarar (5.383). <span class="tag hesap">hesap</span></li>
+</ul>
+</section>
+
+<section id="nakit">
+<h2>4 · Nakit akışı: işletme nakit üretiyor, çevrim farkı eritiyor <span class="tag hesap">hesap</span></h2>
+<div class="svgbox">
+<svg viewBox="0 0 840 330" role="img" aria-label="Nakit köprüsü">
+<text x="12" y="22" class="s-t">Nakit köprüsü, 2026 ilk yarı (mn TL, düzeltilmiş)</text>
+<rect x="40"  y="164.8" width="64" height="125.2" fill="#3C3A35"/>
+<rect x="130" y="46.9"  width="64" height="117.9" fill="#6A8E7F"/>
+<rect x="220" y="46.9"  width="64" height="146.7" fill="#B0472A"/>
+<rect x="310" y="142.3" width="64" height="51.3"  fill="#6A8E7F"/>
+<rect x="400" y="142.3" width="64" height="69.8"  fill="#B0472A"/>
+<rect x="490" y="212.1" width="64" height="18.8"  fill="#B0472A"/>
+<rect x="580" y="230.9" width="64" height="59.1"  fill="#3C3A35"/>
+<text x="72"  y="157" class="s-v" text-anchor="middle">8.631</text>
+<text x="162" y="40"  class="s-v" text-anchor="middle">+8.132</text>
+<text x="252" y="40"  class="s-v" text-anchor="middle">−10.117</text>
+<text x="342" y="135" class="s-v" text-anchor="middle">+3.538</text>
+<text x="432" y="135" class="s-v" text-anchor="middle">−4.809</text>
+<text x="522" y="205" class="s-v" text-anchor="middle">−1.302</text>
+<text x="612" y="224" class="s-v" text-anchor="middle">4.073</text>
+<text x="72"  y="308" class="s-l" text-anchor="middle">Açılış</text>
+<text x="162" y="308" class="s-l" text-anchor="middle">Faaliyet</text>
+<text x="252" y="308" class="s-l" text-anchor="middle">Yatırım</text>
+<text x="342" y="308" class="s-l" text-anchor="middle">Finansman</text>
+<text x="432" y="308" class="s-l" text-anchor="middle">Çevrim</text>
+<text x="522" y="308" class="s-l" text-anchor="middle">Parasal</text>
+<text x="612" y="308" class="s-l" text-anchor="middle">Kapanış</text>
+<text x="12" y="326" class="s-s">Köprü kapalı: 8.631 + 8.132 − 10.117 + 3.538 − 4.809 − 1.302 = 4.073 (fark 0)</text>
+</svg>
+</div>
+<ul>
+<li>İşletme faaliyetleri +8.132 (geçen yıl aynı dönem +4.790; +%70). Yatırım −10.117: portföy hareketi net −7.322 (alım 55.350 / satış 48.028), makine-teçizat alımı −3.427. <span class="tag hesap">hesap</span></li>
+<li>Finansman +3.538: kredi girişi +6.066, faiz ödemesi −1.036, kontrol gücü olmayan paylar temettüsü −280, kendi payı alımı −94. <span class="tag hesap">hesap</span></li>
+<li>Nakit düşüşünün üçte biri kullanım dışı kalemlerden: yabancı para çevrim farkı −4.809 ve nakdin parasal etkisi −1.302. Yabancı para nakit taşımanın düzeltme/çevrim maliyeti ilk kez bu ölçekte görünür oldu. <span class="tag cikarim">çıkarım</span></li>
+<li>Serbest nakit (faaliyet − makine alımı) +4.705 — portföy alım-satımı hariç pozitif. Nakit portföye çevrildi; borç ödenmedi, krediler arttı. <span class="tag hesap">hesap</span></li>
+</ul>
+</section>
+<section id="sektor">
+<h2>5 · Segment mimarisi: iki kazanç kalemi, iki zarar kalemi <span class="tag hesap">hesap</span></h2>
+<div class="svgbox">
+<svg viewBox="0 0 860 360" role="img" aria-label="Segment vergi öncesi kârı">
+<text x="12" y="22" class="s-t">Vergi öncesi kâr, 2026 ilk yarı (mn TL) — kırmızı = zarar</text>
+<line x1="240" y1="36" x2="240" y2="340" stroke="#1F1E1D"/>
+<text x="12" y="57" class="s-l">Finansman ve yatırım</text>
+<rect x="240" y="46"  width="330" height="15" fill="#6A8E7F"/>
+<text x="576" y="57" class="s-v">3.887</text>
+<text x="12" y="101" class="s-l">Madencilik</text>
+<rect x="240" y="90"  width="130" height="15" fill="#6A8E7F"/>
+<text x="376" y="101" class="s-v">1.527</text>
+<text x="12" y="145" class="s-l">Elektrik üretimi</text>
+<rect x="240" y="134" width="44" height="15" fill="#6A8E7F"/>
+<text x="290" y="145" class="s-v">516</text>
+<text x="12" y="189" class="s-l">İnternet ve eğlence</text>
+<rect x="240" y="178" width="9" height="15" fill="#6A8E7F"/>
+<text x="255" y="189" class="s-v">108</text>
+<text x="12" y="233" class="s-l">Gayrimenkul</text>
+<rect x="240" y="222" width="3" height="15" fill="#6A8E7F"/>
+<text x="249" y="233" class="s-v">37</text>
+<text x="12" y="277" class="s-l">Otomotiv ticaret ve pazarlama</text>
+<rect x="240" y="266" width="28" height="15" fill="#B0472A"/>
+<text x="274" y="277" class="s-v">−334</text>
+<text x="12" y="321" class="s-l">Sanayi ve ticaret</text>
+<rect x="240" y="310" width="37" height="15" fill="#B0472A"/>
+<text x="283" y="321" class="s-v">−431</text>
+<text x="12" y="352" class="s-s">Negatif değerler eksenin sağına kırmızı çubukla çizildi · çubuk boyutu 0,085 px/mn TL</text>
+</svg>
+</div>
+<table>
+<tr><th>Segment</th><th class="num">Grup dışı gelir</th><th class="num">Yıllık değişim</th><th class="num">Vergi öncesi 26-Y1</th><th class="num">Vergi öncesi 25-Y1</th><th class="num">Özkaynak 30.06.26</th><th class="num">Yatırım harcaması</th></tr>
+<tr><td>Finansman ve yatırım</td><td class="num">21.730</td><td class="num">−%4,0</td><td class="num">3.887</td><td class="num">3.015</td><td class="num">163.323</td><td class="num">146</td></tr>
+<tr><td>Elektrik üretimi</td><td class="num">1.108</td><td class="num">−%29,8</td><td class="num">516</td><td class="num">824</td><td class="num">18.283</td><td class="num">866</td></tr>
+<tr><td>Madencilik</td><td class="num">3.854</td><td class="num">+%50,8</td><td class="num">1.527</td><td class="num">418</td><td class="num">6.808</td><td class="num">1.373</td></tr>
+<tr><td>Sanayi ve ticaret</td><td class="num">13.732</td><td class="num">−%6,8</td><td class="num">−431</td><td class="num">−1.981</td><td class="num">5.854</td><td class="num">583</td></tr>
+<tr><td>Otomotiv ticaret ve pazarlama</td><td class="num">8.137</td><td class="num">−%23,6</td><td class="num">−334</td><td class="num">−1.457</td><td class="num">2.234</td><td class="num">144</td></tr>
+<tr><td>İnternet ve eğlence</td><td class="num">2.425</td><td class="num">−%2,1</td><td class="num">108</td><td class="num">213</td><td class="num">3.582</td><td class="num">217</td></tr>
+<tr><td>Gayrimenkul</td><td class="num">849</td><td class="num">−%2,0</td><td class="num">37</td><td class="num">170</td><td class="num">15.918</td><td class="num">98</td></tr>
+<tr><td><b>Toplam</b></td><td class="num"><b>51.834</b></td><td class="num"><b>−%6,6</b></td><td class="num"><b>5.311</b></td><td class="num"><b>1.203</b></td><td class="num"><b>112.318</b></td><td class="num"><b>3.427</b></td></tr>
+</table>
+<p><b>Elektrik gelir köprüsü — GWIND miktar × fiyat ayrışması</b> (GWIND Fa26-H1 §H + FR + EVDS; düzeltilmiş TL-mn, Haz-26 satın alma gücü; köprü artık-farkı sıfır):</p>
+<table>
+<tr><th>Köprü adımı</th><th class="num">Değer</th><th>Dayanak</th></tr>
+<tr><td>H1-25 geliri · 403.480 MWh × 3.911 TL/MWh (reel)</td><td class="num">1.578,0</td><td>GWIND FR 2025-H1 üretim + 2026-H1 düzeltilmiş hasılat</td></tr>
+<tr><td>Miktar etkisi · +51.240 MWh (+%12,7)</td><td class="num">+200,4</td><td>Fa §H "ek kapasite + iklim şartları"; ülke-geneli rüzgâr yoy +%13,5 (TEİAŞ aylık)</td></tr>
+<tr><td>Fiyat etkisi · reel birim fiyat 3.911→2.435 (−%37,7)</td><td class="num">−671,0</td><td>Spot PTF −%34,7 TL / −%44,7 USD (Fa piyasa bölümü)</td></tr>
+<tr><td>H1-26 geliri · 454.720 MWh</td><td class="num">1.107,4</td><td>DOHOL elektrik segmenti = GWIND konsolide hasılat ✓</td></tr>
+</table>
+<ul>
+<li>Grup özkaynağının %145'i finansman-ve-yatırım segmentinde (163.323 mn; eliminasyon sonrası konsolidasyon 112.318'e iner — segment toplamı 216.002 − eliminasyon 103.683 = bilanço ile birebir ✓). <span class="tag hesap">hesap</span></li>
+<li>Madencilik gelirini %51 artırdı; Gümüştaş'ın Bolkar yatağı için ~12,7 mn tonluk UMREK uyumlu kaynak tahmini 20.04.2026'da açıklandı. Segment özkaynağı hâlâ küçük (6.808) — büyüme yatırım harcamasıyla geliyor. <span class="tag hesap">hesap</span></li>
+<li>Elektrik köprüsü (hesap): gerileme rejim sorunu değil — miktar +%12,7 (RES +%14,4) olumlu, bağlayıcı taraf reel birim fiyat (−%37,7). YEKDEM USD-bloku (Taşpınar→2030; Çorum→2027, Erzurum→2028 GES @ 133 USD/MWh) + USD/TL ortalaması +%19, realize fiyatı piyasa reel −%50,6 düşüşüne karşı tamponladı; Şah+Mersin (283,9 MW RES'in 204,9 MW'si) spot/ikili-anlaşma maruziyeti tam. <span class="tag hesap">hesap</span></li>
+<li>EVDS fiyat takozu (canlı, 08.10.2026): Yİ-ÜFE elektrik üretim/iletim/dağıtımı (TP.TUFE1YI.T120) Mayıs–Haziran'da yıllık negatife döndü (−%16,9/−%16,5) — toptan çöküş üretici endeksine gecikmeli yansıyor; konut tarifesi (TÜFE elektrik, TP.TUKFIY2025.04510) aynı aylarda +%17,9/+%22,1 yükselmeye devam — toptan↔perakende ayrışması. TEİAŞ aylık raporu native teyit (08.10): ülke-geneli RES H1-26 21.457 GWh, yoy +%13,5 (üretim payı %12,2 — Fa'nın +%12,2'si paydı); GWIND RES +%14,4 ülke ortalamasının hafif üstü; hidrolik payı %19,4→%32,3, doğalgaz payı %20,0→%12,7 — Fa'nın fiyat anlatısı TEİAŞ gerçekleşmesiyle birebir. <span class="tag hesap">hesap</span></li>
+<li>Segment kârı (−%37,5) gelirden (−%29,8) daha dik: 20→30 yıl amortisman revizyonu rüzgârına (amortisman 411,5 vs 521,7 mn TL) rağmen operasyonel kaldıraç negatif çalıştı. <span class="tag hesap">hesap</span></li>
+</ul>
+</section>
+
+<section id="makro">
+<h2>6 · Makro katman: kâr üretim mekanizması faiz döngüsüne bağlı <span class="tag hesap">hesap</span></h2>
+<p class="sub">Negatif kayıt: DOHOL'un KAP sektörü "holdings ve yatırım şirketleri" — TCMB Sektör Bilançoları kümesi holdingleri kapsamıyor; hazır sektör veri seti tanımlı değil. Politika faizi = TCMB bir hafta vadeli repo ihale faiz oranı; adım tarihleri TCMB PPK karar duyurularından (`tcmb_ppk.py`), dizi EVDS3 BIS ülke faizleri grubundan (`TP.BISPOLFAIZ.TUR`, aylık) çekilip çapraz doğrulandı (08.10.2026).</p>
+<div class="svgbox">
+<svg viewBox="0 0 860 240" role="img" aria-label="Politika faizi adımları">
+<text x="12" y="22" class="s-t">TCMB politika faizi, % (gerçekleşen karar adımları)</text>
+<polyline points="60,33 144,33 144,81 220,81 220,120 286,120 286,138 362,138 362,166 427,166 427,183 820,183" fill="none" stroke="#D97757" stroke-width="2.5"/>
+<text x="100" y="49" class="s-v">46</text>
+<text x="182" y="75" class="s-v" text-anchor="middle">43</text>
+<text x="253" y="114" class="s-v" text-anchor="middle">40,5</text>
+<text x="324" y="154" class="s-v" text-anchor="middle">39,5</text>
+<text x="394" y="182" class="s-v" text-anchor="middle">38</text>
+<text x="620" y="177" class="s-v">37</text>
+<text x="144" y="204" class="s-s" text-anchor="middle">24.07.2025</text>
+<text x="220" y="204" class="s-s" text-anchor="middle">11.09.2025</text>
+<text x="286" y="204" class="s-s" text-anchor="middle">23.10.2025</text>
+<text x="362" y="204" class="s-s" text-anchor="middle">11.12.2025</text>
+<text x="427" y="204" class="s-s" text-anchor="middle">22.01.2026</text>
+<text x="60"  y="228" class="s-s" text-anchor="middle">Haz-25</text>
+<text x="392" y="228" class="s-s" text-anchor="middle">Oca-26</text>
+<text x="535" y="228" class="s-s" text-anchor="middle">Nis-26</text>
+<text x="677" y="228" class="s-s" text-anchor="middle">Tem-26</text>
+<text x="820" y="228" class="s-s" text-anchor="middle">Eki-26</text>
+</svg>
+<div class="figcap">Politika faizi = bir hafta vadeli repo ihale faiz oranı. Adımlar TCMB PPK karar duyurularından (<code>scripts/tcmb_ppk.py</code>); aylık düzey EVDS3 <code>TP.BISPOLFAIZ.TUR</code> (BIS ülke faizleri) ile birebir örtüşüyor (08.10.2026 canlı). 37 % 12.03 / 22.04 / 11.06 / 23.07 / 10.09.2026 kararlarıyla sabit. Uyarı: AOFM serisi (TP.APIFON4) politika faiziyle aynı tanım değil — koridor dönemlerinde ayrışır; BIS serisi aylık olduğu için adım tarihleri tek tek ancak DUY kayıtlarından okunur.</div>
+</div>
+<ul>
+<li>Toplam −9 puanlık indirim yürüyüşü altı ardışık toplantıda gerçekleşti (24.07.2025–22.01.2026) ve net yatırım gelirindeki +%137,7 sıçramanın mekanik gerekçesini oluşturuyor: portföyün tahvil ayağı (29.255 mn) kupon yeniden-yatırımı, fon ayağı (55.785 mn) değerleme kazancı. <span class="tag hesap">hesap</span></li>
+<li>İzleme maddesi: indirim döngüsü durursa yatırım geliri katkısı yavaşlar — değerleme bandının birinci çıpa riski bu. <span class="tag cikarim">çıkarım</span></li>
+<li>Şirket oranları TMS 29'a göre düzeltilmiş; karşılaştırılabilir sektör oran tablosu üretilmiyor (küme dışı). Kullanılabilecek tek dış kıyas: holding ikiz-grubu PD/DD dizisi (değerleme bölümünde). <span class="tag hesap">hesap</span></li>
+</ul>
+</section>
+<section id="degerleme">
+<h2>7 · Değerleme: iki bağımsız çıpa aynı yerde buluşuyor <span class="tag cikarim">çıkarım</span></h2>
+<div class="svgbox">
+<svg viewBox="0 0 900 310" role="img" aria-label="Senaryo merdiveni TL/pay">
+<text x="12" y="22" class="s-t">Senaryo merdiveni (TL/pay)</text>
+<text x="12" y="68" class="s-l">Mevcut fiyat (08.10.2026)</text>
+<rect x="300" y="56" width="165" height="15" fill="#D97757"/><text x="471" y="68" class="s-v">18,37</text>
+<text x="12" y="112" class="s-l">Damodaran çıpası (PD/DD 0,673)</text>
+<rect x="300" y="100" width="225" height="15" fill="#6A8E7F"/><text x="531" y="112" class="s-v">24,97</text>
+<text x="12" y="156" class="s-l">Düzeltilmiş SOTP × 0,70 (%30 iskonto)</text>
+<rect x="300" y="144" width="225" height="15" fill="#6A8E7F"/><text x="531" y="156" class="s-v">24,99</text>
+<text x="12" y="200" class="s-l">Düzeltilmiş SOTP (iskontosuz)</text>
+<rect x="300" y="188" width="321" height="15" fill="#C9A227"/><text x="627" y="200" class="s-v">35,71</text>
+<text x="12" y="240" class="s-s">Referanslar</text>
+<rect x="300" y="228" width="334" height="13" fill="#B9B3A4"/><text x="640" y="239" class="s-s">defter 37,10</text>
+<rect x="300" y="245" width="159" height="13" fill="#B9B3A4"/><text x="465" y="256" class="s-s">net finansal varlık/pay 17,68</text>
+<line x1="300" y1="36" x2="300" y2="262" stroke="#1F1E1D"/>
+<text x="300" y="292" class="s-s">Sıfır çizgisi 300 px'te · çubuk = TL/pay × 9 · SOTP: parça parça değerleme toplamı</text>
+</svg>
+</div>
+<p><b>Yöntem 1 — Damodaran emsal çıpası:</b> gelişen ülke "çeşitlendirilmiş" sektörü (n=215) PD/DD 0,717 @ özkaynak kârlılığı %7,13. Şirketin düzeltilmiş özkaynak kârlılığı %6,69 → ROE-orantılı PD/DD 0,673 × defter 37,10 TL = <b>24,97 TL</b>. Kayıt: Damodaran tablosunda "holding" satırı yoktur; çeşitlendirilmiş satırı tanım gereği en yakın emsaldir (KOÇ Holding analizinde de aynı kayıt). <span class="tag hesap">hesap</span></p>
+<p><b>Yöntem 2 — parça parça değerleme (SOTP) yürüyüşü:</b> ana ortaklık özkaynağı 95.446 − GWIND defter-pazar farkı (hisse payı defter 12.582, piyasa-payı 7.511 ⇒ −5.071) + KAREL farkı (piyasa-payı 1.960, defter 453 ⇒ +1.507) = düzeltilmiş SOTP 91.882 mn → <b>35,71 TL/pay</b>; %30 holding indirimi → <b>24,99 TL</b>. Damodaran çıpasıyla 2 kuruş farkla çakışıyor — iki-bacaklı teyit. <span class="tag cikarim">çıkarım</span></p>
+<p><b>Ters-çapa:</b> 18,37 TL, özkaynak kârlılığın sonsuza dek %4,9 kalacağını varsayıyor (0,495/0,717 × 7,13). Son 12 ay ana ortaklık kârı 6.388 mn bu varsayımı ~%35 yukarı çekiyor: çıpa 25 TL'ye çıkar — piyasa ilk yarı momentumunu henüz fiyatlamıyor. <span class="tag cikarim">çıkarım</span></p>
+<table>
+<tr><th>Çarpan</th><th class="num">DOHOL</th><th class="num">KCHOL</th><th class="num">SAHOL</th><th class="num">Damodaran çeşitlendirilmiş</th></tr>
+<tr><td>PD/DD</td><td class="num">0,495</td><td class="num">0,681</td><td class="num">0,444</td><td class="num">0,717</td></tr>
+<tr><td>Özkaynak kârlılığı</td><td class="num">%6,69</td><td class="num">%5,47</td><td class="num">%5,64</td><td class="num">%7,13</td></tr>
+<tr><td>F/K (son 12 ay)</td><td class="num">7,53</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr>
+</table>
+<div class="okbox">İkiz-grup taraması: PD/DD'de ikinci ucuz (SAHOL 0,444 altında) ama özkaynak kârlılığında grup birincisi. Ucuzluk ve sürücü birlikte: üçlü içindeki tek "sürücülü ucuz". <span class="tag cikarim">çıkarım</span></div>
+</section>
+
+<section id="oneri">
+<h2>8 · Öneri bandı ve karar tablosu</h2>
+<div class="okbox"><b>Değer bandı: 24,7–25,3 TL · merkez 25,0 TL.</b> Fiyat 18,37 TL — bant alt sınırının %26 altında, merkeze alan +%36. İki bağımsız çıpa (24,97 / 24,99) bandın merkezini belirliyor. <span class="tag cikarim">çıkarım</span></div>
+<p><b>Hüküm: AL (kademeli).</b> Piyasa değeri (48.074) net finansal varlığa (45.475) eşit: madencilik, enerji, gayrimenkul ve finans portföyü fiyatta yaklaşık sıfıra alınmış. Kâr son 12 ayda 6,4 mlyara çıktı ve sürücüsü ölçülebilir (faiz döngüsü + madencilik). Karşı ağırlıklar: kârın portföy bağımlılığı, temettü yokluğu, %23 kâr sızıntısı (kontrol gücü olmayan paylar). Tez "ucuzluk" değil; net varlık tabanlı yakınsama + faiz döngüsü sürücüsü. Giriş kademeli. <span class="tag cikarim">çıkarım</span></p>
+<table>
+<tr><th>Bant</th><th>Koşul / fiyat</th><th>Eylem</th></tr>
+<tr><td><b>AL</b></td><td>18,37 TL (bant alt sınırının %26 altında)</td><td>İlk tranş; 21 TL altı kademeli ekleme</td></tr>
+<tr><td>Giriş / artış tetikleyicileri</td><td>Faiz indirimi döngüsünün devamı; Daiichi Elektronik halka-arz başvurusunun gerçekleşmesi (21.09.2026 esas sözleşme hazırlığı); FY26 temettü politikasına dönüş; madencilik yatırım harcamasının üretime dönmesi (Bolkar)</td><td>Kademeli giriş / ağırlık artırımı</td></tr>
+<tr><td>Çıkış / kesme sinyali</td><td>Politika faizinde indirimin durması veya yön değişimi; yatırım gelirinin iki çeyrek üst üste düşüşü; Hepiyi opsiyon bedelinin belirgin büyümesi; kontrol gücü olmayan pay kâr sızıntısının %30'u aşması; PD/DD'nin 0,85 üzerine çıkışı (bandın gerçekleşmesi)</td><td>Kısmi / tam çıkış</td></tr>
+</table>
+<p><b>Katalizör takvimi:</b> TCMB 22.10.2026 kararı · 2026 üçüncü çeyrek tabloları (portföy getirisinin sürmesi) · Daiichi halka-arz başvuru süreci · KAREL tahsisli sermaye artışı akıbeti (SPK 29.07.2026'da fiyat revizyonunu uygun bulmadı — artış gerçekleşmedi) · Bolkar maden gelişimi · FY26 temettü kararı.</p>
+<div class="flag"><b>Ters köşe kontrolü (neden yanılabiliriz):</b> iskonto faiz döngüsüne fiyatlanmış olabilir — indirim durursa yatırım geliri düşer ve "ucuz" anında pahalıya döner; portföy geliri temettüye dönüşmediği sürece iskontonun kapanma mekanizması yoktur (holding indirimi için kurumsal araç yok); KGO payı büyüdükçe ana ortaklık defterinin erişilebilir kısmı küçülür.</div>
+</section>
+
+<section id="olay">
+<h2>9 · Olay kronolojisi (2025 sonu → 2026)</h2>
+<table>
+<tr><th>Tarih</th><th>Olay</th><th>Analize etkisi</th></tr>
+<tr><td>20.03.2025</td><td>2024 nakit temettüsü 0,3057 TL/pay (peşin, %15 stopaj)</td><td>Dağıtım geleneğinin son halkası</td></tr>
+<tr><td>2025</td><td>GWIND Almanya 22 MW güneş santralı + Gökova/Nova Avrupa edinimleri</td><td>Enerji segmentinin büyüme ayağı</td></tr>
+<tr><td>22.01 / 01.06.2026</td><td>KAREL tahsisli sermaye artışı kararları (1,75 → 2,25 mlyar TL; Öncü GSYO katılımı)</td><td>KAREL N21: SPK fiyat revizyonunu 29.07.2026'da uygun bulmadı — artış gerçekleşmedi; DOHOL'un %40 ekonomik payı seyrelmedi</td></tr>
+<tr><td>10.04.2026</td><td>Pay geri alım programı sonlandırıldı</td><td>Geri alınmış paylar −921 mn bilançoda duruyor</td></tr>
+<tr><td>17.03 / 10.04.2026</td><td><b>2025 temettüsü yok</b> (0,0000 TL/pay)</td><td>İskontonun kısmi bedeli; toparlanma halinde ilk geri-dönüş katalizörü</td></tr>
+<tr><td>20.04.2026</td><td>Gümüştaş Bolkar (Niğde) UMREK uyumlu polimetalik kaynak tahmini ~12,7 mn ton</td><td>Madencilik segmenti büyüme kanıtı</td></tr>
+<tr><td>21.09.2026</td><td><b>Daiichi Elektronik halka-arz hazırlığı</b> (esas sözleşme + kayıtlı sermaye izni; DOHOL dolaylı %46,6)</td><td>Portföyün realize kanalına girme adayı — SOTP'de realize edilmemiş değer</td></tr>
+<tr><td>30.09.2026</td><td>Devre kesici (DOHOL.E)</td><td>Volatilite notu; standart SPK işlem-yasağı duyuruları yıl boyu sürdü</td></tr>
+</table>
+</section>
+
+<section id="hukum">
+<h2>10 · Son hüküm</h2>
+<p>DOHOL bir sanayi holdingi değil, portföyünü kendi bilançosunda taşıyan yatırım-holding. Bilanço sağlam: vade kuralı altı dönemde sağlı, net finansal varlık +45.475 mn, kaldıraç düşük. Kâr ilk yarıda döndü (ana ortaklık +3.649 mn), sürücüsü ölçülebilir. Fiyat (18,37 TL) neredeyse yalnızca net finansal varlığı karşılıyor; iki bağımsız çıpa 25 TL'de çakışıyor. Karar: <b>AL (kademeli)</b>, band 24,7–25,3 TL.</p>
+<p><b>Ekonomik durum etiketi:</b> sürücüsü olan derin iskonto — faiz döngüsüne endeksli net-varlık ticareti. <span class="tag cikarim">çıkarım</span></p>
+</section>
+
+<footer id="kaynak">
+<section>
+<h3>İddia → kaynak</h3>
+<ul>
+<li>Bilanço, gelir, özkaynak hareketi, nakit akışı ve dipnot sayıları: KAP 2026-H1 finansal rapor tam metni (TMS 29'a göre düzeltilmiş, bin TL, 30 Haziran 2026 alım gücü). Anahtar satırlar rapor metniyle tek tek doğrulandı; kök çarpım denetimi satır numaralı tabloyla wiki'de: dönen 138.287.641 (satır 97) · aktif 220.342.944 (133) · özkaynak 112.318.415 (214) · N6 borçlanma 1533/1542/1551 · nakit köprüsü 560–570 (fark 0).</li>
+<li>Segment ağacı ve eliminasyon kökü: dipnot N3 (rapor içi); KAREL dipnot N22 (KAREL'in kendi 2026-H1 raporuyla birebir); GWIND piyasa değeri: GWIND 2026-H1 raporu + Borsa pay fiyatı.</li>
+<li>Olaylar: KAP özel durum açıklamaları (2025–2026 gövde taraması; bildirim tarihleri tabloda).</li>
+<li>Fiyat ve piyasa değeri: Matriks canlı servisi 08.10.2026 kapanışı. Politika faizi: TCMB karar metinleri (tcmb_ppk.py, 08.10.2026 erişimi).</li>
+<li>Damodaran sektör verisi: Damodaran çeşitlendirilmiş satırı (n=215, 2026 vintaj) — wiki [[damodaran-degerleme-notlari]].</li>
+</ul>
+<h3>Bilinen veri kusurları (kaynak tarafında, giderilemez)</h3>
+<ul>
+<li>2026 ilk çeyrek raporunun 31.12.2025 kıyas kolonu yeniden-sınıflamalı (kısa vadeli yükümlülük 79.729 vs yıllık raporun kendi Aralık-25 kolonu 72.453): altı-dönem serisi her dönemin kendi rapor kolonuyla kuruldu.</li>
+<li>Yıllık raporun hisse başına kâr satırı "Kr" etiketiyle birim hatası taşıyor; analiz bin-TL/bin-pay ölçeğini kendi bölmesiyle doğruladı (1.792.287 ÷ 2.616.996 = 0,685 TL).</li>
+<li>Çeyreklik finansman gideri üçüncü ve dördüncü çeyrek 2025 için ayrı yayımlanmıyor; gelir tablosu grafiğinde kâr ve yatırım geliri kolonları kullanıldı.</li>
+<li>Pay adedi iki tabanlı: çıkarılmış 2.616.996.091 (piyasa değeri hesabı) ile geri alımlar düşülmüş net 2.572.673.058 (defter/ölçü hesabı); iki taban tablolarda ayrı etiketlendi, birbirine karıştırılmadı.</li>
+<li>Elektrik segmenti gerilemesinin miktar×fiyat ayrışması FR metninde kalem kalem yayımlanmıyor (kaynak-kusuru sürüyor) — ayrıştırma §5'te Fa §H + GWIND FR üretimi + EVDS/TEİAŞ native verisiyle kuruldu (08.10 revizyonu); FR düzeyinde resmî ayrışma yayını hâlâ yok.</li>
+</ul>
+<h3>Şirket künyesi</h3>
+<p>Doğan Şirketler Grubu Holding A.Ş. · Merkez: Burhaniye Mah. Kısıklı Cad. No:65, Üsküdar 34676 İstanbul (rapor dipnot 1 kayıtlı adresi) · Ödenmiş sermaye 2.616.996 bin TL (2.616.996.091 pay; bilanço satır 216) · Fiili dolaşım %35,7 (dipnot 1).<br>
+<b>Denetim:</b> 2026-H1 ara dönem sınırlı denetimi DRT Bağımsız Denetim ve Serbest Muhasebeci Mali Müşavirlik A.Ş. (Deloitte Touche Tohmatsu üyesi) tarafından SBDS 2410'a uygun yürütülmüştür (Sorumlu Denetçi Tolga Sirkecioğlu, SMMM, İstanbul, 11.08.2026); olumsuz görüş bildiren husus tespit edilmemiştir.</p>
+<p><b>Bu sayfa</b>, wiki sentez sayfasının sunum kopyasıdır; doğruluk kaynağı wiki + KAP dosyalarıdır. Wiki: <i>synthesis/dohol-2026h1-bilanco-analizi</i> (güncelleme 08.10.2026, kayıt log-89).</p>
+</section>
+<div class="copy">© 2026 Enis Halıcı · Tüm hakları saklıdır.</div>
+</footer>
+
+</div>
+<!-- site-publish:footer -->
+<footer style="max-width:1080px;margin:26px auto 0;padding:14px 20px 22px;border-top:1px solid
+ #E3DED2;font-size:12px;color:#5D594D">
+Bu içerik yatırım tavsiyesi değildir. Veriler KAP kamuyu aydınlatma platformu
+kaynaklıdır; analiz yorum içerir. ·
+<a href="/" style="color:#B0472A">Ana Sayfa</a> ·
+<a href="/reports/DOHOL/" style="color:#B0472A">Tüm DOHOL Raporları</a>
+</footer>
+</body>
+</html>

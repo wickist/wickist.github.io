@@ -135,6 +135,29 @@
         "H1",
         "gyo"
       ]
+    },
+    {
+      "ticker": "DOHOL",
+      "company": "Doğan Şirketler Grubu Holding A.Ş.",
+      "period": "2026-Q2",
+      "periodLabel": "2026 H1",
+      "year": 2026,
+      "quarter": 2,
+      "title": "DOHOL 2026 H1 Finansal Analiz Raporu",
+      "description": "Portföyünü bilançosunda taşıyan yatırım-holding okuması: nakit+finansal yatırım ağırlıklı aktif mimarisi, segment/GWIND elektrik köprüsü ve düzeltilmiş SOTP/NAV bantı.",
+      "publishedAt": "2026-10-08",
+      "updatedAt": "2026-10-08",
+      "path": "/reports/DOHOL/2026-Q2/",
+      "ogImage": "/reports/DOHOL/2026-Q2/og-cover.png",
+      "tags": [
+        "bilanço",
+        "finansal-analiz",
+        "DOHOL",
+        "2026Q2",
+        "H1",
+        "holding",
+        "sotp"
+      ]
     }
   ]
 }
