@@ -158,6 +158,52 @@
         "holding",
         "sotp"
       ]
+    },
+    {
+      "ticker": "SASA",
+      "company": "SASA Polyester Sanayi A.Ş.",
+      "period": "2026-Q2",
+      "periodLabel": "2026 H1",
+      "year": 2026,
+      "quarter": 2,
+      "title": "SASA 2026 H1 Finansal Analiz Raporu",
+      "description": "Operasyonel toparlanma ve hastalıklı sermaye yapısının okuması: vade mimarisi, TMS 29 parasal kazanç bağımlılığı, döngü-senaryolu çarpan merdiveni ve değer bandı.",
+      "publishedAt": "2026-10-09",
+      "updatedAt": "2026-10-09",
+      "path": "/reports/SASA/2026-Q2/",
+      "ogImage": "/reports/SASA/2026-Q2/og-cover.png",
+      "tags": [
+        "bilanço",
+        "finansal-analiz",
+        "SASA",
+        "2026Q2",
+        "H1",
+        "polyester",
+        "değer-tuzagı"
+      ]
+    },
+    {
+      "ticker": "SISE",
+      "company": "Türkiye Şişe ve Cam Fabrikaları A.Ş.",
+      "period": "2026-Q2",
+      "periodLabel": "2026 H1",
+      "year": 2026,
+      "quarter": 2,
+      "title": "SISE 2026 H1 Finansal Analiz Raporu",
+      "description": "Likiditesi yeniden düzenlenen, kârlılığı çöken bilançonun okuması: vade mimarisi, parasal kazanç bağımlılığı, nakit kanalları ve defter-değeri iskontosu.",
+      "publishedAt": "2026-10-09",
+      "updatedAt": "2026-10-09",
+      "path": "/reports/SISE/2026-Q2/",
+      "ogImage": "/reports/SISE/2026-Q2/og-cover.png",
+      "tags": [
+        "bilanço",
+        "finansal-analiz",
+        "SISE",
+        "2026Q2",
+        "H1",
+        "cam",
+        "kimya"
+      ]
     }
   ]
 }
