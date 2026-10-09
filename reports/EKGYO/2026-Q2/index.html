@@ -48,6 +48,9 @@ td{padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
 .kpi .l{font-size:11.5px;color:#C9C4B8;margin-top:2px}
 .badge{display:inline-block;background:var(--sage);color:#fff;font-weight:700;padding:6px 16px;border-radius:20px;font-size:14px}
 .badge.warn{background:var(--danger)}
+.band{display:inline-block;width:46px;height:14px;border-radius:7px;vertical-align:middle;background:#6A8E7F}
+.band.red{background:#B0472A}
+.band.gray{background:#9A958A}
 .note{font-size:12.5px;color:#6B675E;margin-top:8px}
 .figcap{font-size:12.5px;color:#6B675E;margin-top:6px}
 .svgbox{overflow-x:auto}
@@ -388,7 +391,7 @@ nav a:hover{color:var(--ink)}
 <div class="okbox"><b>Sektör rejimi, şirkete özgü ayıp değil:</b> M sektörü 2025'i kambiyo zararları (143,8 mlr) + finansman gideri (74,8 mlr) ile <b>43,7 mlr TL net zararla</b> kapattı; faiz karşılama 1,09× — EKGYO'nun 0,99×'u sektörle aynı boylamda. Fark yastıkta: sektörün özkaynak oranı EKGYO'nun 1,7 katı — aynı faiz şoku EKGYO'da daha derin keser. <span class="tag cikarim">çıkarım</span></div>
 <ul>
 <li><b>Talep reel çöküyor:</b> konut satışı H1-26 nominal −%3,1 ama reel (TÜFE deflatörlü) aylık −%9,6…−%46,6; nominal yan yatay görüntü enflasyon illüzyonu. <span class="tag hesap">hesap</span></li>
-<li><b>İpotek kanalı kapalı:</b> akım faiz %41,8, ipotekli pay %17,4 (gelenek %30–40). Faiz indirimi gelmeden hacim toparlanması yok — AL tezinin zamanlayıcısı TCMB'de. <span class="tag cikarim">çıkarım</span></li>
+<li><b>İpotek kanalı kapalı:</b> akım faiz %41,8, ipotekli pay %17,4 (gelenek %30–40). Faiz indirimi gelmeden hacim toparlanması yok — giriş tezinin zamanlayıcısı TCMB'de. <span class="tag cikarim">çıkarım</span></li>
 <li><b>Reel fiyat erimesi:</b> KFE İstanbul reel y/y −%3,8; NAV için makro rüzgâr negatif — ama iskonto (PD/NAD 0,34) bunu zaten taşıyor. <span class="tag cikarim">çıkarım</span></li>
 <li><b>İki hız:</b> L sektörü (kira/hizmet) reel +%2,1 büyürken alım-satım daralıyor — EKGYO kira geliri (+%13,9) bu direnci taşıyor. <span class="tag hesap">hesap</span></li>
 </ul>
@@ -441,10 +444,10 @@ nav a:hover{color:var(--ink)}
 <section id="oneri">
 <h2>10 · Öneri ve karar tablosu</h2>
 <div class="okbox"><b>Değer bandı: 22–31 TL · merkez 26,5 TL (NAD × 0,465).</b> Fiyat 19,42 TL — bandın %12 altında; merkeze alan +%36. Güvenlik marjı iki tabanda da var: defter 40,2 · net aktif değer 57,0. <span class="tag cikarim">çıkarım</span></div>
-<p><b>Hüküm: AL (kademeli).</b> Varlık defteri iki taban çıpasına da derin iskontolu; sözleşmeli ihale havuzu ~117 mlyr asgari şirket payı taahhüdü (95,4 Fa26 + Tepeüstü + Kemerburgaz 3) ve büyüyor (+35,5 mlyr teklif aşamasında); ön tahsilat defteri dolu; şirket kendi payını alıyor. Karşı ağırlık finansman yapısında: faiz karşılama 0,99×, borçlanma sınırı %81, son 12 ay zararı, kamu alacağı 41,6 mlyr tahsil takvimi (6,8 mlyr'si 02.10'da arsa mahsubuyla tahsil). Tez "ucuzluk" değil; teslimat ve faiz indirimi tetikleyicili iskonto yakınsama asimetrisi. Giriş kademeli; tetik listesi geçersiz kılarsa pozisyon kesilir. <span class="tag cikarim">çıkarım</span></p>
+<p><b>Hüküm: <span class="band"></span> (kademeli).</b> Varlık defteri iki taban çıpasına da derin iskontolu; sözleşmeli ihale havuzu ~117 mlyr asgari şirket payı taahhüdü (95,4 Fa26 + Tepeüstü + Kemerburgaz 3) ve büyüyor (+35,5 mlyr teklif aşamasında); ön tahsilat defteri dolu; şirket kendi payını alıyor. Karşı ağırlık finansman yapısında: faiz karşılama 0,99×, borçlanma sınırı %81, son 12 ay zararı, kamu alacağı 41,6 mlyr tahsil takvimi (6,8 mlyr'si 02.10'da arsa mahsubuyla tahsil). Tez "ucuzluk" değil; teslimat ve faiz indirimi tetikleyicili iskonto yakınsama asimetrisi. Giriş kademeli; tetik listesi geçersiz kılarsa pozisyon kesilir. <span class="tag cikarim">çıkarım</span></p>
 <table>
 <tr><th>Bant</th><th>Koşul / fiyat</th><th>Eylem</th></tr>
-<tr><td><b>AL</b></td><td>19,42 TL (bandın %12 altında)</td><td>İlk tranş; 22 TL altı kademeli ekleme</td></tr>
+<tr><td><span class="band"></span></td><td>19,42 TL (bandın %12 altında)</td><td>İlk tranş; 22 TL altı kademeli ekleme</td></tr>
 <tr><td>Giriş / artış tetikleri</td><td>Üçüncü çeyrekte ön tahsilatın hasılata dönüşü (satışlar ≥30 mlyr); faiz karşılamanın 1,25× üzerine çıkışı; Hasdal ve İnkılap sözleşme bildirimleri; 2026 temettüsünün korunması</td><td>Kademeli giriş / ağırlık artırımı</td></tr>
 <tr><td>Çıkış / kesme sinyali</td><td>Borçlanma sınırının %100'e yürümesi; faiz karşılamanın 1× altında üç çeyrek kalıcılığı; düz arsa satışının zararına devir rejimine dönmesi; temettü kesintisi; kamu alacağının 45 mlyr üzerine çıkıp nakde dönmemesi</td><td>Kısmi / tam çıkış</td></tr>
 </table>
