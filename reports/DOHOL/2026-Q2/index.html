@@ -359,25 +359,25 @@ nav a:hover{color:var(--ink)}
 <h2>6 · Makro katman: kâr üretim mekanizması faiz döngüsüne bağlı <span class="tag hesap">hesap</span></h2>
 <p class="sub">Negatif kayıt: DOHOL'un KAP sektörü "holdings ve yatırım şirketleri" — TCMB Sektör Bilançoları kümesi holdingleri kapsamıyor; hazır sektör veri seti tanımlı değil. Politika faizi = TCMB bir hafta vadeli repo ihale faiz oranı; adım tarihleri TCMB PPK karar duyurularından (`tcmb_ppk.py`), dizi EVDS3 BIS ülke faizleri grubundan (`TP.BISPOLFAIZ.TUR`, aylık) çekilip çapraz doğrulandı (08.10.2026).</p>
 <div class="svgbox">
-<svg viewBox="0 0 860 240" role="img" aria-label="Politika faizi adımları">
-<text x="12" y="22" class="s-t">TCMB politika faizi, % (gerçekleşen karar adımları)</text>
-<polyline points="60,33 144,33 144,81 220,81 220,120 286,120 286,138 362,138 362,166 427,166 427,183 820,183" fill="none" stroke="#D97757" stroke-width="2.5"/>
-<text x="100" y="49" class="s-v">46</text>
-<text x="182" y="75" class="s-v" text-anchor="middle">43</text>
-<text x="253" y="114" class="s-v" text-anchor="middle">40,5</text>
-<text x="324" y="154" class="s-v" text-anchor="middle">39,5</text>
-<text x="394" y="182" class="s-v" text-anchor="middle">38</text>
-<text x="620" y="177" class="s-v">37</text>
-<text x="144" y="204" class="s-s" text-anchor="middle">24.07.2025</text>
-<text x="220" y="204" class="s-s" text-anchor="middle">11.09.2025</text>
-<text x="286" y="204" class="s-s" text-anchor="middle">23.10.2025</text>
-<text x="362" y="204" class="s-s" text-anchor="middle">11.12.2025</text>
-<text x="427" y="204" class="s-s" text-anchor="middle">22.01.2026</text>
-<text x="60"  y="228" class="s-s" text-anchor="middle">Haz-25</text>
-<text x="392" y="228" class="s-s" text-anchor="middle">Oca-26</text>
-<text x="535" y="228" class="s-s" text-anchor="middle">Nis-26</text>
-<text x="677" y="228" class="s-s" text-anchor="middle">Tem-26</text>
-<text x="820" y="228" class="s-s" text-anchor="middle">Eki-26</text>
+<svg viewBox="0 0 840 240" role="img" aria-label="Politika faizi yürüyüşü">
+<text x="12" y="22" class="s-t">TCMB politika faizi (%, bir hafta vadeli repo) — gerçekleşen PPK kararları, Haz-25 → 10.09.2026</text>
+<line x1="60" y1="200" x2="780" y2="200" stroke="#DED9CB"/>
+<polyline points="90,52 200,84 310,110 420,120 530,136 640,147 750,147" fill="none" stroke="#D97757" stroke-width="3"/>
+<circle cx="90" cy="52" r="4" fill="#D97757"/><circle cx="200" cy="84" r="4" fill="#D97757"/><circle cx="310" cy="110" r="4" fill="#D97757"/><circle cx="420" cy="120" r="4" fill="#D97757"/><circle cx="530" cy="136" r="4" fill="#D97757"/><circle cx="640" cy="147" r="4" fill="#D97757"/><circle cx="750" cy="147" r="4" fill="#D97757"/>
+<text x="90" y="38" class="s-v" text-anchor="middle">46</text>
+<text x="200" y="70" class="s-v" text-anchor="middle">43</text>
+<text x="310" y="96" class="s-v" text-anchor="middle">40,5</text>
+<text x="420" y="106" class="s-v" text-anchor="middle">39,5</text>
+<text x="530" y="122" class="s-v" text-anchor="middle">38</text>
+<text x="640" y="133" class="s-v" text-anchor="middle">37</text>
+<text x="750" y="133" class="s-v" text-anchor="middle">37</text>
+<text x="90" y="220" class="s-s" text-anchor="middle">Haz-25</text>
+<text x="200" y="220" class="s-s" text-anchor="middle">24.07.25</text>
+<text x="310" y="220" class="s-s" text-anchor="middle">11.09.25</text>
+<text x="420" y="220" class="s-s" text-anchor="middle">23.10.25</text>
+<text x="530" y="220" class="s-s" text-anchor="middle">11.12.25</text>
+<text x="640" y="220" class="s-s" text-anchor="middle">22.01.26</text>
+<text x="750" y="220" class="s-s" text-anchor="middle">10.09.26 (5 toplantı sabit)</text>
 </svg>
 <div class="figcap">Politika faizi = bir hafta vadeli repo ihale faiz oranı. Adımlar TCMB PPK karar duyurularından (<code>scripts/tcmb_ppk.py</code>); aylık düzey EVDS3 <code>TP.BISPOLFAIZ.TUR</code> (BIS ülke faizleri) ile birebir örtüşüyor (08.10.2026 canlı). 37 % 12.03 / 22.04 / 11.06 / 23.07 / 10.09.2026 kararlarıyla sabit. Uyarı: AOFM serisi (TP.APIFON4) politika faiziyle aynı tanım değil — koridor dönemlerinde ayrışır; BIS serisi aylık olduğu için adım tarihleri tek tek ancak DUY kayıtlarından okunur.</div>
 </div>
