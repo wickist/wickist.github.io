@@ -20,7 +20,7 @@
 <meta name="twitter:title" content="SISE 2026 H1 Finansal Analiz Raporu">
 <meta name="twitter:description" content="Likiditesi yeniden düzenlenen, kârlılığı çöken bilançonun okuması: vade mimarisi, parasal kazanç bağımlılığı, nakit kanalları ve defter-değeri iskontosu.">
 <meta name="twitter:image" content="https://wickist.github.io/reports/SISE/2026-Q2/og-cover.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "SISE 2026 H1 Finansal Analiz Raporu", "description": "Likiditesi yeniden düzenlenen, kârlılığı çöken bilançonun okuması: vade mimarisi, parasal kazanç bağımlılığı, nakit kanalları ve defter-değeri iskontosu.", "inLanguage": "tr", "datePublished": "2026-10-09", "dateModified": "2026-10-09", "url": "https://wickist.github.io/reports/SISE/2026-Q2/", "image": "https://wickist.github.io/reports/SISE/2026-Q2/og-cover.png", "publisher": {"@type": "Organization", "name": "Finansal Analiz Raporları"}, "about": {"@type": "Organization", "name": "Türkiye Şişe ve Cam Fabrikaları A.Ş.", "tickerSymbol": "SISE"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "SISE 2026 H1 Finansal Analiz Raporu", "description": "Likiditesi yeniden düzenlenen, kârlılığı çöken bilançonun okuması: vade mimarisi, parasal kazanç bağımlılığı, nakit kanalları ve defter-değeri iskontosu.", "inLanguage": "tr", "datePublished": "2026-10-09", "dateModified": "2026-10-10", "url": "https://wickist.github.io/reports/SISE/2026-Q2/", "image": "https://wickist.github.io/reports/SISE/2026-Q2/og-cover.png", "publisher": {"@type": "Organization", "name": "Finansal Analiz Raporları"}, "about": {"@type": "Organization", "name": "Türkiye Şişe ve Cam Fabrikaları A.Ş.", "tickerSymbol": "SISE"}}</script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
 :root{
@@ -112,7 +112,7 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--accent-dark);outli
   <span class="brand">SISE · 2026-H1</span>
   <a href="#ozet">Özet</a><a href="#yapi">Bilanço Yapısı</a><a href="#oran">Oranlar</a>
   <a href="#gelir">Gelir Tablosu</a><a href="#nakit">Nakit Akışı</a><a href="#borc">Borç ve Riskler</a>
-  <a href="#sektör">Sektör</a><a href="#makro">Makro</a><a href="#olaylar">Olaylar</a><a href="#huküm">Hüküm</a>
+  <a href="#sektör">Sektör</a><a href="#makro">Makro</a><a href="#olaylar">Olaylar</a><a href="#makyaj">Makyaj</a><a href="#izleme">İzleme</a><a href="#huküm">Hüküm</a>
   <a href="#degerleme">Değerleme</a><a href="#oneri">Öneri</a><a href="#kaynak">Kaynaklar</a>
 </div></nav>
 
@@ -461,17 +461,20 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--accent-dark);outli
   </div>
 </div></section>
 
-<section id="huküm"><div class="wrap">
-  <h2>Hüküm ve izleme listesi</h2>
-  <p class="body"><b>Hüküm:</b> Likiditesi yeniden düzenlenen, kârlılığı çöken bilanço. Cari oran 1,81 ve altın finansman kuralı karşılanıyor; buna karşılık faaliyet kârı faiz giderini karşılamıyor (0,88×), nakit dönüş döngüsü 34 gün bozuldu, işletme nakit akışı eksi verdi ve çekirdek (parasal kazanç dışı) vergi öncesi zarar −9.718'e derinleşti. Dönem kârının kaynağı muhasebe transferleri; kâr kalitesi düşük. <span class="tag c">çıkarım — destekli</span></p>
-  <p class="body" style="font-weight:600;margin-top:18px">Kırılganlık sırası:</p>
-  <ul class="plain">
-    <li>Faiz karşılama 0,88× — faaliyet kârı faiz giderini karşılamıyor; yeni yabancı para kuponu %8,4+ ile ödeme maliyeti yapışkan.</li>
-    <li>Kovenant tanım değişikliği talebi — çözüme kavuşmazsa refinansman maliyeti sıçrar.</li>
-    <li>Nakit 21,6 mlr; yıllık faiz (8,8) + yatırım (12) + temettü toplamının altında. Varlık satışı veya yeni tahvil olmadan likidite daralması olası.</li>
-    <li>Teşvikli ertelenmiş vergi varlığı 13,4 mlr — kârsızlık uzarsa silme riski.</li>
-  </ul>
-  <p class="body" style="font-weight:600;margin-top:18px">İzlenecek yedi gelişme:</p>
+<section id="makyaj">
+<div class="wrap">
+<h2>Bilanço makyajı taraması: kazanç kalitesi</h2>
+<div class="verdict" style="border-left:4px solid var(--sage,#6B8E6B)"><b>Temiz tarama:</b> Beneish şüphe bandı dışında, Piotroski zayıf bantta değil, window-dressing bayrağı yok. Tarama temizliği kazanç garantisi değildir; bandın kendisi istatistiktir.</div>
+<div class="tblwrap"><table><tr><th>Metrik</th><th>Değer</th><th>Bant / okuma</th></tr><tr><td>Beneish M-Score</td><td><b>-1,941</b></td><td>şüphe bandı dışı (eşik -1,78 altı)</td></tr><tr><td>Piotroski F</td><td><b>5/9</b></td><td>nötr</td></tr><tr><td>Sloan tahakkuk oranı</td><td><b>0,015</b></td><td>tahakkuk baskısı yok</td></tr><tr><td>Faaliyet NA / net kâr</td><td><b>-0,70</b></td><td>nakit desteği zayıf</td></tr><tr><td>Örtük finansman maliyeti (net borca)</td><td><b>%-1750,0</b></td><td>kur+faiz karışık, yön çapası</td></tr><tr><td>Z″ (Altman düzeltilmiş)</td><td><b>1,83</b></td><td>gri (1,1-2,6)</td></tr><tr><td>Window-dressing (çeyrek-sonu)</td><td><b>nakit %-49,1, KVB %-16,0</b></td><td>bayrak yok</td></tr></table></div>
+
+<p style="opacity:.7">Şirket finansman giderinin kur/faiz/komisyon kırılımını yayınlasa da tablo şablonu ayrıştırılamadı ya da döküm yayımlanmıyor — bu bir olumsuzluk değil, kapsam eksikliğidir.</p>
+<p style="opacity:.75;font-size:.9em"><b>Metodoloji:</b> Tarama <code>scripts/manipulasyon_tarama.py</code> v5 ile aynı dönem FR-txt + KAP göl verisinden üretildi (10.10.2026). Göl, TMS 29 şirketlerinde üniforma-gerçek birimdir (is_k=cpi_k=1 semantiği); Beneish eşiği −1,78 (orijinal −2,22 revizyonu sonrası). Birim denetimi: kayıt birimi doğrulandı (txt birimi bin TL, kalibre sapma 1.000). Sinyaller tek başına manipülasyon kanıtı değildir; hüküm FR dipnot teyidiyle birlikte verilir.</p>
+</div>
+</section>
+<section id="izleme">
+<div class="wrap">
+<h2>İzleme listesi</h2>
+<p class="body" style="font-weight:600;margin-top:18px">İzlenecek yedi gelişme:</p>
   <ol class="steps">
     <li><b>Rıza talebi süreci</b> (ODA 1662552 sonrası) ve olası yeni tahvil/prime fiyatlaması.</li>
     <li><b>Q3 işletme nakit akışı</b> — ödeme temposu sürerse nakit 15 mlr altına iner mi.</li>
@@ -481,6 +484,20 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--accent-dark);outli
     <li><b>Q3 TMS 29 katsayısı</b> — parasal kazanç kalemi küçülüyor; kâr destekleyicisi zayıflıyor.</li>
     <li><b>Hakan Aran'ın genel kurul onayı</b> ve finansman stratejisinde değişiklik sinyali.</li>
   </ol>
+</div>
+</div>
+</section>
+<section id="huküm"><div class="wrap">
+  <h2>Hüküm</h2>
+  <p class="body"><b>Hüküm:</b> Likiditesi yeniden düzenlenen, kârlılığı çöken bilanço. Cari oran 1,81 ve altın finansman kuralı karşılanıyor; buna karşılık faaliyet kârı faiz giderini karşılamıyor (0,88×), nakit dönüş döngüsü 34 gün bozuldu, işletme nakit akışı eksi verdi ve çekirdek (parasal kazanç dışı) vergi öncesi zarar −9.718'e derinleşti. Dönem kârının kaynağı muhasebe transferleri; kâr kalitesi düşük. <span class="tag c">çıkarım — destekli</span></p>
+  <p class="body" style="font-weight:600;margin-top:18px">Kırılganlık sırası:</p>
+  <ul class="plain">
+    <li>Faiz karşılama 0,88× — faaliyet kârı faiz giderini karşılamıyor; yeni yabancı para kuponu %8,4+ ile ödeme maliyeti yapışkan.</li>
+    <li>Kovenant tanım değişikliği talebi — çözüme kavuşmazsa refinansman maliyeti sıçrar.</li>
+    <li>Nakit 21,6 mlr; yıllık faiz (8,8) + yatırım (12) + temettü toplamının altında. Varlık satışı veya yeni tahvil olmadan likidite daralması olası.</li>
+    <li>Teşvikli ertelenmiş vergi varlığı 13,4 mlr — kârsızlık uzarsa silme riski.</li>
+  </ul>
+  
 </div></section>
 
 <section id="degerleme"><div class="wrap">
@@ -558,13 +575,13 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--accent-dark);outli
 </div></section>
 
 <section id="oneri"><div class="wrap">
-  <h2>Karar Tablosu</h2>
-  <div class="verdict" style="max-width:100%"><b>Karar: İZLE (negatif eğilimli).</b> 37,32'de (07.10 canlı) orta döngü nakit akışı fiyatı taşımıyor; normalize dağıtılabilir net kâr ≈ sıfır, temettü büyümesi yok. Defter iskontosu, varlık geri çözümü (Beykoz örneği), 7582 sayılı Kanun vergi indirimi (2027) ve JCR BBB- tabanı defter iskontosunu savunur; tek başına getiri potansiyeli yaratmaz. Eşik okuması Q3 FAVÖK verisine bağlıdır. <span class="tag c">çıkarım — destekli</span></div>
+  <h2>Öneri: 37,32 TL'de karar (07.10 canlı)</h2>
+  <div class="verdict" style="max-width:100%"><b>Karar: İZLE (negatif eğilimli).</b> 37,32'de (07.10 canlı) yeni giriş yok: orta döngü nakit akışı fiyatı taşımıyor; normalize dağıtılabilir net kâr ≈ sıfır, temettü büyümesi yok. Defter iskontosu, varlık geri çözümü (Beykoz örneği), 7582 sayılı Kanun vergi indirimi (2027) ve JCR BBB- tabanı pozisyonu savunur; tek başına getiri potansiyeli yaratmaz. Pozisyon kararı Q3 FAVÖK okumasına bağlıdır. <span class="tag c">çıkarım — destekli</span></div>
   <div class="tblwrap" style="margin-top:18px">
   <table>
     <tr><th>Bant</th><th>Koşul / fiyat</th><th>Eylem</th></tr>
-    <tr><td>İZLE</td><td>28-45 TL (mevcut 37,32 — 07.10 canlı)</td><td>Eşik içi bölge; band dışına çıkışta yeniden değerlendirme</td></tr>
-    <tr><td>GİRİŞ TETİKLERİ</td><td>≤18 TL (çarpan 10,0× ağırlıklı değer, temiz taban) <b>ve</b> LTM FAVÖK > 26k teyidi (Matriks FFÖK tanımı; Kimyasallar FAVÖK > 2k/çeyrek + Q3 işletme nakit akışı pozitife dönüş); veya yatırım harcamasının 18k'ya inip finansman giderinin faiz indirimleriyle düşmesi</td><td>Tetikler oluşursa model yeniden koşar</td></tr>
+    <tr><td><b>İZLE</b></td><td>28-45 TL (mevcut 37,32 — 07.10 canlı)</td><td>Giriş yok; elde tutanlar için pozisyon Q3 teyidine kadar</td></tr>
+    <tr><td>GİRİŞ TETİKLERİ</td><td>≤18 TL (çarpan 10,0× ağırlıklı değer, temiz taban) <b>ve</b> LTM FAVÖK > 26k teyidi (Matriks FFÖK tanımı; Kimyasallar FAVÖK > 2k/çeyrek + Q3 işletme nakit akışı pozitife dönüş); veya yatırım harcamasının 18k'ya inip finansman giderinin faiz indirimleriyle düşmesi</td><td>Kademeli giriş savunulabilir</td></tr>
     <tr><td>ÇIKIŞ SİNYALİ</td><td>Nakit 15k altına (H1: 21,6k) · rıza talebi sürecinin başarısızlığı / yeni tahvil priminin %9 üstü · Q4-26 LTM FAVÖK < 22k · FAVÖK teyidi olmadan fiyat ≥45 TL · ertelenmiş vergi varlığında (13,4k) silme notu · kısa vadeli borçlanma 45k üstü</td><td>Gözden geçirilir / azaltılır</td></tr>
   </table>
   </div>

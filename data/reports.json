@@ -13,7 +13,7 @@
       "title": "EREGL 2026 H1 Finansal Analiz Raporu",
       "description": "Bilanço, gelir tablosu, nakit akışı, özkaynak ve finansal oran analizi; USD kolon okuması, TMS 29 notu ve normalize getiri üçgeni.",
       "publishedAt": "2026-10-07",
-      "updatedAt": "2026-10-08",
+      "updatedAt": "2026-10-10",
       "path": "/reports/EREGL/2026-Q2/",
       "ogImage": "/reports/EREGL/2026-Q2/og-cover.png",
       "tags": [
@@ -35,7 +35,7 @@
       "title": "TUPRS 2026 H1 Finansal Analiz Raporu",
       "description": "Bilanço, gelir tablosu, nakit akışı, özkaynak ve finansal oran analizi; rafineri marjları (crack), kapasite kullanımı ve baz değerler defteri.",
       "publishedAt": "2026-10-07",
-      "updatedAt": "2026-10-08",
+      "updatedAt": "2026-10-10",
       "path": "/reports/TUPRS/2026-Q2/",
       "ogImage": "/reports/TUPRS/2026-Q2/og-cover.png",
       "tags": [
@@ -58,7 +58,7 @@
       "title": "THYAO 2026 H1 Finansal Analiz Raporu",
       "description": "Bilanço, gelir tablosu, nakit akışı ve kapasite okuması; II-14.1 dolar tabloları, yakıtsız CASK, trafik ekleri ve TMS 29 notu.",
       "publishedAt": "2026-10-08",
-      "updatedAt": "2026-10-08",
+      "updatedAt": "2026-10-10",
       "path": "/reports/THYAO/2026-Q2/",
       "ogImage": "/reports/THYAO/2026-Q2/og-cover.png",
       "tags": [
@@ -80,7 +80,7 @@
       "title": "SAHOL 2026 H1 Finansal Analiz Raporu",
       "description": "Konsolide bilanço ve nakit kanalları okuması; iştirak mimarisi, düzeltilmiş SOTP/NAV iskonto bandı ve banka bloku analizi.",
       "publishedAt": "2026-10-08",
-      "updatedAt": "2026-10-08",
+      "updatedAt": "2026-10-10",
       "path": "/reports/SAHOL/2026-Q2/",
       "ogImage": "/reports/SAHOL/2026-Q2/og-cover.png",
       "tags": [
@@ -102,7 +102,7 @@
       "title": "ASELS 2026 H1 Finansal Analiz Raporu",
       "description": "Sipariş defterinin bilanço okuması: müşteri avansı ile SSB finansmanı, ROKETSAN alt-bileşen sözleşmesi, altın kural, oran eşikleri, yatırım nakdi ve iki ayaklı değerleme; FR+PDF metin katmanı denetimli.",
       "publishedAt": "2026-10-08",
-      "updatedAt": "2026-10-08",
+      "updatedAt": "2026-10-10",
       "path": "/reports/ASELS/2026-Q2/",
       "ogImage": "/reports/ASELS/2026-Q2/og-cover.png",
       "tags": [
@@ -124,7 +124,7 @@
       "title": "EKGYO 2026 H1 Finansal Analiz Raporu",
       "description": "Bilanço, gelir tablosu, nakit akışı ve oran analizi; borç ve ihale hattı, TOKİ ilişkisi, TMS 29 notu ve iki yöntemli değer bandı (22–31 TL).",
       "publishedAt": "2026-10-08",
-      "updatedAt": "2026-10-08",
+      "updatedAt": "2026-10-10",
       "path": "/reports/EKGYO/2026-Q2/",
       "ogImage": "/reports/EKGYO/2026-Q2/og-cover.png",
       "tags": [
@@ -146,7 +146,7 @@
       "title": "DOHOL 2026 H1 Finansal Analiz Raporu",
       "description": "Portföyünü bilançosunda taşıyan yatırım-holding okuması: nakit+finansal yatırım ağırlıklı aktif mimarisi, segment/GWIND elektrik köprüsü ve düzeltilmiş SOTP/NAV bantı.",
       "publishedAt": "2026-10-08",
-      "updatedAt": "2026-10-09",
+      "updatedAt": "2026-10-10",
       "path": "/reports/DOHOL/2026-Q2/",
       "ogImage": "/reports/DOHOL/2026-Q2/og-cover.png",
       "tags": [
@@ -169,7 +169,7 @@
       "title": "SASA 2026 H1 Finansal Analiz Raporu",
       "description": "Operasyonel toparlanma ve hastalıklı sermaye yapısının okuması: vade mimarisi, TMS 29 parasal kazanç bağımlılığı, döngü-senaryolu çarpan merdiveni ve değer bandı.",
       "publishedAt": "2026-10-09",
-      "updatedAt": "2026-10-09",
+      "updatedAt": "2026-10-10",
       "path": "/reports/SASA/2026-Q2/",
       "ogImage": "/reports/SASA/2026-Q2/og-cover.png",
       "tags": [
@@ -192,7 +192,7 @@
       "title": "SISE 2026 H1 Finansal Analiz Raporu",
       "description": "Likiditesi yeniden düzenlenen, kârlılığı çöken bilançonun okuması: vade mimarisi, parasal kazanç bağımlılığı, nakit kanalları ve defter-değeri iskontosu.",
       "publishedAt": "2026-10-09",
-      "updatedAt": "2026-10-09",
+      "updatedAt": "2026-10-10",
       "path": "/reports/SISE/2026-Q2/",
       "ogImage": "/reports/SISE/2026-Q2/og-cover.png",
       "tags": [
