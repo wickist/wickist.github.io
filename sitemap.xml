@@ -1,22 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://wickist.github.io/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://wickist.github.io/</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://wickist.github.io/reports/AAGYO/</loc></url>
+  <url><loc>https://wickist.github.io/reports/AGROT/</loc></url>
   <url><loc>https://wickist.github.io/reports/ASELS/</loc></url>
+  <url><loc>https://wickist.github.io/reports/BERA/</loc></url>
   <url><loc>https://wickist.github.io/reports/DOHOL/</loc></url>
   <url><loc>https://wickist.github.io/reports/EKGYO/</loc></url>
   <url><loc>https://wickist.github.io/reports/EREGL/</loc></url>
+  <url><loc>https://wickist.github.io/reports/GWIND/</loc></url>
+  <url><loc>https://wickist.github.io/reports/LIDER/</loc></url>
   <url><loc>https://wickist.github.io/reports/SAHOL/</loc></url>
   <url><loc>https://wickist.github.io/reports/SASA/</loc></url>
   <url><loc>https://wickist.github.io/reports/SISE/</loc></url>
   <url><loc>https://wickist.github.io/reports/THYAO/</loc></url>
+  <url><loc>https://wickist.github.io/reports/TRGYO/</loc></url>
   <url><loc>https://wickist.github.io/reports/TUPRS/</loc></url>
-  <url><loc>https://wickist.github.io/reports/TUPRS/2026-Q2/</loc><lastmod>2026-10-10</lastmod></url>
-  <url><loc>https://wickist.github.io/reports/THYAO/2026-Q2/</loc><lastmod>2026-10-10</lastmod></url>
-  <url><loc>https://wickist.github.io/reports/SISE/2026-Q2/</loc><lastmod>2026-10-10</lastmod></url>
-  <url><loc>https://wickist.github.io/reports/SASA/2026-Q2/</loc><lastmod>2026-10-10</lastmod></url>
-  <url><loc>https://wickist.github.io/reports/SAHOL/2026-Q2/</loc><lastmod>2026-10-10</lastmod></url>
-  <url><loc>https://wickist.github.io/reports/EREGL/2026-Q2/</loc><lastmod>2026-10-10</lastmod></url>
-  <url><loc>https://wickist.github.io/reports/EKGYO/2026-Q2/</loc><lastmod>2026-10-10</lastmod></url>
-  <url><loc>https://wickist.github.io/reports/DOHOL/2026-Q2/</loc><lastmod>2026-10-10</lastmod></url>
-  <url><loc>https://wickist.github.io/reports/ASELS/2026-Q2/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://wickist.github.io/reports/YYAPI/</loc></url>
+  <url><loc>https://wickist.github.io/reports/YYAPI/2026-Q2/</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://wickist.github.io/reports/TUPRS/2026-Q2/</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://wickist.github.io/reports/TRGYO/2026-Q2/</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://wickist.github.io/reports/THYAO/2026-Q2/</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://wickist.github.io/reports/SISE/2026-Q2/</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://wickist.github.io/reports/SASA/2026-Q2/</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://wickist.github.io/reports/SAHOL/2026-Q2/</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://wickist.github.io/reports/LIDER/2026-Q2/</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://wickist.github.io/reports/GWIND/2026-Q2/</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://wickist.github.io/reports/EREGL/2026-Q2/</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://wickist.github.io/reports/EKGYO/2026-Q2/</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://wickist.github.io/reports/DOHOL/2026-Q2/</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://wickist.github.io/reports/BERA/2026-Q2/</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://wickist.github.io/reports/ASELS/2026-Q2/</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://wickist.github.io/reports/AGROT/2026-Q2/</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://wickist.github.io/reports/AAGYO/2026-Q2/</loc><lastmod>2026-10-11</lastmod></url>
 </urlset>
