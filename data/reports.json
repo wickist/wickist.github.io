@@ -368,7 +368,7 @@
       "year": 2026,
       "quarter": 4,
       "title": "BAHKM Takas Analiz Raporu — Akış, Virman, Marjinal Maliyet (Ağu 2024 – Eki 2026)",
-      "description": "26 aylık takas defteri: yedi aktörün kurumsal akışı, merdiven alımı, virman izi ve fon mal bırakması — toplayıcı kârda, satıcının tamponu boş.",
+      "description": "26 aylık takas defteri: yedi aktörün kurumsal akışı, merdiven alımı, virman izi, yabancı tarafının CIY/MLB kanalları ve fon mal bırakması — toplayıcı kârda, satıcının tamponu boş.",
       "publishedAt": "2026-10-15",
       "updatedAt": "2026-10-15",
       "path": "/reports/BAHKM/2026-Q4/",
@@ -378,12 +378,13 @@
         "aracı kurum dağılımı",
         "akış analizi",
         "virman",
+        "yabancı oranı",
         "BAHKM",
         "2026Q4",
         "kimya"
       ],
       "coverSubtitle": "Takas Analiz Raporu",
-      "coverSections": "26 Aylık Defter • Kurumsal Akış • Virman • Marjinal Maliyet"
+      "coverSections": "26 Aylık Defter • Kurumsal Akış • Virman • Yabancı Tarafı • Marjinal Maliyet"
     }
   ]
 }
