@@ -19,6 +19,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
+W, H = 1200, 630
 PAPER = (234, 230, 217)    # #EAE6D9 — kirli beyaz (saf beyaz değil)
 INK = (31, 30, 29)         # #1F1E1D
 SOFT = (60, 58, 53)        # #3C3A35
