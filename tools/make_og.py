@@ -81,7 +81,7 @@ def paste_seal(img: Image.Image, x: int, y: int, h: int = 62) -> None:
     bh = max(2, h // 25)
     st1 = ImageStat.Stat(seal.crop((0, 0, w, bh)))
     st2 = ImageStat.Stat(seal.crop((0, h - bh, w, h)))
-    p = [max(int(a), int(b)) for a, b in zip(st1.median, st2.median)]
+    p = [min(int(a), int(b)) for a, b in zip(st1.median, st2.median)]
     norm = Image.merge("RGB", [ch.point(lambda v, pc=pc: min(255, v * 255 // pc))
                                for ch, pc in zip(seal.split(), p)])
     mask = Image.new("L", (w, h), 0)
