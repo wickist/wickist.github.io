@@ -122,7 +122,7 @@ def draw_cover(path: Path, ticker: str, period_label: str, subtitle: str,
     sx = W - 48 - 62
     re = sx - 18
     d.text((re - d.textlength(url, font=f_url), H - 70), url, font=f_url, fill=CLAY)
-    f_cr = inter(17)
+    f_cr = inter(14)
     d.text((re - d.textlength(COPYRIGHT, font=f_cr), H - 32), COPYRIGHT,
            font=f_cr, fill=SOFT)
     paste_seal(img, sx, H - 71)
