@@ -20,6 +20,19 @@ FG = (237, 234, 228)
 MUTED = (167, 162, 155)
 LINE = (90, 86, 80)
 F = "/usr/share/fonts/truetype/dejavu/"
+LOGO = ROOT / "assets" / "images" / "logo.png"   # kullanıcının yaprak logosu — her kapakta zorunlu
+def paste_logo(img: Image.Image) -> None:
+    """Yaprak logosunu sağ üst köşeye kâğıt zeminli, yuvarlatılmış altın çerçeveli plaket olarak basar."""
+    if not LOGO.exists():
+        return
+    h = 250
+    w = int(round(h * 261 / 250))
+    logo = Image.open(LOGO).convert("RGBA").resize((w, h), Image.LANCZOS)
+    mask = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(mask).rounded_rectangle((0, 0, w - 1, h - 1), radius=30, fill=255)
+    x, y = W - 70 - w, 62
+    img.paste(logo, (x, y), mask)
+    ImageDraw.Draw(img).rounded_rectangle((x, y, x + w - 1, y + h - 1), radius=30, outline=GOLD, width=2)
 
 
 def font(name: str, size: int) -> ImageFont.FreeTypeFont:
@@ -49,6 +62,7 @@ def draw_cover(path: Path, ticker: str, period_label: str, subtitle: str,
     d.text((70, H - 58), company, font=font("DejaVuSans.ttf", 26), fill=MUTED)
     d.text((W - 70 - d.textlength("wickist.github.io", font=font("DejaVuSans.ttf", 26)),
             H - 58), "wickist.github.io", font=font("DejaVuSans.ttf", 26), fill=GOLD)
+    paste_logo(img)
     img.save(path, "PNG", optimize=True)
 
 
@@ -62,8 +76,8 @@ def main() -> None:
             out,
             ticker=r["ticker"],
             period_label=r["periodLabel"],
-            subtitle="Finansal Analiz Raporu",
-            sections="Bilanço • Gelir Tablosu • Nakit Akışı • Oran Analizi",
+            subtitle=r.get("coverSubtitle", "Finansal Analiz Raporu"),
+            sections=r.get("coverSections", "Bilanço • Gelir Tablosu • Nakit Akışı • Oran Analizi"),
             company=r["company"],
         )
         made += 1
