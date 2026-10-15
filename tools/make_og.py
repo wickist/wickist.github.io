@@ -16,7 +16,7 @@ import argparse
 import json
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
 W, H = 1200, 630
@@ -29,8 +29,10 @@ AMBER = (228, 185, 106)    # #E4B96A — rapor amber vurgusu
 RULE = (216, 210, 192)     # hairline
 BAND = (228, 185, 106)     # #E4B96A — alt bant: dönem rozetiyle aynı amber
 FDIR = ROOT / "assets" / "fonts"
-LOGO = ROOT / "assets" / "images" / "logo.png"   # yaprak + ensō — her kapakta zorunlu
+LOGO = ROOT / "assets" / "images" / "logo.png"   # CYCLE yaprak logosu — her kapakta zorunlu
+SEAL = ROOT / "assets" / "images" / "seal.png"   # monokrom CYCLE mührü — telif yanında
 EYEBROW = "BIST · KAP KAYNAKLI · BAĞIMSIZ ANALİZ"
+COPYRIGHT = "© 2026 Enis Halıcı · Tüm hakları saklıdır."
 
 
 def frac(size: int, wght: int = 700, opsz: int = 144) -> ImageFont.FreeTypeFont:
@@ -56,13 +58,26 @@ def paste_logo_soft(img: Image.Image, x: int = 40, y: int = 24, h: int = 300) ->
     """Logoyu sol üste çerçevesiz basar; kenarları gauss ile eritip kâğıt zeminde kaybeder."""
     if not LOGO.exists():
         return
-    w = int(round(h * 261 / 250))
+    iw, ih = Image.open(LOGO).size
+    w = int(round(h * iw / ih))
     logo = Image.open(LOGO).convert("RGBA").resize((w, h), Image.LANCZOS)
     pad = int(h * 0.12)
     mask = Image.new("L", (w, h), 0)
     ImageDraw.Draw(mask).rectangle((pad, pad, w - pad, h - pad), fill=255)
     mask = mask.filter(ImageFilter.GaussianBlur(int(h * 0.15)))
     img.paste(logo, (x, y), mask)
+
+
+def paste_seal(img: Image.Image, x: int, y: int, h: int = 62) -> None:
+    """Mührü alt bandın rengine çarparak (multiply) basar: kâğıt tonu bandın amberine
+    döner, mürekkep çizgileri kalır — bantın üstüne basılmış gerçek mühür görünümü."""
+    if not SEAL.exists():
+        return
+    iw, ih = Image.open(SEAL).size
+    w = int(round(h * iw / ih))
+    seal = Image.open(SEAL).convert("RGB").resize((w, h), Image.LANCZOS)
+    patch = img.crop((x, y, x + w, y + h))
+    img.paste(ImageChops.multiply(patch, seal), (x, y))
 
 
 def draw_cover(path: Path, ticker: str, period_label: str, subtitle: str,
@@ -89,11 +104,17 @@ def draw_cover(path: Path, ticker: str, period_label: str, subtitle: str,
     # başlık + satır
     d.text((48, 396), subtitle, font=frac(52, 600, 96), fill=INK)
     d.text((48, 486), sections, font=inter(29), fill=MUTED)
-    # alt bant — yaprak rengi şerit içinde
-    d.text((48, H - 56), company, font=inter(23), fill=SOFT)
+    # üst bant çizgisi üstü: site URL'i sağa yaslı
     url = "wickist.github.io"
-    d.text((W - 48 - d.textlength(url, font=inter(23, True)), H - 56),
-           url, font=inter(23, True), fill=CLAY)
+    d.text((W - 48 - d.textlength(url, font=inter(21, True)), H - 112),
+           url, font=inter(21, True), fill=CLAY)
+    # alt bant: solda şirket, sağda telif + mühür (mühür bandın amberine multiply ile biner)
+    d.text((48, H - 54), company, font=inter(23), fill=SOFT)
+    f_cr = inter(21)
+    sx = W - 48 - 62
+    d.text((sx - 18 - d.textlength(COPYRIGHT, font=f_cr), H - 52), COPYRIGHT,
+           font=f_cr, fill=SOFT)
+    paste_seal(img, sx, H - 71)
     img.save(path, "PNG", optimize=True)
 
 
