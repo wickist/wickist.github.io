@@ -25,6 +25,7 @@ INK = (31, 30, 29)         # #1F1E1D
 SOFT = (60, 58, 53)        # #3C3A35
 MUTED = (107, 103, 94)     # #6B675E
 CLAY = (176, 71, 42)       # #B0472A — rapor aksanı
+AMBER = (228, 185, 106)    # #E4B96A — rapor amber vurgusu
 RULE = (216, 210, 192)     # hairline
 BAND = (211, 213, 180)     # yaprak yeşili silik alt bant
 FDIR = ROOT / "assets" / "fonts"
