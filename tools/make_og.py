@@ -19,14 +19,13 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
-W, H = 1200, 630
-PAPER = (240, 238, 230)    # #F0EEE6 — rapor kâğıdı
+PAPER = (234, 230, 217)    # #EAE6D9 — kirli beyaz (saf beyaz değil)
 INK = (31, 30, 29)         # #1F1E1D
 SOFT = (60, 58, 53)        # #3C3A35
 MUTED = (107, 103, 94)     # #6B675E
 CLAY = (176, 71, 42)       # #B0472A — rapor aksanı
-AMBER = (228, 185, 106)    # #E4B96A — rapor amber vurgusu
-RULE = (222, 217, 203)     # #DED9CB — hairline
+RULE = (216, 210, 192)     # hairline
+BAND = (211, 213, 180)     # yaprak yeşili silik alt bant
 FDIR = ROOT / "assets" / "fonts"
 LOGO = ROOT / "assets" / "images" / "logo.png"   # yaprak + ensō — her kapakta zorunlu
 EYEBROW = "BIST · KAP KAYNAKLI · BAĞIMSIZ ANALİZ"
@@ -68,6 +67,7 @@ def draw_cover(path: Path, ticker: str, period_label: str, subtitle: str,
                sections: str, company: str) -> None:
     img = Image.new("RGB", (W, H), PAPER)
     d = ImageDraw.Draw(img)
+    d.rectangle((0, H - 80, W, H), fill=BAND)   # silik yaprak bandı — şirket/URL kısmı
     paste_logo_soft(img)
     x0 = 400
     # künye: amber kare + aralıklı küçük harf
@@ -87,7 +87,7 @@ def draw_cover(path: Path, ticker: str, period_label: str, subtitle: str,
     # başlık + satır
     d.text((48, 396), subtitle, font=frac(52, 600, 96), fill=INK)
     d.text((48, 486), sections, font=inter(29), fill=MUTED)
-    # alt bant
+    # alt bant — yaprak rengi şerit içinde
     d.text((48, H - 56), company, font=inter(23), fill=SOFT)
     url = "wickist.github.io"
     d.text((W - 48 - d.textlength(url, font=inter(23, True)), H - 56),
