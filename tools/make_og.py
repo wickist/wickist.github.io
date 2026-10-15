@@ -16,7 +16,7 @@ import argparse
 import json
 from pathlib import Path
 
-from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
+from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont, ImageStat
 
 ROOT = Path(__file__).resolve().parent.parent
 W, H = 1200, 630
@@ -78,9 +78,10 @@ def paste_seal(img: Image.Image, x: int, y: int, h: int = 62) -> None:
     w = int(round(h * iw / ih))
     seal = Image.open(SEAL).convert("RGB").resize((w, h), Image.LANCZOS)
     # kenar şeridinin medyanı = kâğıt tonu; kanal bazında 255'e ölçekle
-    strip = list(seal.crop((0, 0, w, max(2, h // 25))).getdata()) + \
-        list(seal.crop((0, h - max(2, h // 25), w, h)).getdata())
-    p = [sorted(px[c] for px in strip)[len(strip) // 2] for c in range(3)]
+    bh = max(2, h // 25)
+    st1 = ImageStat.Stat(seal.crop((0, 0, w, bh)))
+    st2 = ImageStat.Stat(seal.crop((0, h - bh, w, h)))
+    p = [max(int(a), int(b)) for a, b in zip(st1.median, st2.median)]
     norm = Image.merge("RGB", [ch.point(lambda v, pc=pc: min(255, v * 255 // pc))
                                for ch, pc in zip(seal.split(), p)])
     mask = Image.new("L", (w, h), 0)
@@ -114,15 +115,15 @@ def draw_cover(path: Path, ticker: str, period_label: str, subtitle: str,
     # başlık + satır
     d.text((48, 396), subtitle, font=frac(52, 600, 96), fill=INK)
     d.text((48, 486), sections, font=inter(29), fill=MUTED)
-    # üst bant çizgisi üstü: site URL'i sağa yaslı
-    url = "wickist.github.io"
-    d.text((W - 48 - d.textlength(url, font=inter(21, True)), H - 112),
-           url, font=inter(21, True), fill=CLAY)
-    # alt bant: solda şirket, sağda telif + mühür (mühür bandın amberine multiply ile biner)
+    # alt bant: solda şirket; sağda URL eski yerinde, altında küçük telif; en sağda mühür
     d.text((48, H - 54), company, font=inter(23), fill=SOFT)
-    f_cr = inter(21)
+    url = "wickist.github.io"
+    f_url = inter(23, True)
     sx = W - 48 - 62
-    d.text((sx - 18 - d.textlength(COPYRIGHT, font=f_cr), H - 52), COPYRIGHT,
+    re = sx - 18
+    d.text((re - d.textlength(url, font=f_url), H - 70), url, font=f_url, fill=CLAY)
+    f_cr = inter(17)
+    d.text((re - d.textlength(COPYRIGHT, font=f_cr), H - 32), COPYRIGHT,
            font=f_cr, fill=SOFT)
     paste_seal(img, sx, H - 71)
     img.save(path, "PNG", optimize=True)
