@@ -69,15 +69,25 @@ def paste_logo_soft(img: Image.Image, x: int = 40, y: int = 24, h: int = 300) ->
 
 
 def paste_seal(img: Image.Image, x: int, y: int, h: int = 62) -> None:
-    """Mührü alt bandın rengine çarparak (multiply) basar: kâğıt tonu bandın amberine
-    döner, mürekkep çizgileri kalır — bantın üstüne basılmış gerçek mühür görünümü."""
+    """Mührü alt bandın üstüne eriterek basar: kâğıt tonu kanala göre beyaza
+    normalize edilir (kare kenar/çerçeve izi kaybolur, bantla birebir kaynaşır),
+    mürekkep çizgileri multiply ile kalır; kenarlara yumuşak maske verilir."""
     if not SEAL.exists():
         return
     iw, ih = Image.open(SEAL).size
     w = int(round(h * iw / ih))
     seal = Image.open(SEAL).convert("RGB").resize((w, h), Image.LANCZOS)
+    # kenar şeridinin medyanı = kâğıt tonu; kanal bazında 255'e ölçekle
+    strip = list(seal.crop((0, 0, w, max(2, h // 25))).getdata()) + \
+        list(seal.crop((0, h - max(2, h // 25), w, h)).getdata())
+    p = [sorted(px[c] for px in strip)[len(strip) // 2] for c in range(3)]
+    norm = Image.merge("RGB", [ch.point(lambda v, pc=pc: min(255, v * 255 // pc))
+                               for ch, pc in zip(seal.split(), p)])
+    mask = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(mask).rectangle((w // 20, h // 20, w - w // 20, h - h // 20), fill=255)
+    mask = mask.filter(ImageFilter.GaussianBlur(h // 10))
     patch = img.crop((x, y, x + w, y + h))
-    img.paste(ImageChops.multiply(patch, seal), (x, y))
+    img.paste(ImageChops.multiply(patch, norm), (x, y), mask)
 
 
 def draw_cover(path: Path, ticker: str, period_label: str, subtitle: str,
