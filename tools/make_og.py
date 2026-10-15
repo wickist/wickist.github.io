@@ -6,6 +6,7 @@ Kullanım:
 """
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 
@@ -67,9 +68,15 @@ def draw_cover(path: Path, ticker: str, period_label: str, subtitle: str,
 
 
 def main() -> None:
+    ap = argparse.ArgumentParser(description="OG kapakları; --only TICKER:PERIOD ile yalnız seçili raporlar")
+    ap.add_argument("--only", action="append", metavar="TICKER:PERIOD")
+    a = ap.parse_args()
+    only = set(a.only or [])
     reg = json.loads((ROOT / "data" / "reports.json").read_text(encoding="utf-8"))
     made = 0
     for r in reg["reports"]:
+        if only and f"{r['ticker']}:{r['period']}" not in only:
+            continue
         out = ROOT / r["ogImage"].lstrip("/")
         out.parent.mkdir(parents=True, exist_ok=True)
         draw_cover(
