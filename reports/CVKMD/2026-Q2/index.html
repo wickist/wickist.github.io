@@ -40,6 +40,13 @@ td{padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
 .num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .tag{display:inline-block;font-size:11px;font-weight:600;padding:1px 8px;border-radius:10px;margin-left:6px;vertical-align:middle}
 .hesap{background:#E3EDE7;color:#3F6B58}.cikarim{background:#F4E3D6;color:#9C5A34}.cozulmedi{background:#F0D9D2;color:#8E3A22}
+.tag.c{background:#F4E3D6;color:#9C5A34}
+.verdict{border-left:4px solid var(--accent);background:#D977570D;padding:14px 18px;border-radius:0 10px 10px 0;margin:18px 0;font-size:14px}
+.verdict b{color:var(--danger)}
+.plain{list-style:none;margin-left:0}
+.plain li{padding:8px 0 8px 22px;position:relative;border-bottom:1px dashed var(--line)}
+.plain li:last-child{border-bottom:none}
+.plain li::before{content:"";position:absolute;left:2px;top:16px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
 .hero{background:linear-gradient(160deg,#22211F,#3A3733);color:#F5F2EA;border:none}
 .hero h1{color:#F5F2EA}.hero .sub{color:#C9C4B8;margin-bottom:14px}
 .hero .lede{color:#C9C4B8}
@@ -116,7 +123,7 @@ footer#kaynak section.kpanel{width:auto;max-width:none;margin:14px 0}
 <div class="kpi"><div class="v">%169</div><div class="l">Vergi-öncesi kârın parasal kazanç payı</div></div>
 <div class="kpi"><div class="v">35,6×</div><div class="l">F/K (H1 yıllıklandırılmış)</div></div>
 </div>
-<span class="badge hold"><span class="band gray"></span> — çarpan tam; marj kanıtı bekliyor</span>
+<span class="badge hold">Çarpan tam; marj kanıtı bekliyor</span>
 <div class="note">Analiz baz fiyatı: 13,90 TL (12.10.2026 Matriks baz fiyatı / önceki kapanış). Ekran tablosu canlı Matriks verisiyle (13,35 TL, 12.10 11:05) yenilendi; değerleme bölümü baz fiyatında sabit kaldı. Para birimi: mn TL, 30.06.2026 alım gücü (TMS 29 enflasyon düzeltmeli). Kaynak: wiki sentez sayfası + KAP finansal rapor metni.</div>
 </section>
 
@@ -184,32 +191,33 @@ footer#kaynak section.kpanel{width:auto;max-width:none;margin:14px 0}
 <section id="nakit">
 <h2>3 · Nakit akışı: faaliyet negatifti, büyüme borç + avans + bedelli üçgeniyle finanse edildi</h2>
 <div class="svgbox">
-<svg viewBox="0 0 892 480" role="img" aria-label="Nakit akışı köprüsü">
+<svg viewBox="0 0 820 370" role="img" aria-label="Nakit akışı köprüsü">
 <text x="20" y="24" class="s-t">Nakit köprüsü: 1.463,0 → 528,4 mn TL (H1-26)</text>
-<line x1="20" y1="320" x2="872" y2="320" stroke="#DED9CB" stroke-dasharray="4 4"/>
-<rect x="26" y="203.0" width="80" height="117.0" fill="#3C3A35"/>
-<text x="66" y="196" class="s-v" text-anchor="middle">1.463,0</text>
-<rect x="148" y="203.0" width="80" height="73.4" fill="#B0472A"/>
-<text x="188" y="196" class="s-v" text-anchor="middle">−917,6</text>
-<rect x="270" y="276.4" width="80" height="177.7" fill="#B0472A"/>
-<text x="310" y="269" class="s-v" text-anchor="middle">−2.221,5</text>
-<rect x="392" y="295.3" width="80" height="158.8" fill="#6A8E7F"/>
-<text x="432" y="288" class="s-v" text-anchor="middle">+1.985,0</text>
-<rect x="514" y="263.3" width="80" height="32.0" fill="#6A8E7F"/>
-<text x="554" y="256" class="s-v" text-anchor="middle">+399,8</text>
-<rect x="636" y="263.3" width="80" height="14.4" fill="#B0472A"/>
-<text x="676" y="292" class="s-v" text-anchor="middle">−180,3</text>
-<rect x="758" y="277.7" width="80" height="42.3" fill="#3C3A35"/>
-<text x="798" y="271" class="s-v" text-anchor="middle">528,4</text>
-<text x="66" y="470" class="s-s" text-anchor="middle">Dönem başı</text>
-<text x="188" y="470" class="s-s" text-anchor="middle">Faaliyet</text>
-<text x="310" y="470" class="s-s" text-anchor="middle">Yatırım</text>
-<text x="432" y="470" class="s-s" text-anchor="middle">Finansman</text>
-<text x="554" y="470" class="s-s" text-anchor="middle">Çevrim farkı</text>
-<text x="676" y="470" class="s-s" text-anchor="middle">Parasal etki</text>
-<text x="798" y="470" class="s-s" text-anchor="middle">Dönem sonu</text>
-<text x="20" y="448" class="s-s">Köprü: −1.154,2 + 399,8 − 180,3 = −934,6 (s.429–432); dönembaşı 1.463,0 → dönemsonu 528,4 = bilanço nakdi ✓ Δ0 kapandı</text>
+<line x1="462.2" y1="48" x2="462.2" y2="330" stroke="#DED9CB" stroke-dasharray="4 4"/>
+<text x="120" y="66.5" class="s-l" text-anchor="end">Dönem başı</text>
+<rect x="462.2" y="56" width="212.2" height="13" fill="#3C3A35"/>
+<text x="680" y="66.5" class="s-v">1.463,0</text>
+<text x="120" y="106.5" class="s-l" text-anchor="end">Faaliyet</text>
+<rect x="329.1" y="96" width="133.1" height="13" fill="#B0472A"/>
+<text x="323.1" y="106.5" class="s-v" text-anchor="end">−917,6</text>
+<text x="120" y="146.5" class="s-l" text-anchor="end">Yatırım</text>
+<rect x="140" y="136" width="322.2" height="13" fill="#B0472A"/>
+<text x="148" y="146.5" class="s-v" fill="#FAF9F5">−2.221,5</text>
+<text x="120" y="186.5" class="s-l" text-anchor="end">Finansman</text>
+<rect x="462.2" y="176" width="287.9" height="13" fill="#6A8E7F"/>
+<text x="756" y="186.5" class="s-v">+1.985,0</text>
+<text x="120" y="226.5" class="s-l" text-anchor="end">Çevrim farkı</text>
+<rect x="462.2" y="216" width="58" height="13" fill="#6A8E7F"/>
+<text x="526" y="226.5" class="s-v">+399,8</text>
+<text x="120" y="266.5" class="s-l" text-anchor="end">Parasal etki</text>
+<rect x="436" y="256" width="26.2" height="13" fill="#B0472A"/>
+<text x="430" y="266.5" class="s-v" text-anchor="end">−180,3</text>
+<text x="120" y="306.5" class="s-l" text-anchor="end">Dönem sonu</text>
+<rect x="462.2" y="296" width="76.6" height="13" fill="#3C3A35"/>
+<text x="545" y="306.5" class="s-v">528,4</text>
+<text x="20" y="356" class="s-s">Köprü: −1.154,2 + 399,8 − 180,3 = −934,6 (s.429–432); dönembaşı 1.463,0 → dönemsonu 528,4 = bilanço nakdi ✓ Δ0 kapandı</text>
 </svg>
+<p class="figcap">mn TL · TMS 29 düzeltmeli · sıfır çizgisi ortada — kırmızı: çıkış, yeşil: giriş, koyu: dönem sınırları; kalem kırılımları metinde</p>
 </div>
 <ul>
 <li><b>Faaliyet −917,6</b> (H1-25: +3.035,7; s.343) — düşüşün motoru avans/ertelenmiş hasılat çözülmesi −2.204,9 (s.2966) + alacak/stok hareketi. Düzeltmeler: amortisman +335,5 (s.350), parasal kazanç NA'dan −340,8 ile düşülüyor (s.365) — kârın nakit-dışı bileşimi tablodan siliniyor.</li>
@@ -344,9 +352,13 @@ footer#kaynak section.kpanel{width:auto;max-width:none;margin:14px 0}
 </section>
 
 </div><section id="izleme">
+<div class="wrap">
 <h2>13 · İzleme listesi</h2>
+<div class="verdict" style="max-width:100%"><b>Hüküm:</b> Ciro büyümesi gerçek ve Sarıalan tam-kapasite başlangıcı (24.09.2026) kapasite tezini kamuya açık biçimde doğruladı; ancak kârın vergi-öncesi %169'u dezenflasyonla sönecek TMS 29 parasal kazanç kaleminden geliyor ve fiyat bunu yıllıklandırılmış 35,6× F/K ile peşinen ödemiş. Dönem-sonrası nakit girişleri (≈5,3 mlr) bilanço riskini kaldırıyor; getiri motoru metal fiyatı + Sarıalan hacmi + HOM değerlemesine taşındı. <span class="tag c">çıkarım — destekli</span></div>
+<p style="margin:10px 0 0"><b>Eşik kontrolü:</b> <span class="band"></span> eşiği oluşmadı — Sarıalan katkısıyla yıllıklandırılmış F/K &lt;20× beklenirken 13,35 TL'de 35,6×; <span class="band red"></span> tetikleri (Not 19 değer düşüklüğü sinyali, Trafigura taahhüt sapması, ruhsat iadelerinin rezerv ömrüne olumsuz etkisinin teyidi) de oluşmadı — duruş izleme.</p>
 <p style="font-weight:600;margin-top:18px">İzlenecek gelişmeler:</p>
-<ul><li>Dönem-sonrası nakit girişlerinin kullanımı: %170 bedelli ≈2.380 mn (19.08.2026) + Trafigura 70 mn $ ön-ödeme (Not 35, s.4712-4783; ODA) — tetik: Q3-26 sonu nakit ≥ 3.000 mn ve net borç ≤ 0 (şimdi ND 3.718,1)</li><li>Capex dönüşü: H1 capex −2.265,3 mn = FAVÖK-proxy'nin 2,5×'ı (s.410) — tetik: H2-26 faaliyet kârı ≥ 700 mn (kapasite katkısının teyidi)</li><li>Parasal kazanç normalizasyonu: +1.566,1 mn = vergi-öncesi kârın %169'u (s.206) — tetik: faaliyet kârı yıllıklandırılmış ≥ 1.100 mn (parasal-hariç taban)</li><li>HOM halka arz ilerlemesi: SPK başvurusu 16.07.2026 (ODA) — tetik: kayıt/price disclosure — defter değeri okumasının kamuya açılması</li><li>Virtus koşullu taksitli devir borcu nakit çıkış takvimi (s.2841/s.3337) — tetik: H2-26 planlı taksit dışı çıkış yok</li><li>Stok birikimi: stok günü 54,2 (36,7'den +17,5; değer düşüklüğü notu s.2876) — tetik: stok günü ≤ 45; değer düşüklüğü ≤ 50 mn</li><li>Ruhsat iadesi etkisi: S.87500 + S.20066206 No'lu IV. Grup işletme ruhsat sahaları 03.09.2026'da iade edildi (ODA) — tetik: Q3 dipnotlarında ilgili maddi olmayan duran varlık/ruhsat kaleminin akıbeti ve değer düşüklüğü testi</li></ul>
+<ul class="plain"><li>Dönem-sonrası nakit kullanımı — %170 bedelli ≈2.380 mn (19.08.2026) + Trafigura 70 mn $ ön-ödeme (Not 35, s.4712-4783; ODA) — Q3-26 sonu nakit ≥ 3.000 mn ve net borç ≤ 0 (şimdi ND 3.718,1) — Q3-26 FR / ODA</li><li>Capex dönüşü — H1 capex −2.265,3 mn = FAVÖK-proxy'nin 2,5×'ı (s.410) — H2-26 faaliyet kârı ≥ 700 mn (kapasite katkısının teyidi) — Q3/Q4-26 FR</li><li>Parasal kazanç normalizasyonu — +1.566,1 mn = vergi-öncesi kârın %169'u (s.206) — faaliyet kârı yıllıklandırılmış ≥ 1.100 mn (parasal-hariç taban) — GT satırları</li><li>HOM halka arz ilerlemesi — SPK başvurusu 16.07.2026 (ODA) — kayıt / price disclosure ile defter değeri okumasının kamuya açılması — SPK / ODA</li><li>Virtus koşullu taksitli devir borcu nakit çıkış takvimi (s.2841/s.3337) — H2-26 planlı taksit dışı çıkış yok — Q3/Q4-26 FR</li><li>Stok birikimi — stok günü 54,2 (36,7'den +17,5; değer düşüklüğü notu s.2876) — stok günü ≤ 45; değer düşüklüğü ≤ 50 mn — Q3-26 FR</li><li>Ruhsat iadesi etkisi — S.87500 + S.20066206 No'lu IV. Grup işletme ruhsat sahaları 03.09.2026'da iade edildi (ODA) — Q3 dipnotlarında ilgili maddi olmayan duran varlık/ruhsat kaleminin akıbeti ve değer düşüklüğü testi — Q3-26 FR</li></ul>
+</div>
 </section>
 <footer id="kaynak">
 <div class="kaynak-ic">

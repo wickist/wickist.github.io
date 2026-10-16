@@ -63,9 +63,11 @@ EDITS: dict[str, list[tuple[str, str]]] = {
     ],
     "CVKMD": [
         ('<span class="badge hold">TUT — çarpan tam, marj kanıtı bekliyor</span>',
-         '<span class="badge hold"><span class="band gray"></span> — çarpan tam; marj kanıtı bekliyor</span>'),
+         '<span class="badge hold">Çarpan tam; marj kanıtı bekliyor</span>'),
         ('<b>AL eşiği:</b>', f'<b>{GREEN} eşiği:</b>'),
         ('<b>SAT eşiği:</b>', f'<b>{RED} eşiği:</b>'),
+        ('<b>Eşik kontrolü:</b> AL eşiği oluşmadı', f'<b>Eşik kontrolü:</b> {GREEN} eşiği oluşmadı'),
+        ('; SAT tetikleri (', f'; {RED} tetikleri ('),
     ],
     "DOHOL": [
         ('<span class="badge">AL (kademeli) — fiyat bant alt sınırının %26 altında</span>',
