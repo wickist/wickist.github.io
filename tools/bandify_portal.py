@@ -39,6 +39,15 @@ EDITS: dict[str, list[tuple[str, str]]] = {
         ('<td>elde tut; "ucuz" sepetine alma</td>', '<td>izleme listesinde tutulur</td>'),
         ('<td>kademeli kâr realizasyonu</td>', '<td>pozisyon gözden geçirilir</td>'),
     ],
+    "AFYON": [
+        ('<div class="kararband"><span class="kchip">AL</span><span class="kchip">SAT</span><span class="kchip">TUT</span><span class="kchip on izle">İZLE</span></div>',
+         '<div class="kararband"><span class="kchip on izle">İZLE</span></div>'),
+        ('7 · Hüküm ve öneri</h2>', '7 · Öneri ve gerekçe</h2>'),
+        ('opsiyon değerli. Karar: İZLE.', 'opsiyon değerli. Karar: <b>İZLE</b>.'),
+        ('<span class="badge hold">İZLE</span>', '<span class="badge hold">Varlık iskontosu izleniyor</span>'),
+        ("<b>AL'a terfi eşikleri:</b>", '<b>Yükseltme eşikleri:</b>'),
+        ('Ama üç şey birlikte "al" dedirtmiyor:', 'Ama üç şey birlikte yükseltme sinyali vermiyor:'),
+    ],
     "AGROT": [
         ('AL için erken; SAT için varlık gerekçesi yok.',
          f'{GREEN} için erken; {RED} için varlık gerekçesi yok.'),

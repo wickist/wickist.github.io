@@ -434,6 +434,28 @@
         "H1",
         "gyo"
       ]
+    },
+    {
+      "ticker": "AFYON",
+      "company": "Afyon Çimento Sanayi T.A.Ş.",
+      "period": "2026-Q2",
+      "periodLabel": "2026 H1",
+      "year": 2026,
+      "quarter": 2,
+      "title": "AFYON 2026 H1 Finansal Analiz Raporu",
+      "description": "Defter altı fiyat ve net nakit: TMS 29 parasal kayıp ile ertelenmiş vergi yazımı kaynaklı H1 zararı, ilişkili-taraf büyüme bacağı, kârın %249'u dağıtım ve Q3 teyit seti okuması.",
+      "publishedAt": "2026-10-17",
+      "updatedAt": "2026-10-17",
+      "path": "/reports/AFYON/2026-Q2/",
+      "ogImage": "/reports/AFYON/2026-Q2/og-cover.png",
+      "tags": [
+        "bilanço",
+        "finansal analiz",
+        "AFYON",
+        "2026Q2",
+        "H1",
+        "cimento"
+      ]
     }
   ]
 }
