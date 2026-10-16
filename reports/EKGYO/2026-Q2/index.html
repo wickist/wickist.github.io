@@ -20,7 +20,7 @@
 <meta name="twitter:title" content="EKGYO 2026 H1 Finansal Analiz Raporu">
 <meta name="twitter:description" content="Bilanço, gelir tablosu, nakit akışı ve oran analizi; borç ve ihale hattı, TOKİ ilişkisi, TMS 29 notu ve iki yöntemli değer bandı (22–31 TL).">
 <meta name="twitter:image" content="https://wickist.github.io/reports/EKGYO/2026-Q2/og-cover.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "EKGYO 2026 H1 Finansal Analiz Raporu", "description": "Bilanço, gelir tablosu, nakit akışı ve oran analizi; borç ve ihale hattı, TOKİ ilişkisi, TMS 29 notu ve iki yöntemli değer bandı (22–31 TL).", "inLanguage": "tr", "datePublished": "2026-10-08", "dateModified": "2026-10-11", "url": "https://wickist.github.io/reports/EKGYO/2026-Q2/", "image": "https://wickist.github.io/reports/EKGYO/2026-Q2/og-cover.png", "publisher": {"@type": "Organization", "name": "Finansal Analiz Raporları"}, "about": {"@type": "Organization", "name": "Emlak Konut Gayrimenkul Yatırım Ortaklığı A.Ş.", "tickerSymbol": "EKGYO"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "EKGYO 2026 H1 Finansal Analiz Raporu", "description": "Bilanço, gelir tablosu, nakit akışı ve oran analizi; borç ve ihale hattı, TOKİ ilişkisi, TMS 29 notu ve iki yöntemli değer bandı (22–31 TL).", "inLanguage": "tr", "datePublished": "2026-10-08", "dateModified": "2026-10-16", "url": "https://wickist.github.io/reports/EKGYO/2026-Q2/", "image": "https://wickist.github.io/reports/EKGYO/2026-Q2/og-cover.png", "publisher": {"@type": "Organization", "name": "Finansal Analiz Raporları"}, "about": {"@type": "Organization", "name": "Emlak Konut Gayrimenkul Yatırım Ortaklığı A.Ş.", "tickerSymbol": "EKGYO"}}</script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600;700&display=swap');
 :root{--bg:#F0EEE6;--panel:#FAF9F5;--ink:#1F1E1D;--accent:#D97757;--danger:#B0472A;--sage:#6A8E7F;--gold:#C9A227;--line:#DED9CB;}
@@ -70,6 +70,14 @@ nav .brand{font-family:'Copernicus','Fraunces',Georgia,'Times New Roman',serif;f
 nav a{color:#5D594D;text-decoration:none;font-size:13.5px;font-weight:500}
 nav a:hover{color:var(--ink)}
 .tblwrap{overflow-x:auto}
+@media(max-width:640px){section{padding:18px 14px}table{font-size:12px}th,td{padding:6px 6px}td.num,th.num,.num{white-space:normal}td{word-break:break-word}}
+.kpanel{border:1px solid var(--line,#DED9CB);border-top:4px solid #22211F;border-radius:14px;background:var(--panel,#FAF9F5);padding:18px 20px;margin:14px 0}
+.kunye-not{font-size:.85em;color:#6B675E;margin-top:8px}
+.bos-kayit{font-size:.9em;font-style:italic;color:#8A8578}
+.copy{text-align:center;padding:14px 0 22px;color:#8A8578;font-size:12.5px}
+footer#kaynak{background:none;color:#57544C;font-size:12.5px;padding:6px 0 30px}
+footer#kaynak .kaynak-ic{max-width:980px;margin:0 auto;padding:0 18px;box-sizing:border-box}
+footer#kaynak section.kpanel{width:auto;max-width:none;margin:14px 0}
 
 .band{display:inline-block;width:46px;height:14px;border-radius:7px;vertical-align:middle;background:#6A8E7F}
 .band.red{background:#B0472A}
@@ -383,6 +391,7 @@ nav a:hover{color:var(--ink)}
 <text x="854" y="339.0" class="s-v" text-anchor="end">faiz %42,0</text>
 <text x="12" y="505" class="s-s">Kaynak: TÜİK/TCMB EVDS (08.10.2026 canlı çekim, sector GYO). Reel seriler TÜFE deflatörlü; satış serileri 12 aylık toplam (mevsimsellik temizlenmiş). İpotekli satış payı Ağu 26: %17,4 — gelenek %30–40.</text>
 </svg>
+<p style="opacity:.7;font-size:.85em"><i>(12.10 düzeltme: grafikteki "satış reel 62" serisi konut satış ADETİNİN TTM endeksiydi ve yanlışlıkla Yİ-ÜFE deflatörüne bölünmüştü — doğru seri değeri 127,1 (adet, indirgeme yok; KFE reel 97 meşrudur — fiyat endeksi). Grafik serisi bir sonraki üretimde güncellenecektir — docs/mali-analiz-rapor-hatti-denetim-2026-10.md §1.3)</i></p>
 </div>
 <table>
 <tr><th>2025 sektör toplamı (TCMB M — gayrimenkul faaliyetleri, nominal)</th><th class="num">Sektör M</th><th class="num">EKGYO</th></tr>
@@ -461,19 +470,28 @@ nav a:hover{color:var(--ink)}
 
 <section id="makyaj">
 <h2>11 · Bilanço makyajı taraması: kazanç kalitesi</h2>
-<div style="background:#F7E8E3;border-left:4px solid var(--danger,#B0472A);padding:10px 14px;border-radius:8px;margin:10px 0"><b>1 sinyal:</b> Piotroski F = 4/9 zayıf bant. Sinyal kanıt değildir; tezkik incelemesi yapıldı — sonuç aşağıdadır.</div>
-<div class="tblwrap"><table><tr><th>Metrik</th><th>Değer</th><th>Bant / okuma</th></tr><tr><td>Beneish M-Score</td><td><b>-3,993</b></td><td>şüphe bandı dışı (eşik -1,78 altı)</td></tr><tr><td>Piotroski F</td><td><b>4/9</b></td><td>zayıf</td></tr><tr><td>Sloan tahakkuk oranı</td><td><b>0,046</b></td><td>tahakkuk baskısı yok</td></tr><tr><td>Faaliyet NA / net kâr</td><td><b>-4,03</b></td><td>nakit desteği zayıf</td></tr><tr><td>Örtük finansman maliyeti (net borca)</td><td><b>%1520,0</b></td><td>kur+faiz karışık, yön çapası</td></tr><tr><td>Z″ (Altman düzeltilmiş)</td><td><b>3,55</b></td><td>güçlü (>2,6)</td></tr><tr><td>Window-dressing (çeyrek-sonu)</td><td><b>nakit %173,3, KVB %-1,2</b></td><td>bayrak yok</td></tr></table></div>
-<h3>Sinyal tezkiki — FR/dipnot incelemesi yapıldı (10.10.2026)</h3><div class="tblwrap"><table><tr><th>Sinyal</th><th>İnceleme bulgusu</th><th>Hüküm</th></tr><tr><td style="white-space:nowrap"><b>M-band iddiası (+1,007) — ln-düzeltmeli M=-3,993 bant-altı, sinyal kalktı</b></td><td>Eski iddia doğrusal-formül artefaktı: ln-düzeltmeli Beneish M=-3,993 → eşik altında, M-sinyali yok. Altta yatan bulgu duruyor: alacak artışı GERÇEK ama hasılat-doğumlu değil — artışın ~2/3'ü ÇŞB kentsel-dönüşüm ÖDEME alacağı (Dipnot 25); DSRI 5,16 Beneish semantiği dışı (devlet-alacağı baskılı iş-modeli), izleme maddesi olarak geçerli.<br><span style="opacity:.65;font-size:.85em">Kaynak: Dipnot 25; ln-düzeltmeli scan-h1-26.json (M=-3,993)</span></td><td style="white-space:nowrap;color:#666"><b>IZAHAT-GERCEKCI</b></td></tr><tr><td style="white-space:nowrap"><b>F=4/9 + SGAI 1,71 + LVGI 1,54</b></td><td>Beş kayıp gerçek ama tümü FR'da olay-bazlı açıklanmış: OCF −14 mlr kronik (stok-ağırlıklı model; stok 298,5 mlr = TA'nın %68'i), ROA düşüşü sürükleyicileri finansman gideri +7,4 mlr ve ertelenmiş vergi −7,3 mlr (nakit-dışı), kaldıraç artışı açık tahvil/kira-sertifikası ihracı (borç 56→95,3 mlr; NA'da 59,2 mlr ihraç girişi), devir-hızı düşüşü teslim döngüselliği (2025 teslim yılı). SGAI artışı stok eritme pazarlama baskısı (reklam +%83) — kârı DÜŞÜRDÜĞÜ için şişirme yönüyle çelişir. Endişe: TLREF %41,98 maliyetli borcun kâr sıkıştırması ve kamu-bağımlı tahsilat (yapısal likidite).<br><span style="opacity:.65;font-size:.85em">Kaynak: FR txt satır 394 (OCF), 274/281/283 (finansman/vergi/net kâr), 1107-1128 (borç dökümü, TLREF), 263 (hasılat), 2098-2117 (GYG dökümü)</span></td><td style="white-space:nowrap;color:#6B8E6B"><b>IZAHAT GERCEKCI</b></td></tr></table></div><p style="margin-top:8px"><b>Genel hüküm:</b> [GÜNCELLEME 10.10: Beneish ln-düzeltmesi sonrası M=-3,993 bant-altı — M-sinyali ölçüm artefaktı olarak kalktı.] Kazanç-manipülasyonu değil: alacak şişmesi devlet-alacağı baskılı iş-modeli (Beneish DSRI semantiği dışı) + göl vintaj-artefaktı; F=4 kayıpları tamamı açıklanmış borçlanma/vergi/teslim-döngüsü olayları.</p>
+<div style="background:#FBF3E4;border-left:4px solid #C9A227;padding:10px 14px;border-radius:8px;margin:10px 0"><b>Tarama eksik:</b> veri seti Beneish/Piotroski için yeterli değil — alt-kalemler okunamadı. Bu bir CLEAN kaydı DEĞİLDİR.</div>
+<div class="tblwrap"><table><tr><th>Metrik</th><th>Değer</th><th>Bant / okuma</th></tr><tr><td>Piotroski F</td><td><b>2/9 (5 test hesaplanamadı)</b></td><td>zayıf</td></tr><tr><td>Faaliyet NA / net kâr</td><td><b>-4,03</b></td><td>nakit desteği zayıf</td></tr><tr><td>Z″ (Altman, imalat-dışı)</td><td><b>4,14</b></td><td>güçlü (>2,6)</td></tr><tr><td>Window-dressing (çeyrek-sonu)</td><td><b>nakit %173,3, KVB %-1,2</b></td><td>bayrak yok</td></tr></table></div>
+<h3>Sinyal tezkiki — FR/dipnot incelemesi yapıldı</h3><div class="tblwrap"><table><tr><th>Sinyal</th><th>İnceleme bulgusu</th><th>Hüküm</th></tr><tr><td><b>M-band iddiası (lineer +1,007) — 12.10: ln-düzeltme geçersiz kılındı; yeni tarama M=None (vintaj ölçülemedi, dürüst boş)</b></td><td>12.10 denetim düzeltmesi: kanonik Beneish-1999 endeksleri DOĞRUDAN lineer toplar (logaritma yok) — 10.10'daki 'ln-düzeltmesi' regresyondu ve sinyal bastırmak için kullanılamaz. Yeni taramada M=None (p-BS vintajı txt ile ölçülemedi — BS-bağımlı sinyaller bastırıldı, uydurma değer yok). Altta yatan bulgu DURUYOR: alacak artışı GERÇEK ama hasılat-doğumlu değil — artışın ~2/3'ü ÇŞB kentsel-dönüşüm ÖDEME alacağı (Dipnot 25); DSRI 5,16 Beneish semantiği dışı (devlet-alacağı baskılı iş-modeli), izleme maddesi olarak geçerli.<br><span style="opacity:.65;font-size:.85em">Kaynak: Dipnot 25; ln-düzeltmeli scan-h1-26.json (M=-3,993)</span></td><td style="color:#6B8E6B"><b>IZAHAT-GERCEKCI</b></td></tr><tr><td><b>F=4/9 + SGAI 1,71 + LVGI 1,54</b></td><td>Beş kayıp gerçek ama tümü FR'da olay-bazlı açıklanmış: OCF −14 mlr kronik (stok-ağırlıklı model; stok 298,5 mlr = TA'nın %68'i), ROA düşüşü sürükleyicileri finansman gideri +7,4 mlr ve ertelenmiş vergi −7,3 mlr (nakit-dışı), kaldıraç artışı açık tahvil/kira-sertifikası ihracı (borç 56→95,3 mlr; NA'da 59,2 mlr ihraç girişi), devir-hızı düşüşü teslim döngüselliği (2025 teslim yılı). SGAI artışı stok eritme pazarlama baskısı (reklam +%83) — kârı DÜŞÜRDÜĞÜ için şişirme yönüyle çelişir. Endişe: TLREF %41,98 maliyetli borcun kâr sıkıştırması ve kamu-bağımlı tahsilat (yapısal likidite).<br><span style="opacity:.65;font-size:.85em">Kaynak: FR txt satır 394 (OCF), 274/281/283 (finansman/vergi/net kâr), 1107-1128 (borç dökümü, TLREF), 263 (hasılat), 2098-2117 (GYG dökümü)</span></td><td style="color:#6B8E6B"><b>IZAHAT GERCEKCI</b></td></tr></table></div><p style="margin-top:8px"><b>Genel hüküm:</b> [12.10 GÜNCELLEME: ln-düzeltmesi denetimde geçersiz kılındı (Beneish-1999 kanonik formülü lineerdir); yeni tarama M=None — vintaj ölçülemedi, dürüst boş: M-sinyali 'kalktı' değil, 'ölçülemedi'.] Kazanç-manipülasyonu değil: alacak şişmesi devlet-alacağı baskılı iş-modeli (Beneish DSRI semantiği dışı) + göl vintaj-artefaktı; F=4 kayıpları tamamı açıklanmış borçlanma/vergi/teslim-döngüsü olayları.</p>
 <h3>Finansman gideri dipnot dökümü (-12.712.504 bin TL, 2026-H1)</h3><div class="tblwrap"><table><tr><th>Bileşen</th><th>bin TL</th><th>Pay</th></tr><tr><td>Kur farkları</td><td><b>-601.811</b></td><td>%5</td></tr><tr><td>Faiz giderleri</td><td><b>-12.016.773</b></td><td>%95</td></tr><tr><td>Komisyon/masraf</td><td><b>-42.160</b></td><td>%0</td></tr><tr><td>Diğer</td><td><b>-51.760</b></td><td>%0</td></tr></table></div>
-<p style="opacity:.75;font-size:.9em"><b>Metodoloji:</b> Tarama <code>scripts/manipulasyon_tarama.py</code> v5.x ile aynı dönem FR-txt + KAP göl verisinden üretildi (10.10.2026). Göl, TMS 29 şirketlerinde üniforma-gerçek birimdir (is_k=cpi_k=1 semantiği); Beneish eşiği −1,78 (orijinal −2,22 revizyonu sonrası). Birim denetimi: kayıt birimi doğrulandı (txt birimi bin TL, kalibre sapma 0.962). Sinyaller tek başına manipülasyon kanıtı değildir; hüküm FR dipnot teyidiyle birlikte verilir.</p>
+<p style="opacity:.75;font-size:.9em"><b>Metodoloji:</b> Tarama <code>scripts/manipulasyon_tarama.py</code> + <code>metot_defteri.py</code> (formüllerin tek kaynağı) ile aynı dönem FR-txt + KAP göl verisinden üretildi (2026-H1). Göl, TMS 29 şirketlerinde üniforma-gerçek birimdir (is_k=cpi_k=1 semantiği); Beneish eşiği −1,78 (orijinal −2,22 revizyonu sonrası). Birim denetimi: kayıt birimi doğrulandı (txt birimi bin TL, kalibre sapma 0.962). Sinyaller tek başına manipülasyon kanıtı değildir; hüküm FR dipnot teyidiyle birlikte verilir.</p>
 </section>
+
+
 <section id="izleme">
 <h2>12 · İzleme listesi</h2>
 <p style="font-weight:600;margin-top:18px">İzlenecek gelişmeler:</p>
 <ul><li><b>Kamu alacağı tahsilatı:</b> ÇŞB bakiyesi 24,5 mlr (Haz-26; toplam kamu alacağı ~41,6 mlyr) — arsa-mahsup ve nakit tahsilat takvimi; ilk 6,8 mlyr'lik mahsubun devamı kritik.</li><li><b>Finansman maliyeti geçidi:</b> TLREF %41,98'li kredi + %41,14 kira sertifikaları — indirim döngüsüyle örtük maliyetin düşüş hızı; faiz karşılama 0,99× eşik altı seyrinde.</li><li><b>Teslim döngüsü:</b> 298,5 mlr stok (TA'nın %68'i) ve 113,6 mlr ertelenmiş gelirin hasılata dönüş temposu — hasılat −%15,7 sonrası toparlanma kanıtı.</li><li><b>İhale havuzu:</b> ~117 mlyr sözleşmeli taahhüt + 35,5 mlyr teklif aşaması — yeni sözleşme akışı ve ASKGP arsa faturalamalarının sürekliliği.</li><li><b>Kronik negatif faaliyet NA:</b> stok-yoğun gelişim modelinde OCF işareti (H1 −14,0 mlr); negatiflik derinleşirse finansman ihtiyacı ve borç maliyeti sarmalı büyür.</li><li><b>Geri alım ve bant eşikleri:</b> kendi payı alım programının devamı; 22–31 TL bandı dışına taşmada karar tablosu yeniden okunur.</li></ul>
 </section>
+</div>
 <footer id="kaynak">
-<section>
+<div class="kaynak-ic">
+<section class="kpanel">
+<h3>Şirket künyesi</h3>
+<p>Emlak Konut Gayrimenkul Yatırım Ortaklığı A.Ş. (eski unvanı Emlak Gayrimenkul Yatırım Ortaklığı A.Ş.; 6 Mart 1991 tescil, 2002'de gayrimenkul yatırım ortaklığına dönüşüm) · Merkez: Barbaros Mah. Mor Sümbül Sok. No:7/2B, Batı Ataşehir / İstanbul · Ödenmiş sermaye 3.800 mn TL (dipnot 16; pay adedi için kusur maddesine bakınız) · TOKİ ortaklık payı %49,34.<br>
+<b>Denetim:</b> 2026-H1 ara dönem sınırlı denetimi PwC Bağımsız Denetim ve SMMM A.Ş. tarafından SBDS 2410'a uygun yürütülmüştür (Sorumlu Denetçi Salim Alyanak, İstanbul, 14.08.2026); olumsuz görüş bildiren husus tespit edilmemiştir.</p>
+<p class="kunye-not">Bu sayfa wiki sentez sayfasının sunum kopyasıdır; doğruluk kaynağı wiki + KAP dosyalarıdır.</p>
+
 <h3>İddia → kaynak</h3>
 <ul>
 <li>Bilanço, gelir, nakit akışı ve dipnot sayıları: KAP 2026-H1 finansal rapor tam metni (TMS 29 düzeltilmiş, "bin TL, 30 Haziran 2026 satın alma gücü"). Anahtar satırlar rapor metniyle tek tek doğrulandı: aktif 440.012.804 · kısa vadeli 194.797.508 · uzun vadeli 92.379.425 · özkaynak 152.836 · nakit 40.620.757 · stok 298.485.532 · dönem kârı 2.357.999.</li>
@@ -483,22 +501,27 @@ nav a:hover{color:var(--ink)}
 <li>Fiyat ve yayınlanan oranlar: Matriks canlı servis (08.10.2026 12:05). Makro göstergeler: anchors-2026-10-07 (TCMB EVDS, TÜİK, Damodaran 05.01.2026 vintaj).</li>
 <li>Sektör medyanları: GYO göreceli değerleme sayfası; gelişen ülke medyanları Damodaran 05.01.2026.</li>
 </ul>
-<h3>Bilinen veri kusurları (kaynak tarafında, giderilemez)</h3>
+
+<h3>Bilinen veri kusurları</h3>
 <ul>
-<li>Veri gölündeki EKGYO serileri düzeltilmemiş XML + III-48.1 bireysel/nominal setinden besleniyor; analiz yalnız rapor kolonlarını kullanır. Göl okuması yapan üçüncü taraf ekranlarda aktif 423.624 görünür — rapor değeri 440.013 esastır.</li>
+<li>Harici veri aynalarındaki EKGYO serileri düzeltilmemiş XML + III-48.1 bireysel/nominal setinden oluşuyor; analiz yalnız rapor kolonlarını kullanır. Ayna verisini okuyan üçüncü taraf ekranlarda aktif 423.624 görünür — rapor değeri 440.013 esastır.</li>
 <li>Rapor dipnot 16 kendi içinde tutarsız: sermaye "3.800.000 bin TL, her biri 1 kuruş, 380 mlyar adet" derken hisse başına kâr notunun paydası 3.795 mn paydır ve yayımlanan hisse başına kâr (0,06213) bu iki okumadan hiçbiriyle tam mutabık değildir. Analiz, üç ayrı kaynakla doğrulanan pay adedini esas alır: 3.800 mn (Matriks PD/DD yayını 0,49229 birebir · temettü 2.280 mn ÷ 0,60 TL · ağırlıklı ortalama pay satırı).</li>
 <li>Şirket tarihî net aktif değer serisi yayımlamıyor: tarihî PD/NAD dizisi üretilemez; yakınsama çıpası tek-noktadır.</li>
 <li>Türk lirası katmanında özkaynak maliyeti kurulamadı (10 yıl vadeli tahvil risksiz faizi gösterge şeridinde yok); Türk lirası ayağı yalnız TLREF tabanıyla sınırlandı.</li>
 </ul>
-<h3>Şirket künyesi</h3>
-<p>Emlak Konut Gayrimenkul Yatırım Ortaklığı A.Ş. (eski unvanı Emlak Gayrimenkul Yatırım Ortaklığı A.Ş.; 6 Mart 1991 tescil, 2002'de gayrimenkul yatırım ortaklığına dönüşüm) · Merkez: Barbaros Mah. Mor Sümbül Sok. No:7/2B, Batı Ataşehir / İstanbul · Ödenmiş sermaye 3.800 mn TL (dipnot 16; pay adedi için kusur maddesine bakınız) · TOKİ ortaklık payı %49,34.<br>
-<b>Denetim:</b> 2026-H1 ara dönem sınırlı denetimi PwC Bağımsız Denetim ve SMMM A.Ş. tarafından SBDS 2410'a uygun yürütülmüştür (Sorumlu Denetçi Salim Alyanak, İstanbul, 14.08.2026); olumsuz görüş bildiren husus tespit edilmemiştir.</p>
-<p><b>Bu sayfa</b>, wiki sentez sayfasının sunum kopyasıdır; doğruluk kaynağı wiki + KAP dosyalarıdır. Wiki: <i>synthesis/ekgyo-2026h1-bilanco-analizi</i> (güncelleme 08.10.2026, kayıt log-78).</p>
-</section>
-<div class="copy">© 2026 Enis Halıcı · Tüm hakları saklıdır.</div>
-</footer>
 
+<!-- rapor_hat:dis-kaynak-linkleri -->
+<p style="font-size:.9em"><b>Dış kaynak bağlantıları:</b>
+<a href="https://www.kap.org.tr/tr/bildirim-sorgu">KAP bildirim sorgu</a> ·
+<a href="https://evds3.tcmb.gov.tr">TCMB EVDS</a> ·
+<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates">ABD Hazinesi getiri eğrisi</a> ·
+<a href="https://pages.stern.nyu.edu/~adamodar/">Damodaran (NYU Stern)</a> ·
+<a href="https://www.matriks.com.tr">Matriks</a> — künye kodları metinde geçer.</p>
+</section>
+
+<div class="copy">© 2026 Enis Halıcı · Tüm hakları saklıdır.</div>
 </div>
+</footer>
 <!-- site-publish:footer -->
 <footer style="max-width:1080px;margin:26px auto 0;padding:14px 20px 22px;border-top:1px solid
  #E3DED2;font-size:12px;color:#5D594D">
