@@ -385,6 +385,33 @@
       ],
       "coverSubtitle": "Takas Analiz Raporu",
       "coverSections": "26 Aylık Defter • Kurumsal Akış • Virman • Yabancı Tarafı • Marjinal Maliyet"
+    },
+    {
+      "ticker": "MIATK",
+      "company": "Mia Teknoloji A.Ş.",
+      "period": "2026-Q4",
+      "periodLabel": "Ekim 2026 · Takas",
+      "year": 2026,
+      "quarter": 4,
+      "title": "MIATK Takas Analiz Raporu — Blok Koridoru, Virman, Fon Kuyruğu (Kas 2021 – Eki 2026)",
+      "description": "Beş yıllık takas defteri: FNY→CIY→BLS→YATFON blok koridoru, 12,4 mn lotluk Bulls kuyruğu, CIY kanallı yabancı dönüşü (r=0,91) ve %42,8'den %60,25'e açılan float — kuyruk satılır mı, emilir mi?",
+      "publishedAt": "2026-10-16",
+      "updatedAt": "2026-10-16",
+      "path": "/reports/MIATK/2026-Q4/",
+      "ogImage": "/reports/MIATK/2026-Q4/og-cover.png",
+      "tags": [
+        "takas",
+        "aracı kurum dağılımı",
+        "akış analizi",
+        "virman",
+        "blok koridoru",
+        "yabancı oranı",
+        "MIATK",
+        "2026Q4",
+        "bilişim"
+      ],
+      "coverSubtitle": "Takas Analiz Raporu",
+      "coverSections": "5 Yıllık Defter • Blok Koridoru • Fon Kuyruğu • Yabancı Dönüşü • İzleme Takvimi"
     }
   ]
 }
